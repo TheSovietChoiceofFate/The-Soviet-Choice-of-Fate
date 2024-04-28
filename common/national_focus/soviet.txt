@@ -12,7 +12,7 @@ focus_tree = {
 		id = SF_SOV_Intensify_Anti_Sabotage_Movemant #强化反破坏运动
 		icon = GFX_goal_unknown
 		cost = 5.00
-		x = 14
+		x = 11
 		y = 0
 		cancelable = no
 	}
@@ -23,7 +23,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
 		}
-		x = 13
+		x = 10
 		y = 1
 	}
 	focus = {
@@ -33,7 +33,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
 		}
-		x = 15
+		x = 12
 		y = 1
 	}
 	focus = {
@@ -46,7 +46,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Raise_Production_Quotas
 		}
-		x = 14
+		x = 11
 		y = 2
 	}
 	focus = {
@@ -56,7 +56,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Cut_Bonds_Interest_Rates
 		}
-		x = 14
+		x = 11
 		y = 3
 	}
 	focus = {
@@ -66,7 +66,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_The_Next_Step
 		}
-		x = 12
+		x = 9
 		y = 4
 	}
 	focus = {
@@ -76,7 +76,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
 		}
-		x = 11
+		x = 8
 		y = 5
 	}
 	focus = {
@@ -86,7 +86,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
 		}
-		x = 13
+		x = 10
 		y = 5
 	}
 	focus = {
@@ -96,7 +96,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_The_Next_Step
 		}
-		x = 16
+		x = 13
 		y = 4
 	}
 	focus = {
@@ -106,7 +106,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Further_Judicial_Reform
 		}
-		x = 15
+		x = 12
 		y = 5
 	}
 	focus = {
@@ -116,7 +116,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Further_Judicial_Reform
 		}
-		x = 17
+		x = 14
 		y = 5
 	}
 	focus = {
@@ -129,7 +129,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Cut_Through_Red_Tape
 		}
-		x = 16
+		x = 13
 		y = 6
 	}
 	focus = {
@@ -142,7 +142,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SF_SOV_Soviet_Judge
 		}
-		x = 15
+		x = 12
 		y = 7
 	}
 	focus = {
@@ -155,7 +155,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Boost_Production_Of_Consumer_Goods
 		}
-		x = 12
+		x = 9
 		y = 6
 	}
 	focus = {
@@ -165,7 +165,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Ensure_Economic_Efficiency
 		}
-		x = 11
+		x = 8
 		y = 7
 	}
 	focus = {
@@ -175,7 +175,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Overheating_In_The_Transportation_Industry
 		}
-		x = 11
+		x = 8
 		y = 8
 	}
 	focus = {
@@ -188,7 +188,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SF_SOV_Consititutional_Supremacy
 		}
-		x = 17
+		x = 14
 		y = 7
 	}
 	focus = {
@@ -198,7 +198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Consititutional_Supremacy
 		}
-		x = 15
+		x = 12
 		y = 8
 	}
 	focus = {
@@ -208,7 +208,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Soviet_Judge
 		}
-		x = 17
+		x = 14
 		y = 8
 	}
 	focus = {
@@ -218,7 +218,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Ensure_Economic_Efficiency
 		}
-		x = 13
+		x = 10
 		y = 7
 	}
 	focus = {
@@ -228,7 +228,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Question_Of_Agricultural_Production_Quotas
 		}
-		x = 13
+		x = 10
 		y = 8
 	}
 	focus = {
@@ -245,7 +245,7 @@ focus_tree = {
 			focus = SF_SOV_Guarantee_Judicial_Independence
 			focus = SF_SOV_The_Law_Serves_Politics
 		}
-		x = 14
+		x = 11
 		y = 9
 	}
 }
