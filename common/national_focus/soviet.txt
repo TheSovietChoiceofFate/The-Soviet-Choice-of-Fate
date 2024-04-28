@@ -1,0 +1,251 @@
+focus_tree = {
+	id = soviet
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SF_SOV_Intensify_Anti_Sabotage_Movemant #强化反破坏运动
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 4
+		y = 0
+		cancelable = no
+	}
+	focus = {
+		id = SF_SOV_Encourage_Stakhanovites #鼓励斯达汉诺夫分子
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
+		}
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = SF_SOV_Raise_Production_Quotas #拔高生产定额
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
+		}
+		x = 5
+		y = 1
+	}
+	focus = {
+		id = SF_SOV_Cut_Bonds_Interest_Rates #降低国债利率
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SF_SOV_Encourage_Stakhanovites
+		}
+		prerequisite = {
+			focus = SF_SOV_Raise_Production_Quotas
+		}
+		x = 4
+		y = 2
+	}
+	focus = {
+		id = SF_SOV_The_Next_Step #下一步
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SF_SOV_Cut_Bonds_Interest_Rates
+		}
+		x = 4
+		y = 3
+	}
+	focus = {
+		id = SF_SOV_Drafting_Of_The_1937_Plan #着手1937年经济计划
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_The_Next_Step
+		}
+		x = 2
+		y = 4
+	}
+	focus = {
+		id = SF_SOV_Cut_Investment_In_Heavy_Industry #裁剪重工业投资
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_Drafting_Of_The_1937_Plan
+		}
+		x = 1
+		y = 5
+	}
+	focus = {
+		id = SF_SOV_Boost_Production_Of_Consumer_Goods #提振消费品生产
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_Drafting_Of_The_1937_Plan
+		}
+		x = 3
+		y = 5
+	}
+	focus = {
+		id = SF_SOV_Further_Judicial_Reform #更进一步的司法改革
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_The_Next_Step
+		}
+		x = 6
+		y = 4
+	}
+	focus = {
+		id = SF_SOV_Empower_Defense_Agencies #赋权辩护机构
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_Further_Judicial_Reform
+		}
+		x = 5
+		y = 5
+	}
+	focus = {
+		id = SF_SOV_Cut_Through_Red_Tape #简化繁文缛节
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_Further_Judicial_Reform
+		}
+		x = 7
+		y = 5
+	}
+	focus = {
+		id = SF_SOV_Status_Of_Lynching #私刑之地位
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Empower_Defense_Agencies
+		}
+		prerequisite = {
+			focus = SF_SOV_Cut_Through_Red_Tape
+		}
+		x = 6
+		y = 6
+	}
+	focus = {
+		id = SF_SOV_Consititutional_Supremacy #宪法至上
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Status_Of_Lynching
+		}
+		mutually_exclusive = {
+			focus = SF_SOV_Soviet_Judge
+		}
+		x = 5
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_Ensure_Economic_Efficiency #确保经济体效率
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Cut_Investment_In_Heavy_Industry
+		}
+		prerequisite = {
+			focus = SF_SOV_Boost_Production_Of_Consumer_Goods
+		}
+		x = 2
+		y = 6
+	}
+	focus = {
+		id = SF_SOV_Overheating_In_The_Transportation_Industry #运输业的过热现象
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Ensure_Economic_Efficiency
+		}
+		x = 1
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_Dying_Movement #行将就木的运动
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Overheating_In_The_Transportation_Industry
+		}
+		x = 1
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_Soviet_Judge #法官乃是苏维埃的法官
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Status_Of_Lynching
+		}
+		mutually_exclusive = {
+			focus = SF_SOV_Consititutional_Supremacy
+		}
+		x = 7
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_Guarantee_Judicial_Independence #保障司法独立性
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Consititutional_Supremacy
+		}
+		x = 5
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_The_Law_Serves_Politics #律法服务于政治，阶级斗争高于一切
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Soviet_Judge
+		}
+		x = 7
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_Question_Of_Agricultural_Production_Quotas #农业产出指标问题
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Ensure_Economic_Efficiency
+		}
+		x = 3
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_The_Clouds_That_Resurface #再现的阴云
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Question_Of_Agricultural_Production_Quotas
+		}
+		x = 3
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_Constitution_Of_1936 #1936年宪法
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = SF_SOV_Dying_Movement
+		}
+		prerequisite = {
+			focus = SF_SOV_The_Clouds_That_Resurface
+		}
+		prerequisite = {
+			focus = SF_SOV_Guarantee_Judicial_Independence
+			focus = SF_SOV_The_Law_Serves_Politics
+		}
+		x = 4
+		y = 9
+	}
+}

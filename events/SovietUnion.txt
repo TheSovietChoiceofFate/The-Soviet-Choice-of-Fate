@@ -1,0 +1,36 @@
+﻿# 1936饥荒事件组
+
+add_namespace = sovietfate
+
+# 1936.1.1 配给制的终结
+country_event = {
+	id = sovietfate.1
+	title = sovietfate.1.t
+	desc = sovietfate.1.d
+    fire_only_once = yes
+	trigger = {
+    tag = SOV
+    }
+	option = { 
+		name = sovietfate.1.a
+		add_political_power = 20
+			country_event = {
+			id = sovietfate.2
+			days = 1
+		}
+	}
+}
+
+# 斯大林宪法
+country_event = {
+	id = sovietfate.2
+	title = sovietfate.2.t
+	desc = sovietfate.2.d
+    fire_only_once = yes
+	trigger = {
+    tag = SOV
+    }
+	option = { 
+		name = sovietfate.2.a
+	}
+}
