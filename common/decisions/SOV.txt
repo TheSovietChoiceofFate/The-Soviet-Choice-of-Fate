@@ -1,125 +1,52 @@
-####### NO STEP BACK! #######
-@DAYS_DETERMINED = 180 #Used for propaganda campaign SOV_heroes_forward -> Value should be the same as SOV_default_propaganda_campaign_duration
-
-debug_decisions = { #TODO_Manu: Comment these out
-	SOV_debug_show_paranoia_system = { #This is a duplicate of the decision present in the Paranoia category
-		priority = 202
-
-		icon = eng_ally_imperialist_coup
-
-		allowed = {
-			original_tag = SOV
+# 处理饥荒
+SOV_deal_hungry = {
+    SOV_hungry_ing = {     
+		activation = {  
+			has_country_flag = SOV_hungry_ing                       
+		}                                    
+		available = {  
+			NOT = { has_country_flag = SOV_hungry }                        
 		}
-
-		available = {
-			always = yes
+		
+		is_good = no                         
+	
+		days_mission_timeout = 120
+		timeout_effect = {                      
+			custom_effect_tooltip = hungry          
 		}
-
-		visible = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
-
-		cost = 0
-
-		complete_effect = {
-			custom_effect_tooltip = "This will make the Paranoia System visible in the tab. It does NOT activate the Paranoia system."
-			set_country_flag = SOV_debug_show_paranoia_system_flag
-		}
-	}
-
-	SOV_debug_show_propaganda_system = { #This is a duplicate of the decision present in the Paranoia category
-		priority = 201
-
-		icon = eng_ally_imperialist_coup
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			NOT = { has_country_flag = SOV_debug_show_propaganda_system_flag }
-		}
-
-		cost = 0
-
-		complete_effect = {
-			custom_effect_tooltip = "This will make the Propaganda system visible in the tab. It does NOT activate the Propaganda system."
-			set_country_flag = SOV_debug_show_propaganda_system_flag
-		}
-	}
-
-	SOV_TEST_ULTIMATE_CONTINENTS = {
-		priority = 200
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		cost = 0
-
-		complete_effect = {
-			#log = "WARNING: This takes a while"
-			every_state = {
-				limit = {
-					is_on_continent = asia
-				}
-				TIB = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = europe
-				}
-				LUX = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = middle_east
-				}
-				YEM = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = africa
-				}
-				ETH = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = australia
-				}
-				NZL = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = north_america
-				}
-				CAN = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = south_america
-				}
-				PER = { transfer_state = PREV }
-			}
+		complete_effect = {                    
+			custom_effect_tooltip = save_hungry        
 		}
 	}
 }
 
+# 党内倾向
 
+SOV_party_lean = {
+	SOV_write_history = {
+		
+		#icon = 图标名
+		cost = 100
+		days_remove = 365
+		
+		fire_only_once = yes
+
+		allowed/available/visible = {
+		tag = SOV
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			custom_effect_tooltip = history_writing
+	   	}
+		complete_effect = {  
+			custom_effect_tooltip = history
+		}
+		remove_effect = {
+			custom_effect_tooltip = history_finish
+		}
+	}
 
 ########     ###    ########     ###    ##    ##  #######  ####    ###
 ##     ##   ## ##   ##     ##   ## ##   ###   ## ##     ##  ##    ## ##

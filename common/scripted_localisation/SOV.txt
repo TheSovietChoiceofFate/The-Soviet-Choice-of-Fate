@@ -1,0 +1,81 @@
+defined_text = {
+	name = ShowAgricultural
+	text = {
+		trigger = {
+			check_variable = { Agricultural < 10 }
+		}
+		localization_key = "crazy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 10 }
+				check_variable = { Agricultural < 20 }
+			}
+		}
+		localization_key = "joke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 20 }
+				check_variable = { Agricultural < 30 }
+			}
+		}
+		localization_key = "whisper"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 30 }
+				check_variable = { Agricultural < 40 }
+			}
+		}
+		localization_key = "drunk"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 40 }
+				check_variable = { Agricultural < 50 }
+			}
+		}
+		localization_key = "point"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 50 }
+				check_variable = { Agricultural < 60 }
+			}
+		}
+		localization_key = "general"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 60 }
+				check_variable = { Agricultural < 70 }
+			}
+		}
+		localization_key = "talk"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 70 }
+				check_variable = { Agricultural < 80 }
+			}
+		}
+		localization_key = "slience"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { Agricultural > 80 }
+				check_variable = { Agricultural < 90 }
+			}
+		}
+		localization_key = "response"
+	}
+}
