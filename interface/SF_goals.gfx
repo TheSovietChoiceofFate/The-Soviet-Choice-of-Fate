@@ -1,0 +1,90 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Intensify_Anti_Sabotage_Movemant"
+		texturefile = "gfx/interface/goals/SF_SOV_Intensify_Anti_Sabotage_Movemant.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Encourage_Stakhanovites"
+		texturefile = "gfx/interface/goals/SF_SOV_Encourage_Stakhanovites.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Raise_Production_Quotas"
+		texturefile = "gfx/interface/goals/SF_SOV_Raise_Production_Quotas.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Cut_Bonds_Interest_Rates"
+		texturefile = "gfx/interface/goals/SF_SOV_Cut_Bonds_Interest_Rates.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_The_Next_Step"
+		texturefile = "gfx/interface/goals/SF_SOV_The_Next_Step.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Drafting_Of_The_1937_Plan"
+		texturefile = "gfx/interface/goals/SF_SOV_Drafting_Of_The_1937_Plan.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Cut_Investment_In_Heavy_Industry"
+		texturefile = "gfx/interface/goals/SF_SOV_Cut_Investment_In_Heavy_Industry.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Boost_Production_Of_Consumer_Goods"
+		texturefile = "gfx/interface/goals/SF_SOV_Boost_Production_Of_Consumer_Goods.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Ensure_Economic_Efficiency"
+		texturefile = "gfx/interface/goals/SF_SOV_Ensure_Economic_Efficiency.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Further_Judicial_Reform"
+		texturefile = "gfx/interface/goals/SF_SOV_Further_Judicial_Reform.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Empower_Defense_Agencies"
+		texturefile = "gfx/interface/goals/SF_SOV_Empower_Defense_Agencies.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Cut_Through_Red_Tape"
+		texturefile = "gfx/interface/goals/SF_SOV_Cut_Through_Red_Tape.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Status_Of_Lynching"
+		texturefile = "gfx/interface/goals/SF_SOV_Status_Of_Lynching.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Overheating_In_The_Transportation_Industry"
+		texturefile = "gfx/interface/goals/SF_SOV_Overheating_In_The_Transportation_Industry.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Dying_Movement"
+		texturefile = "gfx/interface/goals/SF_SOV_Dying_Movement.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Question_Of_Agricultural_Production_Quotas"
+		texturefile = "gfx/interface/goals/SF_SOV_Question_Of_Agricultural_Production_Quotas.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_The_Clouds_That_Resurface"
+		texturefile = "gfx/interface/goals/SF_SOV_The_Clouds_That_Resurface.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Consititutional_Supremacy"
+		texturefile = "gfx/interface/goals/SF_SOV_Consititutional_Supremacy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Guarantee_Judicial_Independence"
+		texturefile = "gfx/interface/goals/SF_SOV_Guarantee_Judicial_Independence.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Soviet_Judge"
+		texturefile = "gfx/interface/goals/SF_SOV_Soviet_Judge.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_The_Law_Serves_Politics"
+		texturefile = "gfx/interface/goals/SF_SOV_The_Law_Serves_Politics.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_SF_SOV_Constitution_Of_1936"
+		texturefile = "gfx/interface/goals/SF_SOV_Constitution_Of_1936.png"
+	}
+}
