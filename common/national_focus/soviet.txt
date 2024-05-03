@@ -11,6 +11,9 @@ focus_tree = {
 	focus = {
 		id = SF_SOV_Intensify_Anti_Sabotage_Movemant #强化反破坏运动
 		icon = GFX_goal_SF_SOV_Intensify_Anti_Sabotage_Movemant
+		completion_reward = {
+			country_event = { id = sovietfate.26 }
+		}
 		cost = 5.00
 		x = 4
 		y = 0
@@ -40,6 +43,9 @@ focus_tree = {
 		id = SF_SOV_Cut_Bonds_Interest_Rates #降低国债利率
 		icon = GFX_goal_SF_SOV_Cut_Bonds_Interest_Rates
 		cost = 5.00
+		completion_reward = {
+			country_event = { id = sovietfate.33 }
+		}
 		prerequisite = {
 			focus = SF_SOV_Encourage_Stakhanovites
 		}
@@ -55,6 +61,14 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = SF_SOV_Cut_Bonds_Interest_Rates
+		}
+		available = {
+			has_country_flag = SOV_cons
+		}
+		completion_reward = {
+		    custom_effect_tooltip = nextstep
+			country_event = { id = sovietfate.35 }
+		    country_event = { id = sovietfate.34 }
 		}
 		x = 4
 		y = 3
@@ -128,6 +142,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SF_SOV_Cut_Through_Red_Tape
+		}
+		completion_reward = {
+			country_event = { id = sovietfate.36 }
 		}
 		x = 6
 		y = 6
@@ -225,6 +242,9 @@ focus_tree = {
 		id = SF_SOV_The_Clouds_That_Resurface #再现的阴云
 		icon = GFX_goal_SF_SOV_The_Clouds_That_Resurface
 		cost = 2.00
+		completion_reward = {
+			country_event = { id = sovietfate.19 }
+		}
 		prerequisite = {
 			focus = SF_SOV_Question_Of_Agricultural_Production_Quotas
 		}

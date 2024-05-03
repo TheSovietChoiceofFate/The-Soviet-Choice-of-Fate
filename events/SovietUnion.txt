@@ -1,17 +1,298 @@
 ﻿add_namespace = sovietfate
 
+### 1936年
+## 国策事件
+# 斯大林6.3报告
+country_event = {
+	id = sovietfate.33
+	title = sovietfate.33.t
+	desc = sovietfate.33.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.33.a
+	}
+}
+# 前情提要：苏联的法治现状
+country_event = {
+	id = sovietfate.34
+	title = sovietfate.34.t
+	desc = sovietfate.34.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.34.a
+	}
+}
+# 农民强烈反对新规定
+country_event = {
+	id = sovietfate.36
+	title = sovietfate.36.t
+	desc = sovietfate.36.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.36.a
+	}
+}
+# 前情提要：1936年的经济过热
+country_event = {
+	id = sovietfate.35
+	title = sovietfate.35.t
+	desc = sovietfate.35.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.35.a
+	}
+}
+# 饥饿与宪法
+country_event = {
+	id = sovietfate.19
+	title = sovietfate.19.t
+	desc = sovietfate.19.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.19.a
+	}
+}
+## 宪法讨论事件组
+# 开局事件
+country_event = {
+	id = sovietfate.0
+	title = sovietfate.0.t
+	desc = sovietfate.0.d
+	picture = SOV_victory
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.0.a
+	}
+}
+# 配给制的终结
+country_event = {
+	id = sovietfate.1
+	title = sovietfate.1.t
+	desc = sovietfate.1.d
+	picture = sov_peijizhi
+    fire_only_once = yes
+	option = { 
+		name = sovietfate.1.a
+		political_power = 20
+	}
+}
+# 莫洛托夫下台
+country_event = {
+	id = sovietfate.3
+	title = sovietfate.3.t
+	desc = sovietfate.3.d
+	picture = sov_molotov
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.3.a
+		custom_effect_tooltip = molotov
+	}
+}
+# 宪法讨论（故事）
+country_event = {
+	id = sovietfate.2
+	title = sovietfate.2.t
+	desc = sovietfate.2.d
+	picture = sov_jicenggushi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.2.a
+	}
+}
+# 民意、新宪法与新体制
+country_event = {
+	id = sovietfate.5
+	title = sovietfate.5.t
+	desc = sovietfate.5.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.5.a
+		set_country_flag = SOV_debate
+	}
+}
+# 午后的讨论
+country_event = {
+	id = sovietfate.6
+	title = sovietfate.6.t
+	desc = sovietfate.6.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.6.a
+	}
+}
+# 法治意识
+country_event = {
+	id = sovietfate.7
+	title = sovietfate.7.t
+	desc = sovietfate.7.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.7.a
+	}
+}
+# 加里宁的不满
+country_event = {
+	id = sovietfate.8
+	title = sovietfate.8.t
+	desc = sovietfate.8.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.8.a
+		set_country_flag = SOV_jialining
+	}
+}
+# 当民主向你奔来
+country_event = {
+	id = sovietfate.9
+	title = sovietfate.9.t
+	desc = sovietfate.9.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.9.a
+	}
+}
+# 报复
+country_event = {
+	id = sovietfate.10
+	title = sovietfate.10.t
+	desc = sovietfate.10.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.10.a
+	}
+}
+# 积极分子
+country_event = {
+	id = sovietfate.11
+	title = sovietfate.11.t
+	desc = sovietfate.11.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.11.a
+	}
+}
+## 宪法讨论决议
+# 大规模撤换
+country_event = {
+	id = sovietfate.12
+	title = sovietfate.12.t
+	desc = sovietfate.12.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.12.a
+		country_event = {
+			id = sovietfate.13
+			days = 1
+		}
+	}
+}
+# 消极者
+country_event = {
+	id = sovietfate.13
+	title = sovietfate.13.t
+	desc = sovietfate.13.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.13.a
+		country_event = {
+			id = sovietfate.14
+			days = 1
+		}
+		set_country_flag = SOV_zhenshe
+		set_variable = { SOV_difang = 0 }
+	}
+}
+# 火烧基层
+country_event = {
+	id = sovietfate.14
+	title = sovietfate.14.t
+	desc = sovietfate.14.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.14.a
+	}
+}
+# 肃反的威胁
+country_event = {
+	id = sovietfate.15
+	title = sovietfate.15.t
+	desc = sovietfate.15.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.15.a
+	}
+}
+# 深水区
+country_event = {
+	id = sovietfate.16
+	title = sovietfate.16.t
+	desc = sovietfate.16.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    trigger = {
+		tag = SOV
+		check_variable = { SOV_difang > 2 }
+	}
+	option = { 
+		name = sovietfate.16.a
+		country_event = { id = sovietfate.17 }
+	}
+}
+# 渐熄的不满
+country_event = {
+	id = sovietfate.17
+	title = sovietfate.17.t
+	desc = sovietfate.17.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.17.a
+	}
+}
 ## 1936饥荒事件组
 # 报告饥荒
-
 country_event = {
 	id = sovietfate.4
 	title = sovietfate.4.t
 	desc = sovietfate.4.d
     fire_only_once = yes
-	trigger = {
-		tag = SOV
-		mean_time_to_happen = { days = 4 }
-    }
+    is_triggered_only = yes
 	option = { 
 		name = sovietfate.4.a
 		add_political_power = -100
@@ -19,61 +300,176 @@ country_event = {
         set_country_flag = SOV_hungry
 		set_country_flag = SOV_hungry_ing
 		custom_effect_tooltip = Agricultural_up_d
-		hidden_effect = { 
-		    set_variable = { Agricultural = 65 }
-		}
+		add_to_variable = { A0 = -50 }
 	}
 }
-
-# 配给制的终结
-
+# 三年丰收的尽头
 country_event = {
-	id = sovietfate.1
-	title = sovietfate.1.t
-	desc = sovietfate.1.d
-	picture = sov_peijizhi
+	id = sovietfate.18
+	title = sovietfate.18.t
+	desc = sovietfate.18.d
+	#picture = sov_peijizhi
     fire_only_once = yes
-	trigger = {
-		tag = SOV
-		mean_time_to_happen = { days = 1 }
-    }
+    is_triggered_only = yes
 	option = { 
-		name = sovietfate.1.a
-		political_power = 20
+		name = sovietfate.18.a
+		country_event = { id = sovietfate.19 }
 	}
 }
-
-# 宪法讨论
-
+#反破坏运动退潮
 country_event = {
-	id = sovietfate.2
-	title = sovietfate.2.t
-	desc = sovietfate.2.d
-	picture = sov_jicenggushi
+	id = sovietfate.20
+	title = sovietfate.20.t
+	desc = sovietfate.20.d
+	#picture = sov_peijizhi
     fire_only_once = yes
-	trigger = {
-		tag = SOV
-		mean_time_to_happen = { days = 2 }
-    }
+    is_triggered_only = yes
 	option = { 
-		name = sovietfate.2.a
+		name = sovietfate.20.a
 	}
 }
-
-# 莫洛托夫下台
-
+# 欢庆吧，劳动节！
 country_event = {
-	id = sovietfate.3
-	title = sovietfate.3.t
-	desc = sovietfate.3.d
-	picture = sov_molotov
+	id = sovietfate.21
+	title = sovietfate.21.t
+	desc = sovietfate.21.d
+	#picture = sov_peijizhi
     fire_only_once = yes
-	trigger = {
-		tag = SOV
-		mean_time_to_happen = { days = 3 }
-    }
+    is_triggered_only = yes
 	option = { 
-		name = sovietfate.3.a
-		custom_effect_tooltip = molotov
+		name = sovietfate.21.a
+	}
+}
+# 新宪法的草案
+country_event = {
+	id = sovietfate.22
+	title = sovietfate.22.t
+	desc = sovietfate.22.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.22.a
+		set_country_flag = SOV_cons
+	}
+}
+# 十六人审判
+country_event = {
+	id = sovietfate.23
+	title = sovietfate.23.t
+	desc = sovietfate.23.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.23.a
+	}
+}
+# 斯大林的电报
+country_event = {
+	id = sovietfate.24
+	title = sovietfate.24.t
+	desc = sovietfate.24.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.24.a
+	}
+}
+# 斯大林的广播
+country_event = {
+	id = sovietfate.25
+	title = sovietfate.25.t
+	desc = sovietfate.25.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.25.a
+	}
+}
+# 卡冈诺维奇的报告
+country_event = {
+	id = sovietfate.26
+	title = sovietfate.26.t
+	desc = sovietfate.26.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.26.a
+	}
+}
+# 内战反动派遗留问题
+country_event = {
+	id = sovietfate.27
+	title = sovietfate.27.t
+	desc = sovietfate.27.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.27.a
+	}
+}
+# 集体化遗留问题
+country_event = {
+	id = sovietfate.28
+	title = sovietfate.28.t
+	desc = sovietfate.28.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.28.a
+	}
+}
+# 去哥萨克化的遗产
+country_event = {
+	id = sovietfate.29
+	title = sovietfate.29.t
+	desc = sovietfate.29.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.29.a
+	}
+}
+# 选区划分问题
+country_event = {
+	id = sovietfate.30
+	title = sovietfate.30.t
+	desc = sovietfate.30.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.30.a
+	}
+}
+# 红军内部派别问题
+country_event = {
+	id = sovietfate.31
+	title = sovietfate.31.t
+	desc = sovietfate.31.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.31.a
+	}
+}
+# 国防阴谋论
+country_event = {
+	id = sovietfate.32
+	title = sovietfate.32.t
+	desc = sovietfate.32.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.32.a
 	}
 }
