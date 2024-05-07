@@ -2,6 +2,20 @@
 
 ### 1936年
 ## 国策事件
+# 1936年的内务部
+country_event = {
+	id = sovietfate.41
+	title = sovietfate.41.t
+	desc = sovietfate.41.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.41.a
+		activate_mission = SOV_5_1
+		set_country_flag = SOV_yageda
+	}
+}
 # 斯大林6.3报告
 country_event = {
 	id = sovietfate.33
@@ -350,12 +364,17 @@ country_event = {
     is_triggered_only = yes
 	option = { 
 		name = sovietfate.22.a
-		set_country_flag = SOV_cons
-	}
+	    if = {
+		limit = {
+        has_completed_focus = SF_SOV_Cut_Bonds_Interest_Rates
+        }  
+        complete_national_focus = SF_SOV_The_Next_Step		
+        }
+    }
 }
 # 十六人审判
 country_event = {
-	id = sovietfate.23
+	id = sovietfate.23 
 	title = sovietfate.23.t
 	desc = sovietfate.23.d
 	#picture = sov_peijizhi
@@ -471,5 +490,70 @@ country_event = {
     is_triggered_only = yes
 	option = { 
 		name = sovietfate.32.a
+	}
+}
+## 1936年6月中央全会
+# 清查党证运动介绍
+country_event = {
+	id = sovietfate.37
+	title = sovietfate.37.t
+	desc = sovietfate.37.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.37.a
+        country_event = { id = sovietfate.38 days = 1 }
+	}
+}
+# 清查党证运动善后
+country_event = {
+	id = sovietfate.38
+	title = sovietfate.38.t
+	desc = sovietfate.38.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.38.a # 小规模
+        country_event = { id = sovietfate.39 days = 1 }
+	}
+	option = { 
+		name = sovietfate.38.b # 大规模
+        country_event = { id = sovietfate.39 days = 1 }
+	}
+}
+# 接下来的重心
+country_event = {
+	id = sovietfate.39
+	title = sovietfate.39.t
+	desc = sovietfate.39.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.39.a # 叶若夫同志
+        country_event = { id = sovietfate.40 days = 1 }
+	}
+	option = { 
+		name = sovietfate.39.b # 斯大林同志
+        country_event = { id = sovietfate.40 days = 1 }
+	}
+}
+# 对地方当局的批评
+country_event = {
+	id = sovietfate.40
+	title = sovietfate.40.t
+	desc = sovietfate.40.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.40.a # 掩护他们
+        country_event = { id = sovietfate.40 days = 1 }
+	}
+	option = { 
+		name = sovietfate.40.b # 把批评公开
+        country_event = { id = sovietfate.40 days = 1 }
 	}
 }

@@ -1,23 +1,25 @@
 ﻿# SCF设定
 # 定期事件
 country_event = { id = sovietfate.0 days = 1 } 	# 开局事件
-country_event = { id = sovietfate.1 days = 2 } 	# 配给制的终结
+country_event = { id = sovietfate.41 days = 1 } 	# 1936年的内务部
+country_event = { id = sovietfate.1 days = 1 } 	# 配给制的终结
 country_event = { id = sovietfate.2 days = 200 } 	# 宪法讨论（故事）
+country_event = { id = sovietfate.5 days = 152 } 	# 中央全会
+country_event = { id = sovietfate.5 days = 164 } 	# 民意、新宪法与新体制
+country_event = { id = sovietfate.6 days = 192 } 	# 午后的讨论
+country_event = { id = sovietfate.7 days = 201 } 	# 法治意识
+country_event = { id = sovietfate.8 days = 225 } 	# 加里宁的不满
+country_event = { id = sovietfate.9 days = 241 } 	# 当民主向你奔来
+country_event = { id = sovietfate.10 days = 282 }  # 报复
+country_event = { id = sovietfate.11 days = 321 }  # 积极分子
+country_event = { id = sovietfate.4 days = 189 }  # 报告饥荒
+country_event = { id = sovietfate.20 days = 114 }  # 反破坏运动退潮
+country_event = { id = sovietfate.21 days = 120 }  # 欢庆吧，劳动节！
+country_event = { id = sovietfate.22 days = 161 }  # 新宪法的草案
+country_event = { id = sovietfate.23 days = 236 }  # 十六人审判
+country_event = { id = sovietfate.24 days = 268 }  # 斯大林的电报
+country_event = { id = sovietfate.25 days = 328 }  # 斯大林的广播
 country_event = { id = sovietfate.3 days = 1000 } 	# 莫洛托夫下台
-country_event = { id = sovietfate.5 days = 165 } 	# 民意、新宪法与新体制
-country_event = { id = sovietfate.6 days = 193 } 	# 午后的讨论
-country_event = { id = sovietfate.7 days = 202 } 	# 法治意识
-country_event = { id = sovietfate.8 days = 226 } 	# 加里宁的不满
-country_event = { id = sovietfate.9 days = 242 } 	# 当民主向你奔来
-country_event = { id = sovietfate.10 days = 283 }  # 报复
-country_event = { id = sovietfate.11 days = 322 }  # 积极分子
-country_event = { id = sovietfate.4 days = 190 }  # 报告饥荒
-country_event = { id = sovietfate.20 days = 115 }  # 反破坏运动退潮
-country_event = { id = sovietfate.21 days = 121 }  # 欢庆吧，劳动节！
-country_event = { id = sovietfate.22 days = 162 }  # 新宪法的草案
-country_event = { id = sovietfate.23 days = 237 }  # 十六人审判
-country_event = { id = sovietfate.24 days = 269 }  # 斯大林的电报
-country_event = { id = sovietfate.25 days = 329 }  # 斯大林的广播
 
 # 开局变量
 set_variable = { A0 = 55 } # 国有/集体化态度
@@ -577,11 +579,7 @@ if = {
 
 add_ideas = {
 	home_of_revolution
-	trotskyite_plot_nsb
 	SOV_politicized_military
-	SOV_poor_railnetworks_0 #adding this to the mix - no more ignoring economy early on!
-	SOV_risk_of_disease #and epidemics too!
-
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 

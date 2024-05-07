@@ -3,19 +3,11 @@ add_namespace = SE_test
 
 country_event = { 
 	
-	#debuging,remove this later	
 	id = SE_test.1
     title = SE_test.1.t
     desc = SE_test.1.d 
 	hidden = no 
-	trigger = {
-    tag = SOV
-    mean_time_to_happen = {
-    days = 2
-	months = 1
-    years = 1
-       }
-    }
+    is_triggered_only = yes    
 	
 	option = { 
 		#test event1
