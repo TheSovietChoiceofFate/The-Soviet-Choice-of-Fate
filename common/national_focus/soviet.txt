@@ -1,3 +1,4 @@
+# 1936年
 focus_tree = {
 	id = soviet
 	country = {
@@ -20,7 +21,7 @@ focus_tree = {
 		cancelable = no
 	}
 	focus = {
-		id = SF_SOV_Encourage_Stakhanovites #鼓励斯达汉诺夫分子
+		id = SF_SOV_Encourage_Stakhanovites # 鼓励斯达汉诺夫分子
 		icon = GFX_goal_SF_SOV_Encourage_Stakhanovites
 		cost = 5.00
 		prerequisite = {
@@ -40,12 +41,9 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = SF_SOV_Cut_Bonds_Interest_Rates #降低国债利率
+		id = SF_SOV_Cut_Bonds_Interest_Rates # 降低国债利率
 		icon = GFX_goal_SF_SOV_Cut_Bonds_Interest_Rates
 		cost = 5.00
-		completion_reward = {
-			country_event = { id = sovietfate.33 }
-		}
 		prerequisite = {
 			focus = SF_SOV_Encourage_Stakhanovites
 		}
@@ -59,15 +57,15 @@ focus_tree = {
 		id = SF_SOV_The_Next_Step #下一步
 		icon = GFX_goal_SF_SOV_The_Next_Step
 		cost = 0.00
-		prerequisite = {
+		prerequisite = { 
 			focus = SF_SOV_Cut_Bonds_Interest_Rates
 		}
 		available = {
-			has_country_flag = SOV_cons
+			always = no
 		}
 		completion_reward = {
 		    custom_effect_tooltip = nextstep
-			country_event = { id = sovietfate.35 }
+			country_event = { id = sovietfate.35 } 
 		    country_event = { id = sovietfate.34 }
 		}
 		x = 4
@@ -79,6 +77,20 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = {
 			focus = SF_SOV_The_Next_Step
+		}
+		completion_reward = {
+		    custom_effect_tooltip = setAmure
+		    activate_targeted_decision = { target = 226 decision = SOV_4_6 } # 第聂伯河水电站扩建
+			activate_targeted_decision = { target = 252 decision = SOV_4_4 } # 高尔基汽车厂扩建
+			activate_targeted_decision = { target = 219 decision = SOV_4_4 } # 莫斯科汽车厂扩建
+			activate_targeted_decision = { target = 248 decision = SOV_4_4 } # 雅罗斯拉夫汽车厂扩建
+			activate_targeted_decision = { target = 217 decision = SOV_4_7 } # 斯大林格勒拖拉机厂扩建
+			activate_targeted_decision = { target = 405 decision = SOV_4_2 } # 塔什干纺织厂扩建
+			activate_targeted_decision = { target = 253 decision = SOV_4_2 } # 伊万诺沃纺织厂扩建
+			activate_targeted_decision = { target = 206 decision = SOV_4_9 } # 明斯克家具和木材厂新建
+			activate_targeted_decision = { target = 398 decision = SOV_4_10 } # 彼尔姆重型机械厂新建
+			activate_targeted_decision = { target = 197 decision = SOV_4_3 } # 尼古拉耶夫船厂扩建
+			activate_targeted_decision = { target = 214 decision = SOV_4_3 } # 阿尔汉格尔斯克船厂扩建
 		}
 		x = 2
 		y = 4
@@ -265,7 +277,11 @@ focus_tree = {
 			focus = SF_SOV_Guarantee_Judicial_Independence
 			focus = SF_SOV_The_Law_Serves_Politics
 		}
+		completion_reward = {
+			load_focus_tree = soviet_1937
+		}
 		x = 4
 		y = 9
 	}
 }
+

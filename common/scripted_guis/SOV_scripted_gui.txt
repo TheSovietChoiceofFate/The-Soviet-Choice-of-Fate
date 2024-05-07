@@ -1,0 +1,18 @@
+scripted_gui = {
+	
+	sov_cons_gui = { 
+		context_type = decision_category
+		window_name = "sov_cons_gui_window"
+		
+		properties = {
+			SOV_left = {
+				image = "[get_nkvd_leader_gfx]"
+			}
+			SOV_right = {
+				image = "[get_nkvd_leader_gfx]"
+			}
+		}
+		ai_enabled = {
+			tag = SOV		
+		}
+	}

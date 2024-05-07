@@ -1,12 +1,11 @@
- set_variable = { Agricultural = 65 }
-	#以后可能有用
-	#ROOT = {
-	#	add_dynamic_modifier = {
-	#		modifier = SOV_Sovnarkom_Effects_modifier
-	#	}
-	#	hidden_effect = { add_ideas = SOV_Sovnarkom_Effects_idea }
-	#	recalculate_sovnarkom_effects = yes
-	#}
+#  以后可能有用
+#  ROOT = {
+#	add_dynamic_modifier = {
+#		modifier = SOV_Sovnarkom_Effects_modifier
+#	}
+#	hidden_effect = { add_ideas = SOV_Sovnarkom_Effects_idea }
+#	recalculate_sovnarkom_effects = yes
+#}
 # 决议结束
 #remove_party = {
 #	clr_country_flag = 

@@ -1,81 +1,208 @@
 defined_text = {
-	name = ShowAgricultural
+	name = A0 # 国有/集体化态度
 	text = {
 		trigger = {
-			check_variable = { Agricultural < 10 }
+			check_variable = { A0 < 30 }
 		}
-		localization_key = "crazy"
+		localization_key = "A1" # 激进化：认为应该加速国有/集体化
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 10 }
-				check_variable = { Agricultural < 20 }
+				check_variable = { A0 > 30 }
+				check_variable = { A0 < 60 }
 			}
 		}
-		localization_key = "joke"
+		localization_key = "A2" # 维持现状
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 20 }
-				check_variable = { Agricultural < 30 }
+				check_variable = { A0 > 60 }
 			}
 		}
-		localization_key = "whisper"
+		localization_key = "A3" # 自由化：认为应该削弱国有/集体化而加强市场
+	}
+}
+defined_text = {
+	name = B0 # 经济管理态度
+	text = {
+		trigger = {
+			check_variable = { B0 < 30 }
+		}
+		localization_key = "B1" # 法团化：认为经济管理权力应下放给企业管理层乃至工人
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 30 }
-				check_variable = { Agricultural < 40 }
+				check_variable = { B0 > 30 }
+				check_variable = { B0 < 60 }
 			}
 		}
-		localization_key = "drunk"
+		localization_key = "B2" # 维持现状
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 40 }
-				check_variable = { Agricultural < 50 }
+				check_variable = { B0 > 60 }
 			}
 		}
-		localization_key = "point"
+		localization_key = "B3" # 中央集权：认为经济管理权力应由中央掌控
+	}
+}
+defined_text = {
+	name = C0 # 党政关系态度
+	text = {
+		trigger = {
+			check_variable = { C0 < 30 }
+		}
+		localization_key = "C1" # 加强党：认为党的权力至高无上，认同党和政府同一化
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 50 }
-				check_variable = { Agricultural < 60 }
+				check_variable = { C0 > 30 }
+				check_variable = { C0 < 60 }
 			}
 		}
-		localization_key = "general"
+		localization_key = "C2" # 维持现状
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 60 }
-				check_variable = { Agricultural < 70 }
+				check_variable = { C0 > 60 }
 			}
 		}
-		localization_key = "talk"
+		localization_key = "C3" # 党政分离：认为应将行政权力交由政府，而党则应作为意识形态宣传机构而存在
+	}
+}
+defined_text = {
+	name = D0 # 意识形态管控态度
+	text = {
+		trigger = {
+			check_variable = { D0 < 30 }
+		}
+		localization_key = "D1" # 宽松化：认为应该削弱对意识形态的管控
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 70 }
-				check_variable = { Agricultural < 80 }
+				check_variable = { D0 > 30 }
+				check_variable = { D0 < 60 }
 			}
 		}
-		localization_key = "slience"
+		localization_key = "D2" # 维持现状
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { Agricultural > 80 }
-				check_variable = { Agricultural < 90 }
+				check_variable = { D0 > 60 }
 			}
 		}
-		localization_key = "response"
+		localization_key = "D3" # 加强管控：认为应该加强对意识形态的管控和指导
+	}
+}
+defined_text = {
+	name = E0 # 民族关系态度
+	text = {
+		trigger = {
+			check_variable = { E0 < 30 }
+		}
+		localization_key = "E1" # 超民族倾向：认同加速民族同化过程的行为
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { E0 > 30 }
+				check_variable = { E0 < 60 }
+			}
+		}
+		localization_key = "E2" # 民族平等：认为各民族应该相互尊重，地位平等
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { E0 > 60 }
+			}
+		}
+		localization_key = "E3" # 沙文倾向：认同主体民族的优先地位
+	}
+}
+defined_text = {
+	name = F0 # 央地关系态度
+	text = {
+		trigger = {
+			check_variable = { F0 < 30 }
+		}
+		localization_key = "F1" # 权力下放：认为权力应该下放给地方乃至基层
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { F0 > 30 }
+				check_variable = { F0 < 60 }
+			}
+		}
+		localization_key = "F2" # 维持现状
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { F0 > 60 }
+			}
+		}
+		localization_key = "F3" # 中央集权：认为权力应该由中央掌控而非地方
+	}
+}
+defined_text = {
+	name = G0 # 军队
+	text = {
+		trigger = {
+			check_variable = { G0 < 30 }
+		}
+		localization_key = "G1" # 独立倾向：认为军队应该尽量不受干预的行事，以便有更好的战场表现
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { G0 > 30 }
+				check_variable = { G0 < 60 }
+			}
+		}
+		localization_key = "G2" # 维持现状
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { G0 > 60 }
+			}
+		}
+		localization_key = "G3" # 政治化：认为军队需要被牢牢控制着，即使付出一些军事上的代价也是可以接受的
+	}
+}
+defined_text = {
+	name = H0 # 内务部
+	text = {
+		trigger = {
+			check_variable = { H0 < 30 }
+		}
+		localization_key = "H1" # 削弱权力：认为内务部权力应被削弱，转向正常的合法侦讯
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { H0 > 30 }
+				check_variable = { H0 < 60 }
+			}
+		}
+		localization_key = "H2" # 维持现状
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { H0 > 60 }
+			}
+		}
+		localization_key = "H3" # 扩大权力：认为内务部应该扩大权力以确保安全
 	}
 }

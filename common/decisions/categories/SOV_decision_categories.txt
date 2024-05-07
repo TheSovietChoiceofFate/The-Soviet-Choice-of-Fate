@@ -1,18 +1,81 @@
-# 党内倾向
-SOV_party_lean = {
+# 处理粮食短缺
+SOV_1_0 = {
 	#icon = 图标名
 	#picture = 图片名
-	allowed/available/visible = {
-		tag = SOV
+    allowed = {
+        tag = SOV
 	}
-	priority = 8
-}
-
-SOV_deal_hungry = {
-	#icon = 图标名
-	#picture = 图片名
-	allowed/available/visible = {
+	available = {
+        has_country_flag = SOV_hungry
+	}
+	visible = {
 		has_country_flag = SOV_hungry
 	}
+	priority = 12
+}
+# 党内倾向
+SOV_2_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = { 
+        tag = SOV
+	}
 	priority = 9
+}
+# 宪法讨论运动
+SOV_3_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	available = {
+		has_country_flag = SOV_debate
+	}
+	visible = {
+		has_country_flag = SOV_debate
+	}
+	scripted_gui = sov_cons_gui
+	priority = 11
+}
+# 第二个五年计划
+SOV_4_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	priority = 10
+}
+# 雅戈达剧情
+SOV_5_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	available = {
+	hidden_trigger = { has_country_flag = SOV_yageda }
+	}
+	visible = {
+	hidden_trigger = { has_country_flag = SOV_yageda }
+	}
+	priority = 8
+	visible_when_empty = yes
+}
+# 叶若夫剧情
+SOV_6_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	available = {
+	hidden_trigger = { has_country_flag = SOV_yeruofu }
+	}
+	visible = {
+	hidden_trigger = { has_country_flag = SOV_yeruofu }
+	}
+	priority = 9
+	visible_when_empty = yes
 }
