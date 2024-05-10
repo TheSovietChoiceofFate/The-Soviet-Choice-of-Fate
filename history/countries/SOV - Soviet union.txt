@@ -84,7 +84,16 @@ recruit_character = SOV_vsevolod_merkulov
 recruit_character = SOV_vyacheslav_molotov
 recruit_character = SOV_maksim_litvinov
 
-recruit_character = SOV_lev_trotsky
+# SF新增
+recruit_character = SOV_malinkefu
+recruit_character = SOV_Andrey_Vyshinsky
+recruit_character = SOV_Sergo_Ordzhonikidze
+recruit_character = SOV_ridannuofu
+recruit_character = SOV_xieerbakefu
+recruit_character = SOV_migaoyang
+recruit_character = SOV_shiweiernike
+recruit_character = SOV_susiluofu
+
 recruit_character = SOV_ivan_smirnov
 recruit_character = SOV_ivar_smilga
 recruit_character = SOV_karl_radek
@@ -98,12 +107,6 @@ recruit_character = SOV_grigory_zinovyev
 recruit_character = SOV_lev_kamenev
 recruit_character = SOV_martemyan_ryutin
 recruit_character = SOV_patriarch_sergy
-recruit_character = SOV_aleksandr_kerensky
-recruit_character = SOV_pavel_milyukov
-recruit_character = SOV_aleksandr_verkhovsky
-recruit_character = SOV_sofia_panina
-recruit_character = SOV_konstantin_rodzayevsky
-
 
 recruit_character = SOV_aleksandr_vasilevsky
 recruit_character = SOV_aleksandr_golovanov

@@ -1,0 +1,52 @@
+scripted_gui = {
+	
+	SF_politburo_window ={
+		window_name = "SF_politburo"
+		parent_window_token = politics_tab
+		context_type = player_context
+		
+		ai_enabled = {
+			always = no
+		}
+		
+		triggers = {
+			politburo_open_click_enabled = {
+			NOT = { has_country_flag = politburo_detail_see }
+			}
+		}
+		
+		effects = {
+			politburo_open_click = {
+			set_country_flag = politburo_detail_see
+			}
+		}
+	}
+	SF_politburo_detail = {
+		context_type = player_context
+		window_name = "SF_politburo_detail"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = politburo_detail_see
+		}
+
+		triggers = {
+		   has_country_flag = politburo_detail_see
+		}
+
+		effects = {
+			button_close_click = {
+			clr_country_flag = politburo_detail_see
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+}

@@ -1,6 +1,7 @@
 # 处理粮食短缺
 SOV_1_0 = {
     SOV_1_1 = {     
+	    icon = "gfx/interface/decisions/liangshi.png"
 		activation = {  
 			has_country_flag = SOV_hungry_ing    		
 		}                                    
@@ -48,7 +49,7 @@ SOV_2_0 = {
 SOV_3_0 = {
 	SOV_3_3 = {
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 28
 		fire_only_once = yes
@@ -64,10 +65,8 @@ SOV_3_0 = {
 			factor = 100
 		}
 		modifier = { 
-			#custom_effect_tooltip = history_writing
 	   	}
 		complete_effect = { 
-			#custom_effect_tooltip = history
 		}
 		remove_effect = { 
 		    set_country_flag = SOV_zhongzhiwei	
@@ -75,7 +74,7 @@ SOV_3_0 = {
 	}
 		SOV_3_7 = {
 		
-		#icon = 图标名
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 15
 		fire_only_once = no 
@@ -122,7 +121,7 @@ SOV_3_0 = {
 	}
 	SOV_3_2 = {
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 15
 		fire_only_once = no
@@ -145,7 +144,7 @@ SOV_3_0 = {
 	}
 	SOV_3_4 = {
 		
-		#icon = 图标名
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 15
 		fire_only_once = no
@@ -170,7 +169,7 @@ SOV_3_0 = {
 	}
 	SOV_3_5 = {
 		
-		#icon = 图标名
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 15
 		fire_only_once = no
@@ -194,7 +193,7 @@ SOV_3_0 = {
 	}
 	SOV_3_6 = {
 		
-		#icon = 图标名
+		#icon = "gfx/interface/decisions/"
 		cost = 15
 		days_remove = 15
 		fire_only_once = no
@@ -221,9 +220,8 @@ SOV_3_0 = {
 SOV_4_0 = {
     SOV_4_1 = { # 计划完成日
 		
-		#icon = 
-		allowed = { 
-		#always = no 
+		#icon = "gfx/interface/decisions/"
+		allowed = {  
 		tag = SOV
 		} 
 		available = {
@@ -249,7 +247,7 @@ SOV_4_0 = {
 	}
 	SOV_4_8 = { # 建立共青城
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		available = {
 		    657 = { is_owned_and_controlled_by = ROOT }
 			num_of_civilian_factories_available_for_projects > 5
@@ -296,7 +294,7 @@ SOV_4_0 = {
 	}
 	SOV_4_6 = { # 扩建第聂伯河水电站
 		
-		#icon = 
+		icon = "gfx/interface/decisions/shuiba.dds"
 		allowed = { 
 		always = no 
 		} 
@@ -336,7 +334,7 @@ SOV_4_0 = {
 	}
     SOV_4_2 = { # 扩建纺织厂
 		
-		#icon = 
+		icon = "gfx/interface/decisions/mingong.png"
 		allowed = { 
 		always = no 
 		} 
@@ -376,7 +374,7 @@ SOV_4_0 = {
 	}
 	SOV_4_3 = { # 扩建造船厂
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		allowed = { 
 		always = no 
 		} 
@@ -413,7 +411,7 @@ SOV_4_0 = {
 	}
 	SOV_4_4 = { # 扩建汽车厂
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		allowed = { 
 		always = no 
 		} 
@@ -450,7 +448,7 @@ SOV_4_0 = {
 	}
 	SOV_4_5 = { # 修建基建
 
-		#icon = 
+		icon = "gfx/interface/decisions/jijian.png"
 
 		allowed = { 
 		always = no 
@@ -494,7 +492,7 @@ SOV_4_0 = {
 	}
 	SOV_4_7 = { # 扩建拖拉机厂
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/jijian.png"
 		allowed = { 
 		always = no 
 		} 
@@ -531,7 +529,7 @@ SOV_4_0 = {
 	}
 	SOV_4_9 = { # 新建家具和木材厂
 		
-		#icon = 
+		icon = "gfx/interface/decisions/mingong.png"
 		allowed = { 
 		always = no 
 		} 
@@ -571,7 +569,7 @@ SOV_4_0 = {
 	}
     SOV_4_10 = { # 新建重型机械厂
 		
-		#icon = 
+		#icon = "gfx/interface/decisions/"
 		allowed = { 
 		always = no 
 		} 
@@ -610,8 +608,9 @@ SOV_4_0 = {
 		}
 	}
 }
+# 雅戈达剧情
 SOV_5_0 = {
-	SOV_5_1 = {
+	SOV_5_1 = { # 开始调查
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -635,7 +634,7 @@ SOV_5_0 = {
 			activate_mission = SOV_5_2
 		}
 	}
-	SOV_5_2 = {
+	SOV_5_2 = { # 必要的牺牲
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -657,9 +656,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_3
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_3 = {
+	SOV_5_3 = { # “托洛茨基档案”
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -681,9 +681,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_4
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_4 = {
+	SOV_5_4 = { # 调查斯米尔诺夫
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -705,9 +706,11 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_5
+			activate_mission = SOV_6_1
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_5 = {
+	SOV_5_5 = { # 与领袖的约定
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -729,9 +732,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_6
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_6 = {
+	SOV_5_6 = { # “明朗化”
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -753,9 +757,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_7
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_7 = {
+	SOV_5_7 = { # 汇报成果
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -777,9 +782,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_8
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_8 = {
+	SOV_5_8 = { # “大水冲了龙王庙”
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -801,9 +807,10 @@ SOV_5_0 = {
 
 	    timeout_effect = {
 			activate_mission = SOV_5_9
+			#country_event = { id = sovietfate. }
 	    }
 	}
-	SOV_5_9 = {
+	SOV_5_9 = { # 领袖仍旧不满……
 	
 		#icon = 
 	    allowed = { tag = SOV }
@@ -824,6 +831,153 @@ SOV_5_0 = {
 	    }
 
 	    timeout_effect = {
+			clr_country_flag = SOV_yageda
+	    }
+	}
+}
+SOV_6_0 = {
+	SOV_6_1 = { # 监督调查
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+	    }
+
+	    is_good = no
+
+	    days_mission_timeout = 90
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    }
+
+	    timeout_effect = {
+			activate_mission = SOV_6_2
+		}
+	}
+	SOV_6_2 = { # 德赖策案件
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+	    }
+
+	    is_good = no
+
+	    days_mission_timeout = 7
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    }
+
+	    timeout_effect = {
+			activate_mission = SOV_6_3
+	    }
+	}
+	SOV_6_3 = { # 获取阿格拉诺夫支持
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+	    }
+
+	    is_good = no
+
+	    days_mission_timeout = 30
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    }
+
+	    timeout_effect = {
+	    }
+	}
+	SOV_6_4 = { # 调查托姆斯基自杀
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+			}
+
+	    is_good = no
+
+	    days_mission_timeout = 21
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    } 
+
+	    timeout_effect = {
+			country_event = { id = sovietfate.46 days = 5 }
+			activate_mission = SOV_6_5
+	    }
+	}
+	SOV_6_5 = { # 写信给斯大林
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+			}
+
+	    is_good = no
+
+	    days_mission_timeout = 14
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    }
+
+	    timeout_effect = {
+			country_event = { id = sovietfate.47 days = 5 }
+	    }
+	}
+	SOV_6_6 = { # 在索契会见斯大林
+	
+		#icon = 
+	    allowed = { tag = SOV }
+	    available = {
+			hidden_trigger = { always = no }
+			}
+
+	    is_good = no
+
+	    days_mission_timeout = 20
+		fire_only_once = yes
+
+	    activation = {
+		always = no 
+	    }
+
+	    visible = {
+	    }
+
+	    timeout_effect = {
+			country_event = { id = sovietfate.24 }
 	    }
 	}
 }

@@ -1,0 +1,59 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SF_politburo"
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "politburo_open"
+			position = { x = 450 y = 240 }
+			quadTextureSprite = "GFX_lobby_button"
+			pdx_tooltip = "politburo_button_text"				
+		}
+	}
+}
+guiTypes = {
+	containerWindowType = {
+		name = "SF_politburo_detail"
+		position = { x = -255 y = -365 }
+		size = { width = 950 height = 700 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+
+		orientation = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		iconType = {
+			name = "politburo_icon"
+			position = { x = 14 y = 6 }
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = { x = 20 y = 10 }
+			font = "hoi_36header"
+			text = "politburo_title"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 500
+			maxHeight = 20
+			format = left
+		}
+
+		buttonType = {
+			name = "button_close"
+			position = {x = -50 y = 10 }
+			spriteType = "GFX_NV_btn_close"
+			clicksound = click_close
+			#pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+			orientation = UPPER_RIGHT
+		}
+	}
+}

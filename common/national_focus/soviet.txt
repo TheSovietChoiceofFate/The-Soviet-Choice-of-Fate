@@ -81,26 +81,25 @@ focus_tree = {
 		completion_reward = {
 		    custom_effect_tooltip = setAmure
 		    activate_targeted_decision = { target = 226 decision = SOV_4_6 } # 第聂伯河水电站扩建
-			activate_targeted_decision = { target = 252 decision = SOV_4_4 } # 高尔基汽车厂扩建
-			activate_targeted_decision = { target = 219 decision = SOV_4_4 } # 莫斯科汽车厂扩建
-			activate_targeted_decision = { target = 248 decision = SOV_4_4 } # 雅罗斯拉夫汽车厂扩建
-			activate_targeted_decision = { target = 217 decision = SOV_4_7 } # 斯大林格勒拖拉机厂扩建
-			activate_targeted_decision = { target = 405 decision = SOV_4_2 } # 塔什干纺织厂扩建
-			activate_targeted_decision = { target = 253 decision = SOV_4_2 } # 伊万诺沃纺织厂扩建
-			activate_targeted_decision = { target = 206 decision = SOV_4_9 } # 明斯克家具和木材厂新建
-			activate_targeted_decision = { target = 398 decision = SOV_4_10 } # 彼尔姆重型机械厂新建
-			activate_targeted_decision = { target = 197 decision = SOV_4_3 } # 尼古拉耶夫船厂扩建
 			activate_targeted_decision = { target = 214 decision = SOV_4_3 } # 阿尔汉格尔斯克船厂扩建
+			activate_targeted_decision = { target = 197 decision = SOV_4_3 } # 尼古拉耶夫船厂扩建
 		}
 		x = 2
 		y = 4
 	}
 	focus = {
-		id = SF_SOV_Cut_Investment_In_Heavy_Industry #裁剪重工业投资
+		id = SF_SOV_Cut_Investment_In_Heavy_Industry # 更均衡的重工业发展
 		icon = GFX_goal_SF_SOV_Cut_Investment_In_Heavy_Industry
 		cost = 1.00
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
+		}
+		completion_reward = {
+		activate_targeted_decision = { target = 252 decision = SOV_4_4 } # 高尔基汽车厂扩建
+		activate_targeted_decision = { target = 219 decision = SOV_4_4 } # 莫斯科汽车厂扩建
+		activate_targeted_decision = { target = 248 decision = SOV_4_4 } # 雅罗斯拉夫汽车厂扩建
+		activate_targeted_decision = { target = 217 decision = SOV_4_7 } # 斯大林格勒拖拉机厂扩建
+        activate_targeted_decision = { target = 398 decision = SOV_4_10 } # 彼尔姆重型机械厂新建
 		}
 		x = 1
 		y = 5
@@ -111,6 +110,11 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
+		}
+		completion_reward = {
+        activate_targeted_decision = { target = 405 decision = SOV_4_2 } # 塔什干纺织厂扩建
+		activate_targeted_decision = { target = 253 decision = SOV_4_2 } # 伊万诺沃纺织厂扩建
+		activate_targeted_decision = { target = 206 decision = SOV_4_9 } # 明斯克家具和木材厂新建
 		}
 		x = 3
 		y = 5

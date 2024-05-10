@@ -1,0 +1,66 @@
+spriteTypes = {
+    SpriteType = {
+		name = "GFX_lobby_button"
+		texturefile = "gfx/interface/lobby_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_tiled_plain_bg"
+		texturefile = "gfx/interface/tiled_window_thin_border.dds"
+	}
+	SpriteType = {
+		name = "GFX_NV_btn_close"
+		texturefile = "gfx/interface/closebutton.dds"
+	}
+	SpriteType = {
+		name = "GFX_Mikhail_Kalinin"
+		texturefile = "gfx/leaders/SOV/Mikhail_Kalinin.png"
+	}
+	SpriteType = {
+		name = "GFX_Genrikh_Yagoda"
+		texturefile = "gfx/leaders/SOV/Genrikh_Yagoda.png"
+	}
+	SpriteType = {
+		name = "GFX_Nikolai_Yezhov"
+		texturefile = "gfx/leaders/SOV/Nikolai_Yezhov.png"
+	}
+	SpriteType = {
+		name = "GFX_Nikolai_Yezhov_Airbrushed"
+		texturefile = "gfx/leaders/SOV/Nikolai_Yezhov_Airbrushed.png"
+	}
+	SpriteType = {
+		name = "GFX_Nikolai_Yezhov_Hat"
+		texturefile = "gfx/leaders/SOV/Nikolai_Yezhov_Hat.png"
+	}
+	SpriteType = {
+		name = "GFX_NKVD"
+		texturefile = "gfx/leaders/SOV/NKVD.png"
+	}
+	SpriteType = {
+		name = "GFX_Georgy_Blagonravov"
+		texturefile = "gfx/leaders/SOV/Georgy_Blagonravov.png"
+	}
+	SpriteType = {
+		name = "GFX_Lazar_Kaganovich"
+		texturefile = "gfx/leaders/SOV/Lazar_Kaganovich.png"
+	}
+	SpriteType = {
+		name = "GFX_Vyacheslav_Molotov"
+		texturefile = "gfx/leaders/SOV/Vyacheslav_Molotov.png"
+	}
+	SpriteType = {
+		name = "GFX_Zhdanov_young"
+		texturefile = "gfx/leaders/SOV/Zhdanov_young.png"
+	}
+	SpriteType = {
+		name = "GFX_Zhdanov_military"
+		texturefile = "gfx/leaders/SOV/Zhdanov_military.png"
+	}
+	SpriteType = {
+		name = "GFX_Andrei_Zhdanov"
+		texturefile = "gfx/leaders/SOV/Andrei_Zhdanov.png"
+	}
+	SpriteType = {
+		name = "GFX_Joseph_Stalin"
+		texturefile = "gfx/leaders/SOV/Joseph_Stalin.png"
+	}
+}

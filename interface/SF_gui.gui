@@ -1,0 +1,56 @@
+guiTypes = {
+	containerWindowType = {
+		name = "sov_cons_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 275 }
+		
+		iconType = {
+			name = "cons_leader"
+			orientation = center
+			position = { x = -150 y = -100 }
+			pdx_tooltip_delayed = "cons_leader_tt"
+		}
+		iconType = {
+			name = "cons_emblem"
+			orientation = center
+			position = { x = 50 y = -100 }
+			pdx_tooltip_delayed = "cons_emblem_tt"
+		}
+	}
+	containerWindowType = {
+		name = "sov_yageda_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 275 }
+		
+		iconType = {
+			name = "yageda_leader"
+			orientation = center
+			position = { x = -150 y = -100 }
+			pdx_tooltip_delayed = "yageda_leader_tt"
+		}
+		iconType = {
+			name = "yageda_emblem"
+			orientation = center
+			position = { x = 50 y = -100 }
+			pdx_tooltip_delayed = "yageda_emblem_tt"
+		}
+	}
+	containerWindowType = {
+		name = "sov_yeruofu_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 275 }
+		
+		iconType = {
+			name = "yeruofu_leader"
+			orientation = center
+			position = { x = -150 y = -100 }
+			pdx_tooltip_delayed = "yeruofu_leader_tt"
+		}
+		iconType = {
+			name = "yeruofu_emblem"
+			orientation = center
+			position = { x = 50 y = -100 }
+			pdx_tooltip_delayed = "yeruofu_emblem_tt"
+		}
+	}
+}

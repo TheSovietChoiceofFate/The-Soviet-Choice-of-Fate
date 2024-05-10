@@ -1,0 +1,52 @@
+# 新增特质
+leader_traits = {
+	stalin = { # 总书记
+	random = no
+	political_power_factor = 0.05 
+	stability_factor = 0.1 
+    }
+    molotov1 = { # 助手
+	random = no
+	political_power_factor = 0.1 
+	stability_factor = 0.05
+    }
+	vyshinsky = { # 忠诚的法学家
+	random = no
+	stability_factor = 0.05
+	drift_defence_factor = 0.1 
+    }
+	Malenkov = { # 行政专家
+	random = no
+    political_power_factor = 0.15  
+	}
+	Ordzhonikidze = { # 工业跃进领导者
+	random = no
+    political_power_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	}
+	Zhdanov = { # 意识形态大师（日丹诺夫）
+	random = no
+    political_power_factor = 0.1
+	communism_drift = 0.07
+	}
+	Suslov = { # 意识形态大师（苏斯洛夫）
+	random = no
+    political_power_factor = 0.1
+	drift_defence_factor = 0.25 
+	}
+	Shvernik = { # 优秀的组织者
+	random = no
+    political_power_factor = 0.1 
+    stability_factor = 0.02	
+	}
+	Mikoyan = { # 贸易管理专家
+	random = no
+	consumer_goods_factor = -0.1
+    trade_opinion_factor = 0.2
+	}
+	Shcherbakov = { # 怒火鼓动者
+	random = no
+	army_morale = 0.1
+	weekly_casualties_war_support = 0.001
+	}
+}

@@ -1,6 +1,6 @@
 # 处理粮食短缺
 SOV_1_0 = {
-	#icon = 图标名
+	icon = "gfx/interface/decisions/bangzhu.png"
 	#picture = 图片名
     allowed = {
         tag = SOV
@@ -24,7 +24,7 @@ SOV_2_0 = {
 }
 # 宪法讨论运动
 SOV_3_0 = {
-	#icon = 图标名
+	icon = "gfx/interface/decisions/xuanju.png"
 	#picture = 图片名
     allowed = {
         tag = SOV
@@ -40,7 +40,7 @@ SOV_3_0 = {
 }
 # 第二个五年计划
 SOV_4_0 = {
-	#icon = 图标名
+	icon = "gfx/interface/decisions/gongchang.png"
 	#picture = 图片名
     allowed = {
         tag = SOV
@@ -60,8 +60,9 @@ SOV_5_0 = {
 	visible = {
 	hidden_trigger = { has_country_flag = SOV_yageda }
 	}
-	priority = 8
+	priority = 13
 	visible_when_empty = yes
+	scripted_gui = sov_yageda_gui
 }
 # 叶若夫剧情
 SOV_6_0 = {
@@ -76,6 +77,7 @@ SOV_6_0 = {
 	visible = {
 	hidden_trigger = { has_country_flag = SOV_yeruofu }
 	}
-	priority = 9
+	priority = 14
 	visible_when_empty = yes
+	scripted_gui = sov_yeruofu_gui
 }

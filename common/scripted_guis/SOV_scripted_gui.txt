@@ -5,14 +5,47 @@ scripted_gui = {
 		window_name = "sov_cons_gui_window"
 		
 		properties = {
-			SOV_left = {
-				image = "[get_nkvd_leader_gfx]"
+			cons_leader = {
+				image = "[get_Stalin_gfx]"
 			}
-			SOV_right = {
-				image = "[get_nkvd_leader_gfx]"
+			cons_emblem = {
+				image = "[get_Zhdanov_gfx]"
 			}
 		}
 		ai_enabled = {
 			tag = SOV		
 		}
 	}
+	sov_yageda_gui = { 
+		context_type = decision_category
+		window_name = "sov_yageda_gui_window"
+		
+		properties = {
+			yageda_leader = {
+				image = "[get_yageda_gfx]"
+			}
+			yageda_emblem = {
+				image = "[get_Blagonravov_gfx]"
+			}
+		}
+		ai_enabled = {
+			tag = SOV		
+		}
+	}
+    sov_yeruofu_gui = { 
+		context_type = decision_category
+		window_name = "sov_yeruofu_gui_window"
+		
+		properties = {
+			yeruofu_leader = {
+				image = "[get_yeruofu_gfx]"
+			}
+			yeruofu_emblem = {
+				image = "[get_nkvd_gfx]"
+			}
+		}
+		ai_enabled = {
+			tag = SOV		
+		}
+	}
+}

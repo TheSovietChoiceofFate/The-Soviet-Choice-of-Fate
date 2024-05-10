@@ -206,3 +206,89 @@ defined_text = {
 		localization_key = "H3" # 扩大权力：认为内务部应该扩大权力以确保安全
 	}
 }
+defined_text = {
+	name = get_Kalinin_gfx
+	text = {
+		localization_key = "GFX_Mikhail_Kalinin"
+	}
+}
+defined_text = {
+	name = get_yageda_gfx
+	text = {
+		localization_key = "GFX_Genrikh_Yagoda"
+	}
+}
+defined_text = {
+	name = get_yeruofu_gfx
+	text = {
+	trigger = {
+	  NOT = { has_country_flag = Yezhovwin }	
+	}
+		localization_key = "GFX_Nikolai_Yezhov"
+	}
+	text = {
+	trigger = {
+	    has_country_flag = Yezhovwin
+		NOT = { has_idea = SOV_nikolay_yezhov }
+	}
+		localization_key = "GFX_Nikolai_Yezhov_Airbrushed"
+	}
+	text = {
+	trigger = {
+	    has_country_flag = Yezhovwin
+	    has_idea = SOV_nikolay_yezhov	
+	}
+		localization_key = "GFX_Nikolai_Yezhov_Hat"
+	}
+}
+defined_text = {
+	name = get_nkvd_gfx
+	text = {
+		localization_key = "GFX_NKVD"
+	}
+}
+defined_text = {
+	name = get_Blagonravov_gfx
+	text = {
+		localization_key = "GFX_Georgy_Blagonravov"
+	}
+}
+defined_text = {
+	name = get_Kaganovich_gfx
+	text = {
+		localization_key = "GFX_Lazar_Kaganovich"
+	}
+}
+defined_text = {
+	name = get_Molotov_gfx
+	text = {
+		localization_key = "GFX_Vyacheslav_Molotov"
+	}
+}
+defined_text = {
+	name = get_Zhdanov_gfx
+	text = {
+	trigger = {
+	   NOT = { has_country_flag = at_second_war }
+	}    
+		localization_key = "GFX_Zhdanov_young"
+	}
+	trigger = {
+	   has_country_flag = at_second_war 
+	}    
+		localization_key = "GFX_Zhdanov_military"
+	}
+	text = {
+	trigger = {
+	   NOT = { has_country_flag = at_second_war }
+	   has_country_flag = after_second_war
+	}
+		localization_key = "GFX_Andrei_Zhdanov"
+	}
+}
+defined_text = {
+	name = get_Stalin_gfx
+	text = {
+		localization_key = "GFX_Joseph_Stalin"
+	}
+}

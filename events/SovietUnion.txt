@@ -1,13 +1,13 @@
 ﻿add_namespace = sovietfate
 
 ### 1936年
-## 国策事件
+## 大清洗事件组
 # 1936年的内务部
 country_event = {
 	id = sovietfate.41
 	title = sovietfate.41.t
 	desc = sovietfate.41.d
-	#picture = 
+	picture = pic_7
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -16,12 +16,127 @@ country_event = {
 		set_country_flag = SOV_yageda
 	}
 }
+# 开始审理托洛茨基-季诺维也夫联合中心
+country_event = {
+	id = sovietfate.42 
+	title = sovietfate.42.t
+	desc = sovietfate.42.d
+	picture = pic_6
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.42.a
+		country_event = { id = sovietfate.43 days = 18 }
+	}
+}
+# 真理报社论：《一个伟大民族的愤怒》
+country_event = {
+	id = sovietfate.43 
+	title = sovietfate.43.t
+	desc = sovietfate.43.d
+	picture = pic_4
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.43.a
+		country_event = { id = sovietfate.44 days = 2 }
+	}
+}
+# 维辛斯基开展调查
+country_event = {
+	id = sovietfate.44 
+	title = sovietfate.44.t
+	desc = sovietfate.44.d
+	picture = pic_6
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.44.a
+		country_event = { id = sovietfate.45 days = 1 }
+	}
+}
+# 托姆斯基自杀
+country_event = {
+	id = sovietfate.45 
+	title = sovietfate.45.t
+	desc = sovietfate.45.d
+	picture = pic_5
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.45.a
+		country_event = { id = sovietfate.23 days = 3 }
+		activate_mission = SOV_6_4
+	}
+}
+# 十六人审判
+country_event = {
+	id = sovietfate.23
+	title = sovietfate.23.t
+	desc = sovietfate.23.d
+	#picture = sov_peijizhi
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.23.a
+	}
+}
+# 叶若夫的调查结果
+country_event = {
+	id = sovietfate.46 
+	title = sovietfate.46.t
+	desc = sovietfate.46.d
+	picture = pic_7
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.46.a
+	}
+}
+# 叶若夫的信
+country_event = {
+	id = sovietfate.47 
+	title = sovietfate.47.t
+	desc = sovietfate.47.d
+	picture = pic_7
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.47.a
+		activate_mission = SOV_6_6
+	}
+}
+# 斯大林的电报
+country_event = {
+	id = sovietfate.24
+	title = sovietfate.24.t
+	desc = sovietfate.24.d
+	picture = pic_4
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.24.a
+	}
+}
+# 叶若夫的信
+country_event = {
+	id = sovietfate.48 
+	title = sovietfate.48.t
+	desc = sovietfate.48.d
+	picture = pic_7
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.48.a
+	}
+}
+## 国策事件
 # 斯大林6.3报告
 country_event = {
 	id = sovietfate.33
 	title = sovietfate.33.t
 	desc = sovietfate.33.d
-	#picture = 
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -33,7 +148,7 @@ country_event = {
 	id = sovietfate.34
 	title = sovietfate.34.t
 	desc = sovietfate.34.d
-	#picture = 
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -45,7 +160,7 @@ country_event = {
 	id = sovietfate.36
 	title = sovietfate.36.t
 	desc = sovietfate.36.d
-	#picture = 
+	picture = pic_3
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -57,7 +172,7 @@ country_event = {
 	id = sovietfate.35
 	title = sovietfate.35.t
 	desc = sovietfate.35.d
-	#picture = 
+	picture = pic_13
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -69,7 +184,7 @@ country_event = {
 	id = sovietfate.19
 	title = sovietfate.19.t
 	desc = sovietfate.19.d
-	#picture = sov_peijizhi
+	picture = pic_3
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -82,7 +197,7 @@ country_event = {
 	id = sovietfate.0
 	title = sovietfate.0.t
 	desc = sovietfate.0.d
-	picture = SOV_victory
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -94,7 +209,7 @@ country_event = {
 	id = sovietfate.1
 	title = sovietfate.1.t
 	desc = sovietfate.1.d
-	picture = sov_peijizhi
+	picture = pic_13
     fire_only_once = yes
 	option = { 
 		name = sovietfate.1.a
@@ -106,7 +221,7 @@ country_event = {
 	id = sovietfate.3
 	title = sovietfate.3.t
 	desc = sovietfate.3.d
-	picture = sov_molotov
+	picture = pic_12
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -119,7 +234,7 @@ country_event = {
 	id = sovietfate.2
 	title = sovietfate.2.t
 	desc = sovietfate.2.d
-	picture = sov_jicenggushi
+	picture = pic_11
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -131,7 +246,7 @@ country_event = {
 	id = sovietfate.5
 	title = sovietfate.5.t
 	desc = sovietfate.5.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -144,7 +259,7 @@ country_event = {
 	id = sovietfate.6
 	title = sovietfate.6.t
 	desc = sovietfate.6.d
-	#picture = sov_peijizhi
+	picture = pic_11
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -156,7 +271,7 @@ country_event = {
 	id = sovietfate.7
 	title = sovietfate.7.t
 	desc = sovietfate.7.d
-	#picture = sov_peijizhi
+	picture = pic_11
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -168,7 +283,7 @@ country_event = {
 	id = sovietfate.8
 	title = sovietfate.8.t
 	desc = sovietfate.8.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -181,7 +296,7 @@ country_event = {
 	id = sovietfate.9
 	title = sovietfate.9.t
 	desc = sovietfate.9.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -193,7 +308,7 @@ country_event = {
 	id = sovietfate.10
 	title = sovietfate.10.t
 	desc = sovietfate.10.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -205,7 +320,7 @@ country_event = {
 	id = sovietfate.11
 	title = sovietfate.11.t
 	desc = sovietfate.11.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
 	is_triggered_only = yes
 	option = { 
@@ -218,7 +333,7 @@ country_event = {
 	id = sovietfate.12
 	title = sovietfate.12.t
 	desc = sovietfate.12.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -234,7 +349,7 @@ country_event = {
 	id = sovietfate.13
 	title = sovietfate.13.t
 	desc = sovietfate.13.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -252,7 +367,7 @@ country_event = {
 	id = sovietfate.14
 	title = sovietfate.14.t
 	desc = sovietfate.14.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -264,7 +379,7 @@ country_event = {
 	id = sovietfate.15
 	title = sovietfate.15.t
 	desc = sovietfate.15.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -276,7 +391,7 @@ country_event = {
 	id = sovietfate.16
 	title = sovietfate.16.t
 	desc = sovietfate.16.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     trigger = {
 		tag = SOV
@@ -292,7 +407,7 @@ country_event = {
 	id = sovietfate.17
 	title = sovietfate.17.t
 	desc = sovietfate.17.d
-	#picture = sov_peijizhi
+	picture = pic_13
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -307,6 +422,7 @@ country_event = {
 	desc = sovietfate.4.d
     fire_only_once = yes
     is_triggered_only = yes
+	picture = pic_3
 	option = { 
 		name = sovietfate.4.a
 		add_political_power = -100
@@ -322,7 +438,7 @@ country_event = {
 	id = sovietfate.18
 	title = sovietfate.18.t
 	desc = sovietfate.18.d
-	#picture = sov_peijizhi
+	picture = pic_3
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -335,7 +451,7 @@ country_event = {
 	id = sovietfate.20
 	title = sovietfate.20.t
 	desc = sovietfate.20.d
-	#picture = sov_peijizhi
+	picture = pic_1
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -347,7 +463,7 @@ country_event = {
 	id = sovietfate.21
 	title = sovietfate.21.t
 	desc = sovietfate.21.d
-	#picture = sov_peijizhi
+	picture = pic_9
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -359,7 +475,7 @@ country_event = {
 	id = sovietfate.22
 	title = sovietfate.22.t
 	desc = sovietfate.22.d
-	#picture = sov_peijizhi
+	picture = pic_10
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -372,36 +488,12 @@ country_event = {
         }
     }
 }
-# 十六人审判
-country_event = {
-	id = sovietfate.23 
-	title = sovietfate.23.t
-	desc = sovietfate.23.d
-	#picture = sov_peijizhi
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.23.a
-	}
-}
-# 斯大林的电报
-country_event = {
-	id = sovietfate.24
-	title = sovietfate.24.t
-	desc = sovietfate.24.d
-	#picture = sov_peijizhi
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.24.a
-	}
-}
 # 斯大林的广播
 country_event = {
 	id = sovietfate.25
 	title = sovietfate.25.t
 	desc = sovietfate.25.d
-	#picture = sov_peijizhi
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -413,7 +505,7 @@ country_event = {
 	id = sovietfate.26
 	title = sovietfate.26.t
 	desc = sovietfate.26.d
-	#picture = sov_peijizhi
+	picture = pic_1
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -425,7 +517,7 @@ country_event = {
 	id = sovietfate.27
 	title = sovietfate.27.t
 	desc = sovietfate.27.d
-	#picture = sov_peijizhi
+	picture = pic_2
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -437,7 +529,7 @@ country_event = {
 	id = sovietfate.28
 	title = sovietfate.28.t
 	desc = sovietfate.28.d
-	#picture = sov_peijizhi
+	picture = pic_13
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -449,7 +541,7 @@ country_event = {
 	id = sovietfate.29
 	title = sovietfate.29.t
 	desc = sovietfate.29.d
-	#picture = sov_peijizhi
+	picture = pic_2
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -461,7 +553,7 @@ country_event = {
 	id = sovietfate.30
 	title = sovietfate.30.t
 	desc = sovietfate.30.d
-	#picture = sov_peijizhi
+	picture = pic_10
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -473,7 +565,7 @@ country_event = {
 	id = sovietfate.31
 	title = sovietfate.31.t
 	desc = sovietfate.31.d
-	#picture = sov_peijizhi
+	picture = pic_2
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -485,7 +577,7 @@ country_event = {
 	id = sovietfate.32
 	title = sovietfate.32.t
 	desc = sovietfate.32.d
-	#picture = sov_peijizhi
+	picture = pic_2
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -498,7 +590,7 @@ country_event = {
 	id = sovietfate.37
 	title = sovietfate.37.t
 	desc = sovietfate.37.d
-	#picture = sov_peijizhi
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -511,7 +603,7 @@ country_event = {
 	id = sovietfate.38
 	title = sovietfate.38.t
 	desc = sovietfate.38.d
-	#picture = sov_peijizhi
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -528,7 +620,7 @@ country_event = {
 	id = sovietfate.39
 	title = sovietfate.39.t
 	desc = sovietfate.39.d
-	#picture = sov_peijizhi
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
@@ -545,7 +637,7 @@ country_event = {
 	id = sovietfate.40
 	title = sovietfate.40.t
 	desc = sovietfate.40.d
-	#picture = sov_peijizhi
+	picture = pic_4
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
