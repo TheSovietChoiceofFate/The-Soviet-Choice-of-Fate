@@ -221,24 +221,7 @@ defined_text = {
 defined_text = {
 	name = get_yeruofu_gfx
 	text = {
-	trigger = {
-	  NOT = { has_country_flag = Yezhovwin }	
-	}
 		localization_key = "GFX_Nikolai_Yezhov"
-	}
-	text = {
-	trigger = {
-	    has_country_flag = Yezhovwin
-		NOT = { has_idea = SOV_nikolay_yezhov }
-	}
-		localization_key = "GFX_Nikolai_Yezhov_Airbrushed"
-	}
-	text = {
-	trigger = {
-	    has_country_flag = Yezhovwin
-	    has_idea = SOV_nikolay_yezhov	
-	}
-		localization_key = "GFX_Nikolai_Yezhov_Hat"
 	}
 }
 defined_text = {
@@ -268,27 +251,17 @@ defined_text = {
 defined_text = {
 	name = get_Zhdanov_gfx
 	text = {
-	trigger = {
-	   NOT = { has_country_flag = at_second_war }
-	}    
-		localization_key = "GFX_Zhdanov_young"
-	}
-	trigger = {
-	   has_country_flag = at_second_war 
-	}    
-		localization_key = "GFX_Zhdanov_military"
-	}
-	text = {
-	trigger = {
-	   NOT = { has_country_flag = at_second_war }
-	   has_country_flag = after_second_war
-	}
 		localization_key = "GFX_Andrei_Zhdanov"
-	}
 }
 defined_text = {
 	name = get_Stalin_gfx
 	text = {
-		localization_key = "GFX_Joseph_Stalin"
+		localization_key = "GFX_portrait_SOV_iosif_stalin"
+	}
+}
+defined_text = {
+	name = get_Malenkov_gfx
+	text = {
+		localization_key = "GFX_Georgy_Malenkov"
 	}
 }

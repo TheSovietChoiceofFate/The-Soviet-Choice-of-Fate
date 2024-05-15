@@ -1,9 +1,8 @@
 scripted_gui = {
-	
-	SF_politburo_window ={
+
+	party_tend ={
 		window_name = "SF_politburo"
-		parent_window_token = politics_tab
-		context_type = player_context
+		context_type = decision_category
 		
 		ai_enabled = {
 			always = no
@@ -44,8 +43,26 @@ scripted_gui = {
 		}
 
 		properties = {
-			flag = {
-				image = "[This.GetFlag]"
+			politburo_1 = {
+				image = "[get_Stalin_gfx]"
+			}
+			politburo_2 = {
+				image = "[get_Molotov_gfx]"
+			}
+			politburo_3 = {
+				image = "[get_Kaganovich_gfx]"
+			}
+			politburo_4 = {
+				image = "[get_Zhdanov_gfx]"
+			}
+			politburo_5 = {
+				image = "[get_Molotov_gfx]"
+			}
+			politburo_6 = {
+				image = "[get_Molotov_gfx]"
+			}
+			politburo_7 = {
+				image = "[get_Molotov_gfx]"
 			}
 		}
 	}

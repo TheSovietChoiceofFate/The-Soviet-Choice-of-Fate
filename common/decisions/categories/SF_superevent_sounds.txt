@@ -1,0 +1,6 @@
+SF_superevent_sounds = {
+	#icon = 
+	allowed = {
+		always = yes
+	}
+}

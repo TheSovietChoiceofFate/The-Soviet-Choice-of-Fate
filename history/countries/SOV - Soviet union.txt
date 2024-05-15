@@ -1,24 +1,24 @@
 ﻿# SCF设定
 # 定期事件
-country_event = { id = sovietfate.0 days = 1 } 	# 开局事件
-country_event = { id = sovietfate.41 days = 1 } 	# 1936年的内务部
-country_event = { id = sovietfate.1 days = 1 } 	# 配给制的终结
+country_event = { id = sovietfate.0 hours = 1 } 	# 开局事件
+country_event = { id = sfpatrioticwar.0 hours = 5 } # 伟大的卫国战争：难度设定
+country_event = { id = sovietfate.41 hours = 9 } 	# 1936年的内务部
+country_event = { id = sovietfate.1 hours = 18 } 	# 配给制的终结
 country_event = { id = sovietfate.2 days = 200 } 	# 宪法讨论（故事）
-country_event = { id = sovietfate.5 days = 152 } 	# 中央全会
 country_event = { id = sovietfate.5 days = 164 } 	# 民意、新宪法与新体制
 country_event = { id = sovietfate.6 days = 192 } 	# 午后的讨论
 country_event = { id = sovietfate.7 days = 201 } 	# 法治意识
 country_event = { id = sovietfate.8 days = 225 } 	# 加里宁的不满
 country_event = { id = sovietfate.9 days = 241 } 	# 当民主向你奔来
-country_event = { id = sovietfate.10 days = 282 }  # 报复
-country_event = { id = sovietfate.11 days = 321 }  # 积极分子
-country_event = { id = sovietfate.4 days = 189 }  # 报告饥荒
-country_event = { id = sovietfate.20 days = 114 }  # 反破坏运动退潮
-country_event = { id = sovietfate.21 days = 120 }  # 欢庆吧，劳动节！
-country_event = { id = sovietfate.22 days = 161 }  # 新宪法的草案
-country_event = { id = sovietfate.23 days = 236 }  # 十六人审判
-country_event = { id = sovietfate.24 days = 268 }  # 斯大林的电报
-country_event = { id = sovietfate.25 days = 328 }  # 斯大林的广播
+country_event = { id = sovietfate.10 days = 282 }   # 报复
+country_event = { id = sovietfate.11 days = 321 }   # 积极分子
+country_event = { id = sovietfate.4 days = 189 }    # 报告饥荒
+country_event = { id = sovietfate.20 days = 114 }   # 反破坏运动退潮
+country_event = { id = sovietfate.21 days = 120 }   # 欢庆吧，劳动节！
+country_event = { id = sovietfate.22 days = 161 }   # 新宪法的草案
+country_event = { id = sovietfate.23 days = 236 }   # 十六人审判
+country_event = { id = sovietfate.24 days = 268 }   # 斯大林的电报
+country_event = { id = sovietfate.25 days = 328 }   # 斯大林的广播
 country_event = { id = sovietfate.3 days = 1000 } 	# 莫洛托夫下台
 
 # 开局变量
@@ -28,8 +28,8 @@ set_variable = { C0 = 45 } # 党政关系态度
 set_variable = { D0 = 45 } # 意识形态管控态度
 set_variable = { E0 = 45 } # 民族关系态度
 set_variable = { F0 = 45 } # 央地关系态度
-set_variable = { G0 = 45 } # 军队
-set_variable = { H0 = 55 } # 内务部
+set_variable = { G0 = 45 } # 对军队态度
+set_variable = { H0 = 55 } # 对内务部态度
 
 capital = 219
 
@@ -46,16 +46,10 @@ add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 30000 produc
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
-#You don't want Russian party names? Just remove these lines
 set_party_name = {
 	ideology = communism
-	long_name = SOV_communism_party_russian_long
-	name = SOV_communism_party_russian
-}
-set_party_name = {
-	ideology = fascism
-	long_name = SOV_fascism_party_russian_long
-	name = SOV_fascism_party_russian
+	long_name = SOV_communism_party_long
+	name = SOV_communism_party
 }
 
 #COUNTRY LEADERS
@@ -740,67 +734,6 @@ add_to_faction = TAN
 	set_resistance = 10
 	set_garrison_strength = 1.0
 }
-
-#add_ideas = {
-#	trotskyite_plot
-#	home_of_revolution
-#	SOV_poorly_educated_population
-#	SOV_risk_of_disease
-#	SOV_revolutionized_industry_ghost
-#	SOV_poor_railnetworks_0
-#}
-
-#create_country_leader = {
-#	name = "Victor Baydalakov"
-#	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-#	picture = "gfx/leaders/SOV/Portrait_Soviet_Victor_Baydalakov.dds"
-#	expire = "1953.3.1"
-#	ideology = oligarchism
-#	traits = {
-#
-#	}
-#}
-
-#add_namespace = {
-#	name = "unit_leader_sov"
-#	type = unit_leader
-#}
-
-#create_corps_commander = {
-#	name = "Vasily Gordov"
-#	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
-#	traits = { old_guard }
-#	skill = 1
-#
-#	attack_skill = 1
-#	defense_skill = 1
-#	planning_skill = 1
-#	logistics_skill = 1
-#}
-#
-#create_corps_commander = {
-#	name = "Mikhail Shumilov"
-#	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
-#	traits = {  }
-#	skill = 1
-#
-#	attack_skill = 1
-#	defense_skill = 1
-#	planning_skill = 1
-#	logistics_skill = 1
-#}
-#
-#create_corps_commander = {
-#	name = "Ivan Maslennikov"
-#	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
-#	traits = {  }
-#	skill = 1
-#
-#	attack_skill = 1
-#	defense_skill = 1
-#	planning_skill = 1
-#	logistics_skill = 1
-#}
 
 if = {
 	limit = {

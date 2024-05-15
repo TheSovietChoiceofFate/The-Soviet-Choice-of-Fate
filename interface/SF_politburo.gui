@@ -1,13 +1,14 @@
 guiTypes = {
 	containerWindowType = {
 		name = "SF_politburo"
-		position = { x = 0 y = 0 }
+		position = { x = 50 y = 0 }
+		size = { width = 100% height= 100 }
 
 		buttonType = {
 			name = "politburo_open"
-			position = { x = 450 y = 240 }
-			quadTextureSprite = "GFX_lobby_button"
-			pdx_tooltip = "politburo_button_text"				
+			position = { x = 190 y = 10 }
+			spriteType = "GFX_politburo_button"
+			pdx_tooltip = "politburo_button_text"			
 		}
 	}
 }
@@ -27,13 +28,132 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_plain_bg"
+			quadTextureSprite = "GFX_politburo_bg"
 		}
 
 		iconType = {
 			name = "politburo_icon"
 			position = { x = 14 y = 6 }
 		}
+		
+		iconType = { 
+			name = "politburo_1"
+			position = { x = -80 y = -100 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_1_intro"
+		}
+		
+		iconType = { 
+			name = "politburo_2"
+			position = { x = 120 y = -60 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_2_intro"
+			scale = 0.8
+		}
+		
+		iconType = { 
+			name = "politburo_3"
+			position = { x = -250 y = -60 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_3_intro"
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "politburo_4"
+			position = { x = -420 y = -60 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_4_intro"
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "politburo_5"
+			position = { x = 290 y = -60 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_5_intro"
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "politburo_6"
+			position = { x = -60 y = 140 }
+			orientation = center
+			pdx_tooltip_delayed = "politburo_6_intro"
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "politburo_7"
+			position = { x = -60 y = -290 }
+			orientation = center
+		    pdx_tooltip_delayed = "politburo_7_intro"
+			scale = 0.8
+		}
+		
+		#iconType = {
+		#	name = "politburo_8"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_8_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_9"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_9_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_10"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_10_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_11"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_11_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_12"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_12_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_13"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_13_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_14"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_14_intro"
+		#	scale = 0.8
+		#}
+		
+		#iconType = {
+		#	name = "politburo_15"
+		#	position = { x = -60 y = -290 }
+		#	orientation = center
+		#    pdx_tooltip_delayed = "politburo_15_intro"
+		#	scale = 0.8
+		#}
 
 		instantTextboxType = {
 			name = "title"
@@ -51,7 +171,6 @@ guiTypes = {
 			position = {x = -50 y = 10 }
 			spriteType = "GFX_NV_btn_close"
 			clicksound = click_close
-			#pdx_tooltip = "CLOSE"
 			shortcut = "ESCAPE"
 			orientation = UPPER_RIGHT
 		}

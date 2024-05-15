@@ -1,0 +1,32 @@
+defined_text = { 
+	name = get_super_event_title
+	
+	text = { 
+		trigger = {
+			has_global_flag = SOV_East_Poland
+		}
+		localization_key = "GFX_SPEVNT_East_Poland"
+	}
+}
+
+defined_text = { #SUPER EVENT REMARKS
+	name = get_superevent_remark
+	
+	text = { 
+		trigger = {
+			has_global_flag = SOV_East_Poland
+		}
+		localization_key = "GFX_SPEVNT_SOV_East_Poland_REMARK"
+	}
+}
+
+defined_text = { #SUPER EVENT DESCS
+	name = get_superevent_desc
+	
+	text = { 
+		trigger = {
+			has_global_flag = SOV_East_Poland
+		}
+		localization_key = "GFX_SPEVNT_East_Poland_DESC"
+	}
+}

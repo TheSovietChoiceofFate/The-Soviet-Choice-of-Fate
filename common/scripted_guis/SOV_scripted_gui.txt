@@ -1,5 +1,4 @@
 scripted_gui = {
-	
 	sov_cons_gui = { 
 		context_type = decision_category
 		window_name = "sov_cons_gui_window"
@@ -46,6 +45,33 @@ scripted_gui = {
 		}
 		ai_enabled = {
 			tag = SOV		
+		}
+	}
+	sov_nkvd_jiancha = {
+		context_type = decision_category
+		window_name = "sov_nkvd_jiancha_gui"
+
+		ai_enabled = {
+			always = no
+		}
+		
+		triggers = {
+		}
+		dynamic_lists = {
+			sov_nkvd_jiancha_gui_Bar = {
+				array = sov_nkvd_jiancha_gui_Bar_display
+				change_scope = no
+				entry_container = petliura_progress_bar_container_progress
+				index = bar_idx
+			}			
+		}
+
+		properties = {
+			sov_nkvd_jiancha_gui_Bar_icon = { 
+				x = sov_nkvd_jiancha_gui_Bar_icon_x^bar_idx
+				y = sov_nkvd_jiancha_gui_Bar_icon_y^bar_idx
+				frame = sov_nkvd_jiancha_gui_Bar_display^bar_idx								
+			}
 		}
 	}
 }

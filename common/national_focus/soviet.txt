@@ -282,10 +282,39 @@ focus_tree = {
 			focus = SF_SOV_The_Law_Serves_Politics
 		}
 		completion_reward = {
-			load_focus_tree = soviet_1937
 		}
 		x = 4
 		y = 9
+	}
+}
+focus_tree = {
+	id = soviet_purge_1936
+	country = {
+		factor = 0
+		modifier = {
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SF_SOV_Start_1937 #开始1937年人口普查
+		#icon = GFX_goal_SF_SOV_Intensify_Anti_Sabotage_Movemant
+		cost = 1.00
+		x = 4
+		y = 0
+	}
+	focus = {
+		id = SF_SOV_Sudden_Change # 风云突变
+		#icon = GFX_goal_SF_SOV_Encourage_Stakhanovites
+		cost = 1.00
+		prerequisite = {
+			focus = SF_SOV_Start_1937
+		}
+		completion_reward = {
+			load_focus_tree = soviet
+		}
+		x = 4
+		y = 1
 	}
 }
 

@@ -11,16 +11,18 @@ SOV_1_0 = {
 	visible = {
 		has_country_flag = SOV_hungry
 	}
+	visible_when_empty = yes
 	priority = 12
 }
 # 党内倾向
 SOV_2_0 = {
 	#icon = 图标名
-	#picture = 图片名
     allowed = { 
         tag = SOV
 	}
-	priority = 9
+	scripted_gui = party_tend
+	visible_when_empty = yes
+	priority = 99
 }
 # 宪法讨论运动
 SOV_3_0 = {
@@ -36,6 +38,7 @@ SOV_3_0 = {
 		has_country_flag = SOV_debate
 	}
 	scripted_gui = sov_cons_gui
+	visible_when_empty = yes
 	priority = 11
 }
 # 第二个五年计划
@@ -45,6 +48,7 @@ SOV_4_0 = {
     allowed = {
         tag = SOV
 	}
+	visible_when_empty = yes
 	priority = 10
 }
 # 雅戈达剧情
@@ -80,4 +84,21 @@ SOV_6_0 = {
 	priority = 14
 	visible_when_empty = yes
 	scripted_gui = sov_yeruofu_gui
+}
+# 内务部Vs检察院
+SOV_7_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	available = {
+	hidden_trigger = { has_country_flag = SOV_daqingxi }
+	}
+	visible = {
+	hidden_trigger = { has_country_flag = SOV_daqingxi }
+	}
+	priority = 100
+	visible_when_empty = yes
+	scripted_gui = sov_nkvd_jiancha
 }

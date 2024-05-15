@@ -1867,6 +1867,6 @@ instant_effect = {
 
 focus = {
 	current = "SF_SOV_Intensify_Anti_Sabotage_Movemant"
-	progress = 8
+	progress = 7
 }
 	#####################
