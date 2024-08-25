@@ -27,32 +27,25 @@ SOV_TGPW_1_0 = {
 	visible_when_empty = yes
 	priority = 10
 }
-# 防范日本
+# 向故土进军
 SOV_TGPW_2_0 = {
 	#icon = "gfx/interface/decisions/.png"
 	#picture = 
     allowed = {
         tag = SOV
 		has_country_flag = SOV_patriotic_war
-		NOT = { has_war_with = JAP }
 	}
-	available = {
-	}
-	visible_when_empty = yes
-	priority = 10
+	priority = 100
 }
-# 向故土进军
-SOV_TGPW_3_0 = {
+# 防范日本
+#SOV_TGPW_3_0 = {
 	#icon = "gfx/interface/decisions/.png"
 	#picture = 
-    allowed = {
-        tag = SOV
-		has_country_flag = SOV_patriotic_war
-		GER = { has_war_with = POL }
-	}
-	available = {
-	}
-	visible_when_empty = yes
-	priority = 10
-}
+#    allowed = {
+#        tag = SOV
+#		has_country_flag = SOV_patriotic_war
+#		NOT = { has_war_with = JAP }
+#	}
+#	priority = 100
+#}
 

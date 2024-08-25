@@ -12,7 +12,7 @@ SOV_1_0 = {
 		has_country_flag = SOV_hungry
 	}
 	visible_when_empty = yes
-	priority = 12
+	priority = 190
 }
 # 党内倾向
 SOV_2_0 = {
@@ -20,9 +20,9 @@ SOV_2_0 = {
     allowed = { 
         tag = SOV
 	}
-	scripted_gui = party_tend
+	#scripted_gui = party_tend # 政治局GUI，暂时搁置
 	visible_when_empty = yes
-	priority = 99
+	priority = 195
 }
 # 宪法讨论运动
 SOV_3_0 = {
@@ -39,7 +39,7 @@ SOV_3_0 = {
 	}
 	scripted_gui = sov_cons_gui
 	visible_when_empty = yes
-	priority = 11
+	priority = 180
 }
 # 第二个五年计划
 SOV_4_0 = {
@@ -49,7 +49,7 @@ SOV_4_0 = {
         tag = SOV
 	}
 	visible_when_empty = yes
-	priority = 10
+	priority = 170
 }
 # 雅戈达剧情
 SOV_5_0 = {
@@ -64,9 +64,9 @@ SOV_5_0 = {
 	visible = {
 	hidden_trigger = { has_country_flag = SOV_yageda }
 	}
-	priority = 13
+	priority = 150
 	visible_when_empty = yes
-	scripted_gui = sov_yageda_gui
+	#scripted_gui = sov_yageda_gui
 }
 # 叶若夫剧情
 SOV_6_0 = {
@@ -81,9 +81,9 @@ SOV_6_0 = {
 	visible = {
 	hidden_trigger = { has_country_flag = SOV_yeruofu }
 	}
-	priority = 14
+	priority = 160
 	visible_when_empty = yes
-	scripted_gui = sov_yeruofu_gui
+	#scripted_gui = sov_yeruofu_gui
 }
 # 内务部Vs检察院
 SOV_7_0 = {
@@ -98,7 +98,24 @@ SOV_7_0 = {
 	visible = {
 	hidden_trigger = { has_country_flag = SOV_daqingxi }
 	}
-	priority = 100
+	priority = 185
 	visible_when_empty = yes
-	scripted_gui = sov_nkvd_jiancha
+	#scripted_gui = sov_nkvd_jiancha
+}
+# 党内紧张度
+SOV_8_0 = {
+	#icon = 图标名
+	#picture = 图片名
+    allowed = {
+        tag = SOV
+	}
+	available = {
+	NOT = { has_country_flag = SOV_party_tension }
+	}
+	visible = {
+	NOT = { has_country_flag = SOV_party_tension }
+	}
+	priority = 200
+	visible_when_empty = yes
+	#scripted_gui = sov_nkvd_jiancha
 }

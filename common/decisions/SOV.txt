@@ -1,17 +1,17 @@
 # 处理粮食短缺
 SOV_1_0 = {
-    SOV_1_1 = {     
-	    SOV_1_1 = {     
+# 饥荒读条
+    SOV_1_1 = {         
 	    icon = "gfx/interface/decisions/liangshi.png"
 		activation = {  
-			has_country_flag = SOV_hungry_ing    		
+			#has_country_flag = SOV_hungry_ing    		
 		}                                    
 		available = { 	
-			NOT = { has_country_flag = SOV_hungry }                        
+			#NOT = { has_country_flag = SOV_hungry }                        
 		}
 		is_good = no                         
 	
-		days_mission_timeout = 120 
+		days_mission_timeout = 300 
 		timeout_effect = {                     
 			custom_effect_tooltip = hungry     
 		}
@@ -19,6 +19,118 @@ SOV_1_0 = {
 			custom_effect_tooltip = save_hungry        
 		}
 	}
+# 不再指控农民
+    SOV_1_2 = {         
+	    #icon = 图标名
+		cost = 50
+		
+		fire_only_once = yes 
+        days_remove = 30
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        modifier = {
+	   	}
+		complete_effect = {  
+		}
+        remove_effect = {
+        add_stability = 0.05
+        # 党内倾向变化：更倾向工农平等
+        # 减轻debuff
+        set_country_flag = SOV_mercy_easant 
+		}
+	}
+# 减少交付义务
+	SOV_1_3 = {     
+	    #icon = 图标名
+		cost = 0
+		
+		fire_only_once = yes 
+        days_remove = 60
+
+		available = {
+        has_country_flag = SOV_mercy_easant
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        modifier = {
+	   	}
+		complete_effect = { 
+        # 生产效率-8%
+		}
+        remove_effect = {
+        # 减轻debuff
+		}
+	}
+# 援助粮食和种子
+	SOV_1_4 = {     
+	    #icon = 图标名
+		cost = 20
+		
+		fire_only_once = yes 
+
+		available = {
+        has_country_flag = SOV_mercy_easant
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        modifier = {
+	   	}
+		complete_effect = {  
+		}
+        remove_effect = {
+        # 减轻debuff
+		}
+	}
+# 限制谷物出口
+	SOV_1_5 = {     
+	    #icon = 图标名
+		cost = 0
+		
+		fire_only_once = yes 
+        days_remove = 120
+
+		available = {
+        has_country_flag = SOV_mercy_easant
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        modifier = {
+	   	}
+		complete_effect = {  
+        # 消费品系数+15%
+		}
+        remove_effect = {
+        # 减轻debuff
+		}
+	}
+# 打击投机活动
+    SOV_1_6 = {     
+	    #icon = 图标名
+		cost = 50
+		
+		fire_only_once = yes 
+
+		available = {
+        has_country_flag = SOV_mercy_easant
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        modifier = {
+	   	}
+		complete_effect = {  
+		}
+        remove_effect = {
+        add_stability = 0.05
+        # 减轻debuff
+		}
 	}
 }
 # 党内倾向
@@ -44,72 +156,6 @@ SOV_2_0 = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = history_finish
-		}
-	}
-	SOV_2_2 = {
-		
-		#icon = 图标名
-		cost = 0
-		days_remove = 0
-		
-		fire_only_once = yes 
-
-		available = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		remove_effect = {
-			annex_country = {
-            target = LIT
-            transfer_troops = yes
-            }
-			annex_country = {
-            target = LAT
-            transfer_troops = yes
-            }
-			annex_country = {
-            target = EST
-            transfer_troops = yes
-            }
-			transfer_state = 934
-			transfer_state = 97
-			transfer_state = 784
-			transfer_state = 936
-			transfer_state = 96
-			transfer_state = 935
-			transfer_state = 95
-			transfer_state = 94
-			transfer_state = 93
-			transfer_state = 91
-			transfer_state = 89
-			transfer_state = 80
-			transfer_state = 78
-			transfer_state = 766
-		}
-	}
-	SOV_2_3 = { 
-	    #icon = 图标名
-		cost = 0
-		days_remove = 0
-		
-		fire_only_once = yes 
-
-		available = {
-		has_country_flag = SOV_patriotic_war
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		visible = {
-		}
-		remove_effect = {
-	    GER = {
-		declare_war_on = {
-        target = POL
-        type = annex_everything
-        }
-		}
 		}
 	}
 }
