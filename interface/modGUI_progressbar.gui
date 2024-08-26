@@ -1,0 +1,33 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ui_progressbar"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 200 }
+
+		iconType = {
+			name ="progressbar"
+			spriteType = "GFX_mod_progressbar"
+			position = { x = 50 y = 100 }
+		} 
+        iconType = {
+			name ="progressbar_border_pic"
+			spriteType = "GFX_progressbar_border"
+			position = { x = 50 y = 100 }
+		}
+        iconType = {
+			name ="party_tension"
+			spriteType = "GFX_party_tension_pic"
+			position = { x = 150 y = -20 }
+            scale = 0.3
+		}
+		instantTextBoxType = {
+			name ="progressbar_value"
+			position = { x = 150 y = 110 }
+			font = "hoi_24header"
+			text = "SOV_now_party_tension"
+			format = center
+			maxHeight = 24
+		}
+	}
+}
