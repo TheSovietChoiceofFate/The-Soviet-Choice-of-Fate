@@ -1,4 +1,46 @@
 defined_text = {
+	name = PT # 党内紧张度
+	text = {
+		trigger = {
+			check_variable = { PT < 100 }
+		}
+		localization_key = "PT0" # 稳定：无事发生
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PT > 100 }
+				check_variable = { PT < 200 }
+			}
+		}
+		localization_key = "PT1" # 不安：触发对反对派的大规模清洗
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PT > 200 }
+				check_variable = { PT < 300 }
+			}
+		}
+		localization_key = "PT2" # 惊慌：触发对党内阴谋的清洗
+	}
+    text = {
+		trigger = {
+			AND = {
+				check_variable = { PT > 300 }
+				check_variable = { PT < 400 }
+			}
+		}
+		localization_key = "PT3" # 恐惧：触发对旧社会分子的清洗
+	}
+    text = {
+		trigger = {
+				check_variable = { PT > 400 }
+		}
+		localization_key = "PT4" # 疯狂：触发地方清洗
+	}
+}
+defined_text = {
 	name = A0 # 国有/集体化态度
 	text = {
 		trigger = {

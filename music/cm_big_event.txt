@@ -1,0 +1,9 @@
+
+music_station = "cm_big_event"
+
+music = {
+	song = "the_cossacks"	
+	chance = {
+		factor = 0
+	}
+}

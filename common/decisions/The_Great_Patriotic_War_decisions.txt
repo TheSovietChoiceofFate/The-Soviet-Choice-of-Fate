@@ -474,70 +474,17 @@ SOV_TGPW_1_0 = {
 		}
 	}	
 }
-#防范日本
-SOV_TGPW_2_0 = {
-    SOV_TGPW_2_1 = {    
-	    #icon = "gfx/interface/decisions/.png"
-		activation = {  
-		    has_country_flag = SOV_patriotic_war
-		    NOT = { has_war_with = JAP }    		
-		}                                    
-		available = { 	
-			has_country_flag = SOV_patriotic_war
-		    NOT = { has_war_with = JAP }                        
-		}
-		is_good = no                         
-	
-		days_mission_timeout = 3650 
-	}
-#	SOV_TGPW_2_2 = {    
-#	     #icon = 图标名
-#		cost = 30
-#		days_remove = 30
-#		
-#		fire_only_once = yes 
-#
-#		available = {
-#		has_country_flag = SOV_patriotic_war
-#		}
-#		ai_will_do = {
-#			factor = 100
-#		}
-#		visible = {
-#				has_full_control_of_state = 766
-#		}
-#		remove_effect = {
-#	    766 = { #Southern Bessarabia
-#				if = {
-#					limit = { is_fully_controlled_by = ROOT }
-#					custom_effect_tooltip = SOV_molotov_line_forts_2
-#					hidden_effect = {
-#						add_building_construction = {
-#							type = bunker
-#							level = 1
-#							province = {
-#								id = 3704
-#								id = 3701
-#							}
-#							instant_build = yes
-#						}
-#					}
-#				}
-#			}
-#		}
-#	}
-}	
 # 向故土进军
-SOV_TGPW_3_0 = {
-    SOV_TGPW_3_1 = { 
+SOV_TGPW_2_0 = {
+    
+	SOV_TGPW_2_1 = { 
 	    #icon = 图标名
 		cost = 0
 		days_remove = 0
-		
+
 		fire_only_once = yes 
 
         allowed = {
-		has_country_flag = SOV_patriotic_war
 		}
 		available = {
 		has_country_flag = SOV_patriotic_war
@@ -548,8 +495,6 @@ SOV_TGPW_3_0 = {
 			factor = 100
 		}
 		visible = {
-		has_country_flag = SOV_patriotic_war
-		GER = { has_war_with = POL }
 		}
 		remove_effect = {
 	    EPO = {
@@ -568,9 +513,15 @@ SOV_TGPW_3_0 = {
         type = take_core_state
         }
 		set_country_flag = SOV_move_poland
+		SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 1 }
+		play_song = sov_the_cossacks
 		}
-	}
-	SOV_TGPW_3_2 = { 
+	    }
+    }
+	SOV_TGPW_2_2 = { 
 	    #icon = 图标名
 		cost = 0
 		days_remove = 0
@@ -578,15 +529,18 @@ SOV_TGPW_3_0 = {
 		fire_only_once = yes 
 		
 		allowed = {
-		has_country_flag = SOV_patriotic_war
 		}
 		available = {
 		has_country_flag = SOV_move_poland
         EPO = { exists = no }
+		GER = {
+		controls_state = 97
+		controls_state = 934
+		}
 		OR = {
 		POL = { surrender_progress > 0.6 }
 		POL = { exists = no }
-		  }
+		}
 		}
 		ai_will_do = {
 		factor = 100
@@ -596,6 +550,329 @@ SOV_TGPW_3_0 = {
 		remove_effect = {
 	    transfer_state = 97
 		transfer_state = 934
+		set_country_flag = SOV_move_poland_2
 		}
 	}
+	# 苏联-爱沙尼亚互助条约
+	SOV_TGPW_2_3 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_move_poland_2
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+        EST = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        EST = { give_military_access = SOV }
+		set_country_flag = SOV_protect_EST
+		}
+	}
+	# 苏联-拉脱维亚互助条约
+	SOV_TGPW_2_4 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_move_poland_2
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+        LAT = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        LAT = { give_military_access = SOV }
+		set_country_flag = SOV_protect_LAT
+		}
+	}
+	# 苏联-立陶宛互助条约
+	SOV_TGPW_2_5 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_move_poland_2
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+        LIT = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        LIT = { 
+		transfer_state = 784
+		give_military_access = SOV 
+		}
+		set_country_flag = SOV_protect_LIT
+		}
+	}
+	# 爱沙尼亚苏维埃化
+	SOV_TGPW_2_6 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_protect_EST
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+		#FAR = { surrender_progress > 0.5 }
+        EST = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        puppet = EST
+		country_event = { id = sfpatrioticwar.1 days = 14 }
+		}
+	}
+	
+	# 拉脱维亚苏维埃化
+	SOV_TGPW_2_7 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_protect_LAT
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+		#FAR = { surrender_progress > 0.5 }
+        LAT = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        puppet = LAT
+		country_event = { id = sfpatrioticwar.2 days = 14 }
+		}
+	}
+	# 立陶宛苏维埃化
+	SOV_TGPW_2_8 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		has_country_flag = SOV_protect_LIT
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+		#FAR = { surrender_progress > 0.5 }
+        LIT = { exists = yes }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+        puppet = LIT
+		country_event = { id = sfpatrioticwar.3 days = 14 }
+		}
+	}
+	# 索取比萨拉比亚
+	SOV_TGPW_2_9 = { 
+	    #icon = 图标名
+		cost = 0
+		days_remove = 0
+		
+		fire_only_once = yes 
+		
+		allowed = {
+		#GER = { has_war_with = ENG }
+		}
+		available = {
+		#FAR = { surrender_progress > 0.5 }
+		}
+		ai_will_do = {
+		factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+		ROM = { country_event = sfpatrioticwar.4 days = 1 }
+		}
+	}
+}
+SOV_TGPW_3_0 = {
+    
+	SOV_TGPW_3_1 = { 
+	    #icon = 图标名
+		activation = {  
+			OR = {
+			divisions_in_border_state = {
+            size < 2
+            state = 408
+            border_state = 6806
+            }
+			divisions_in_border_state = {
+            size < 10
+            state = 408
+            border_state = 943
+            }
+			divisions_in_border_state = {
+            size < 4
+            state = 408
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size < 4
+            state = 409
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size < 6
+            state = 657
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size < 8
+            state = 657
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size < 10
+            state = 657
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size < 8
+            state = 561
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size < 6
+            state = 563
+            border_state = 761
+            }
+			divisions_in_border_state = {
+            size < 6
+            state = 819
+            border_state = 761
+            }
+			divisions_in_border_state = {
+            size < 4
+            state = 819
+            border_state = 612
+            }
+			divisions_in_border_state = {
+            size < 6
+            state = 817
+            border_state = 612
+            }
+          }			
+		}   
+        available = { 	
+			divisions_in_border_state = {
+            size > 1
+            state = 408
+            border_state = 6806
+            }
+			divisions_in_border_state = {
+            size > 9
+            state = 408
+            border_state = 943
+            }
+			divisions_in_border_state = {
+            size > 3
+            state = 408
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size > 3
+            state = 409
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size > 5
+            state = 657
+            border_state = 717
+            }
+			divisions_in_border_state = {
+            size > 7
+            state = 657
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size > 9
+            state = 657
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size > 7
+            state = 561
+            border_state = 945
+            }
+			divisions_in_border_state = {
+            size > 5
+            state = 563
+            border_state = 761
+            }
+			divisions_in_border_state = {
+            size > 5
+            state = 819
+            border_state = 761
+            }
+			divisions_in_border_state = {
+            size > 3
+            state = 819
+            border_state = 612
+            }
+			divisions_in_border_state = {
+            size > 5
+            state = 817
+            border_state = 612
+            }                     
+		}		
+
+		is_good = no                         
+	
+		days_mission_timeout = 60 
+		timeout_effect = {                     
+			custom_effect_tooltip = SOV_lack_prepare     
+		}
+		complete_effect = {             
+			custom_effect_tooltip = SOV_ensure_safe        
+		}
+    }
 }

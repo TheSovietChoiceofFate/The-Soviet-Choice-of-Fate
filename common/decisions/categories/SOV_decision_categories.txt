@@ -104,18 +104,15 @@ SOV_7_0 = {
 }
 # 党内紧张度
 SOV_8_0 = {
-	#icon = 图标名
-	#picture = 图片名
-    allowed = {
+	icon = generic_political_actions
+	allowed = {
         tag = SOV
 	}
 	available = {
-	NOT = { has_country_flag = SOV_party_tension }
 	}
 	visible = {
-	NOT = { has_country_flag = SOV_party_tension }
 	}
 	priority = 200
+	scripted_gui = ui_progressbar
 	visible_when_empty = yes
-	#scripted_gui = sov_nkvd_jiancha
 }

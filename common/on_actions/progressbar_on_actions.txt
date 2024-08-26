@@ -1,0 +1,59 @@
+on_actions = {
+	on_daily_SOV = {
+		effect = {
+			SOV = {
+				if = {
+					limit = {
+						has_country_flag = progressbar_add
+					}
+					add_to_variable = {
+						progressbar_var = 10
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 100
+					}
+	
+				}
+				else_if = {
+					limit = {
+						has_country_flag = progressbar_decrease
+					}
+					add_to_variable = {
+						progressbar_var = -10
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 100
+					}	
+				}
+			}
+
+			SOV = {
+				if = {
+					limit = {
+						has_country_flag = progressbar_add_sample
+					}
+					add_to_variable = {
+						progressbar_var_sample_2 = 5
+					}
+
+					set_variable = { progressbar_x = progressbar_var_sample_2 }
+					divide_variable = { progressbar_x = 100 }
+					multiply_variable = { progressbar_x = 491 }
+					add_to_variable = { progressbar_x = -8 }
+					clamp_variable = { 
+						var = progressbar_x 
+						min = 8 
+						max = 464 
+					}
+	
+				}
+
+			
+			}
+		}
+	}
+}

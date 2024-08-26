@@ -1,0 +1,12 @@
+SOV_social_radicalization_category = {
+	#icon = 
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	priority = 90
+	
+	visible = {
+	}
+}

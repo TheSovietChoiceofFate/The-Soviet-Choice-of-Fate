@@ -42,4 +42,23 @@ SF_superevent_sounds = {
 			factor = 0
 		}	
 	}
+	
+	SF_superevents = {
+		#icon = 
+		days_re_enable = 1
+		available = {
+		tag = SOV
+		}
+		visible = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			country_event = { id = SE_test.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+	}
 }

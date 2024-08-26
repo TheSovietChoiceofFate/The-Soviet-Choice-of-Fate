@@ -1,8 +1,0 @@
-music_station = "SF_music"
-
-music = {
-	song = "sov_the_cossacks"	
-	chance = {
-		factor = 0
-	}
-}

@@ -1,0 +1,6 @@
+SOV_TEST_1_0 = {
+    allowed = {
+        tag = SOV
+	}
+	priority = 100
+}

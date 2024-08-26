@@ -1,0 +1,64 @@
+defined_text = { 
+	name = CM_SE_title
+			
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 1 } 
+	} 
+	localization_key = "CM_SE_title_1" 
+	}	
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 2 } 
+	} 
+	localization_key = "CM_SE_title_2" 
+	}	
+}
+defined_text = { 
+	name = CM_SE_desc
+		
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 1 } 
+	}  
+	localization_key = "CM_SE_desc_1" 
+	}	
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 2 } 
+	}  
+	localization_key = "CM_SE_desc_2" 
+	}	
+}
+defined_text = { 
+	name = CM_SE_quote
+		
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 1 } 
+	} 
+	localization_key = "CM_SE_quote_1" 
+	}
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 2 } 
+	} 
+	localization_key = "CM_SE_quote_2" 
+	}
+}
+defined_text = { 
+	name = CM_SE_btn
+		
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 1 } 
+	} 
+	localization_key = "CM_SE_btn_1" 
+	}
+	text = { 
+	trigger = { 
+	check_variable = { global.se_display = 2 } 
+	} 
+	localization_key = "CM_SE_btn_2" 
+	}
+}

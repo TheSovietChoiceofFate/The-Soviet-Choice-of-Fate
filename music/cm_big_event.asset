@@ -1,0 +1,5 @@
+music = {
+	name = "the_cossacks"
+	file = "bigevent/the_cossacks.ogg"
+	volume = 0.75
+}
