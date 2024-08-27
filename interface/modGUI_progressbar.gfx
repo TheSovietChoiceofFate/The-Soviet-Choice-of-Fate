@@ -1,17 +1,12 @@
 spriteTypes = {
 	progressbartype = {
 		name = "GFX_mod_progressbar"
-		textureFile1 = "gfx/progressbar/progressbar_full.png"
-		textureFile2 = "gfx/progressbar/progressbar_full_1.png"
-		size = { x = 350 y = 22 }
+		textureFile1 = "gfx/progressbar/progressbar_full.dds"
+		textureFile2 = "gfx/progressbar/progressbar_empty.dds"
+		size = { x = 400 y = 40 }
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 		steps = 100
-	}
-    SpriteType = {
-		name = "GFX_progressbar_border"
-		texturefile = "gfx/progressbar/progressbar_border.png"
-        size = { x = 350 y = 22 }
 	}
     SpriteType = {
 		name = "GFX_party_tension_pic"

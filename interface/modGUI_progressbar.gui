@@ -11,11 +11,6 @@ guiTypes = {
 			position = { x = 50 y = 100 }
 		} 
         iconType = {
-			name ="progressbar_border_pic"
-			spriteType = "GFX_progressbar_border"
-			position = { x = 50 y = 100 }
-		}
-        iconType = {
 			name ="party_tension"
 			spriteType = "GFX_party_tension_pic"
 			position = { x = 150 y = -20 }
@@ -26,6 +21,14 @@ guiTypes = {
 			position = { x = 150 y = 110 }
 			font = "hoi_24header"
 			text = "SOV_now_party_tension"
+			format = center
+			maxHeight = 24
+		}
+        instantTextBoxType = {
+			name ="progressbar_text"
+			position = { x = 150 y = 140 }
+			font = "hoi_24header"
+			text = "[?PT]"
 			format = center
 			maxHeight = 24
 		}
