@@ -5,23 +5,24 @@ SOV_social_radicalization = {
 	decision_category = SOV_social_radicalization_category
 
     range = {
-		id = "SOV_waver_range"
+		id = SOV_waver_range
 		min = -0.10
 		max = 0.10
 		modifier = {
 		}
     }
     side = {
-		id = "SOV_conserve_side"
+		id = SOV_conserve_side
+        icon = GFX_bop_SWI_centralization_canton_side
     range = {
-			id = "SOV_rather_conserve_range"
+			id = SOV_rather_conserve_range
 			min = -0.6
 			max = -0.1
 			modifier = {
 			}
     }	
     range = {
-			id = "SOV_very_conserve_range"
+			id = SOV_very_conserve_range
 			min = -1
 			max = -0.6
 			modifier = {
@@ -29,16 +30,17 @@ SOV_social_radicalization = {
     }
     }
     side = {
-		id = "SOV_extreme_side"
+		id = SOV_extreme_side
+        icon = GFX_bop_ETH_anarchist_side
     range = {
-			id = "SOV_rather_extreme_side"
+			id = SOV_rather_extreme_side
 			min = 0.1
 			max = 0.6
 			modifier = {
 			}
             }
     range = {
-			id = "SOV_very_extreme_side"
+			id = SOV_very_extreme_side
 			min = 0.6
 			max = 1
 			modifier = {
