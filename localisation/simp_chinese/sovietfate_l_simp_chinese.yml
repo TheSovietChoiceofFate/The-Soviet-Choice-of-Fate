@@ -363,12 +363,12 @@
  SOV_now_party_tension: "[?progressbar_var]"
  # 权力平衡：社会激进度
  SOV_social_radicalization: "社会激进度"
- SOV_waver_range: "举棋不定"
- SOV_conserve_side: "保守化"
+ SOV_waver_range: "平衡"
+ SOV_conserve_side: "秩序化"
  SOV_extreme_side: "激进化"
- SOV_rather_conserve_range : "偏保守"
- SOV_very_conserve_range : "非常保守"
- SOV_rather_extreme_side : "偏激进"
- SOV_very_extreme_side : "非常激进"
+ SOV_rather_conserve_range: "倾向法治"
+ SOV_very_conserve_range: "法律与秩序"
+ SOV_rather_extreme_side: "开始动员"
+ SOV_very_extreme_side: "大规模群众政治"
  
  
