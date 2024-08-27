@@ -8,8 +8,14 @@ guiTypes = {
 		iconType = {
 			name ="progressbar"
 			spriteType = "GFX_mod_progressbar"
-			position = { x = 50 y = 100 }
+			position = { x = -8 y = -20 }
 		} 
+        iconType = {
+			name ="progressbar_border_pic"
+			spriteType = "GFX_progressbar_border"
+			position = { x = -10 y = -25 }
+            scale = 0.85
+		}
         iconType = {
 			name ="party_tension"
 			spriteType = "GFX_party_tension_pic"
