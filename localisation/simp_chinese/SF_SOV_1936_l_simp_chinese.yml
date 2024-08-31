@@ -1,5 +1,6 @@
 ﻿l_simp_chinese:
  soviet: "苏维埃社会主义共和国联盟 1936年国策"
+ #国策
  SF_SOV_Intensify_Anti_Sabotage_Movemant:0 "强化反破坏运动"
  SF_SOV_Intensify_Anti_Sabotage_Movemant_desc:0 "我们优秀的斯达汉诺夫主义者经常受到其他工人、管理人员和工程师的抵制和憎恨。内务部经常报告普通工人的敌意；还有大量证据表明，许多高级管理人员、厂长和工程师认为斯达汉诺夫人士打破记录的行为会破坏计划和经济发展。我们必须加强反对破坏分子的运动，使得没有人敢于反对斯达汉诺夫主义者！"
  SF_SOV_Encourage_Stakhanovites:0 "鼓励斯达汉诺夫分子"
@@ -44,3 +45,7 @@
  SF_SOV_The_Clouds_That_Resurface_desc:0 ""
  SF_SOV_Constitution_Of_1936:0 "1936年宪法"
  SF_SOV_Constitution_Of_1936_desc:0 "社会主义劳动，就像一场涤荡的大雨，已经并正在从苏维埃土地上的人民身上洗去资产阶级心理和道德、资产阶级愿望和信仰的一切古老尺度；19年的革命，以一股涤荡的清风穿过了我们广袤的祖国；新宪法将成为我国工农基本成就的一种法典，成为人民为之奋斗并标志着社会主义胜利的成就的索引。"
+ 
+ #整合政策
+ Soviet_integration_policy:0 "整合"
+ compliance_50:0 "核心化"
