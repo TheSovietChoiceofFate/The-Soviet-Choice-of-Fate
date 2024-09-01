@@ -4,10 +4,30 @@ Soviet_integration_policy = {
 
 	visible = {
 		original_tag = SOV
+		any_owned_state = {				
+				is_core_of = FROM
+				AND = {
+					has_resistance = yes
+					occupied_country_tag = FROM
+					is_claimed_by = SOV
+				}			
+			NOT = { is_core_of = ROOT }			
+		}
+		
 	}
 	
 	available = {
 		original_tag = SOV
+		any_owned_state = {				
+				is_core_of = FROM
+				AND = {
+					has_resistance = yes
+					occupied_country_tag = FROM
+					is_claimed_by = SOV
+				}			
+			NOT = { is_core_of = ROOT }
+			
+		}
 	}
 	
 	fallback_law = local_police_force_garrison 
