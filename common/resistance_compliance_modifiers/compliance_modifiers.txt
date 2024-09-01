@@ -37,32 +37,17 @@ compliance_50 = {
 	on_enable = {
 		#Shamelessly steal from KR
 		every_controlled_state = {
-			limit = {
-				OR = {
-					is_core_of = FROM
+			limit = {		
 					AND = {
-						has_resistance = yes
-						occupied_country_tag = FROM
-						is_claimed_by = SOV
-					}
-				}
+					has_resistance = yes
+					occupied_country_tag = FROM
+					is_claimed_by = SOV
+					is_core_of = FROM
+					NOT = { is_core_of = ROOT }
+				}	
 				NOT = { is_core_of = ROOT }
 			}
 			add_core_of = ROOT
-		}
-		hidden_effect = {
-			#remove all cores of FROM
-			if = {
-				limit = {
-					NOT = { country_exists = FROM }
-				}
-				every_controlled_state = {
-					limit = {
-						is_core_of = FROM
-					}
-					remove_core_of = FROM
-				}
-			}
 		}
 	}
 }
