@@ -1,0 +1,38 @@
+defined_text = {
+	name = Get_TNW_welcome_change_button_text
+	text = {
+		trigger = {
+			check_variable = { temp_v = 1 }
+		}
+		localization_key = county_introduce
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_v = 2 }
+		}
+		localization_key = thanks
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_v = 3 }
+		}
+		localization_key = Route_description
+	}
+}
+defined_text = {
+	name = Get_TNW_welcome_country_intro_picture
+	text = {
+		trigger = { tag = SOV }
+		localization_key = GFX_TNW_welcome_SOV_intro_picture
+	}
+}
+defined_text = {
+	name = Get_TNW_welcome_country_intro_text
+	text = {
+		trigger = { 
+			tag = SOV
+			check_variable = { current_page = 1 }
+		}
+		localization_key = TNW_welcome_SOV_intro_text_1
+	}
+}
