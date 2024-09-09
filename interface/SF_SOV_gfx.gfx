@@ -1,27 +1,40 @@
-spriteTypes = {
-    SpriteType = {
-		name = "GFX_politburo_button"
-		texturefile = "gfx/interface/politburo_button.dds"
+SpriteTypes = {
+    spriteType = {
+		name = "GFX_idea_check_cards"
+		texturefile = "gfx/interface/ideas/idea_sov_check_cards.dds"
 	}
-	SpriteType = {
-		name = "GFX_politburo_bg"
-		texturefile = "gfx/interface/politburo_border.dds"
+    spriteType = {
+		name = "GFX_idea_stakhanov"
+		texturefile = "gfx/interface/ideas/idea_sov_stakhanov.dds"
 	}
-	SpriteType = {
-		name = "GFX_NV_btn_close"
-		texturefile = "gfx/interface/closebutton.dds"
-	}
-	spriteType = {
-		name = "GFX_sov_nkvd_jiancha_gui_Base"
-		texturefile = "gfx/interface/gui/sov_nkvd_jiancha_gui_Base.png"
-	}
-	spriteType = {
-		name = "GFX_sov_nkvd_jiancha_gui_PowerBar"
-		texturefile = "gfx/interface/gui/ukraine/sov_nkvd_jiancha_gui_bar.png"
-		noOfFrames = 6
-	}
-	spriteType = {
-		name = "GFX_sov_nkvd_jiancha_gui_Base"
-		texturefile = "gfx/interface/gui/sov_nkvd_jiancha_gui_Base.png"
+    spriteType = {
+		name = "GFX_yezhov_partyleader"
+		texturefile = "gfx/interface/ideas/Yezhov_partyleader.dds"
 	}
 }
+
+#SpriteType = {
+#		name = "GFX_politburo_button"
+#		texturefile = "gfx/interface/politburo_button.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_politburo_bg"
+#		texturefile = "gfx/interface/politburo_border.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_NV_btn_close"
+#		texturefile = "gfx/interface/closebutton.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_sov_nkvd_jiancha_gui_Base"
+#		texturefile = "gfx/interface/gui/sov_nkvd_jiancha_gui_Base.png"
+#	}
+#	SpriteType = {
+#		name = "GFX_sov_nkvd_jiancha_gui_PowerBar"
+#		texturefile = "gfx/interface/gui/ukraine/sov_nkvd_jiancha_gui_bar.png"
+#		noOfFrames = 6
+#	}
+#	SpriteType = {
+#		name = "GFX_sov_nkvd_jiancha_gui_Base"
+#		texturefile = "gfx/interface/gui/sov_nkvd_jiancha_gui_Base.png"
+#	}

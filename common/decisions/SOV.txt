@@ -1097,32 +1097,5 @@ SOV_6_0 = {
 }
 # 党内紧张度
 SOV_8_0 ={
-	SOV_8_1 = {
-		icon = generic_industry
 
-		visible = {
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			clr_country_flag = progressbar_decrease
-			set_country_flag = progressbar_add
-		}
-	}
-	SOV_8_2 = {
-		icon = generic_industry
-
-		visible = {
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			clr_country_flag = progressbar_add
-			set_country_flag = progressbar_decrease
-		}
-	}
 }

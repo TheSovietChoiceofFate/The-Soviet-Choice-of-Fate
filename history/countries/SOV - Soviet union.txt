@@ -1,35 +1,39 @@
 ﻿# SCF设定
 # 定期事件
-country_event = { id = sovietfate.0 hours = 1 } 	# 开局事件
-country_event = { id = sfpatrioticwar.0 hours = 5 } # 伟大的卫国战争：难度设定
-country_event = { id = sovietfate.41 hours = 9 } 	# 1936年的内务部
-country_event = { id = sovietfate.1 hours = 18 } 	# 配给制的终结
-country_event = { id = sovietfate.2 days = 200 } 	# 宪法讨论（故事）
-country_event = { id = sovietfate.5 days = 164 } 	# 民意、新宪法与新体制
-country_event = { id = sovietfate.6 days = 192 } 	# 午后的讨论
-country_event = { id = sovietfate.7 days = 201 } 	# 法治意识
-country_event = { id = sovietfate.8 days = 225 } 	# 加里宁的不满
-country_event = { id = sovietfate.9 days = 241 } 	# 当民主向你奔来
-country_event = { id = sovietfate.10 days = 282 }   # 报复
-country_event = { id = sovietfate.11 days = 321 }   # 积极分子
-country_event = { id = sovietfate.4 days = 189 }    # 报告饥荒
-country_event = { id = sovietfate.20 days = 114 }   # 反破坏运动退潮
-country_event = { id = sovietfate.21 days = 120 }   # 欢庆吧，劳动节！
+#country_event = { id = sfpatrioticwar.0 hours = 5 } # 伟大的卫国战争：难度设定
+#country_event = { id = sovietfate.41 hours = 9 } 	# 1936年的内务部
+#country_event = { id = sovietfate.1 hours = 18 } 	# 配给制的终结
+#country_event = { id = sovietfate.2 days = 200 } 	# 宪法讨论（故事）
+#country_event = { id = sovietfate.5 days = 164 } 	# 民意、新宪法与新体制
+#country_event = { id = sovietfate.6 days = 192 } 	# 午后的讨论
+#country_event = { id = sovietfate.7 days = 201 } 	# 法治意识
+#country_event = { id = sovietfate.8 days = 225 } 	# 加里宁的不满
+#country_event = { id = sovietfate.9 days = 241 } 	# 当民主向你奔来
+#country_event = { id = sovietfate.10 days = 282 }   # 报复
+#country_event = { id = sovietfate.11 days = 321 }   # 积极分子
+#country_event = { id = sovietfate.4 days = 189 }    # 报告饥荒
+#country_event = { id = sovietfate.20 days = 114 }   # 反破坏运动退潮
+#country_event = { id = sovietfate.21 days = 120 }   # 欢庆吧，劳动节！
 country_event = { id = sovietfate.22 days = 161 }   # 新宪法的草案
-country_event = { id = sovietfate.23 days = 236 }   # 十六人审判
-country_event = { id = sovietfate.24 days = 268 }   # 斯大林的电报
-country_event = { id = sovietfate.25 days = 328 }   # 斯大林的广播
-country_event = { id = sovietfate.3 days = 1000 } 	# 莫洛托夫下台
+#country_event = { id = sovietfate.23 days = 236 }   # 十六人审判
+#country_event = { id = sovietfate.24 days = 268 }   # 斯大林的电报
+#country_event = { id = sovietfate.25 days = 328 }   # 斯大林的广播
+#country_event = { id = sovietfate.3 days = 1000 } 	# 莫洛托夫下台
 
 # 开局变量
-set_variable = { A0 = 55 } # 国有/集体化态度
-set_variable = { B0 = 55 } # 经济管理态度
-set_variable = { C0 = 45 } # 党政关系态度
-set_variable = { D0 = 45 } # 意识形态管控态度
-set_variable = { E0 = 45 } # 民族关系态度
-set_variable = { F0 = 45 } # 央地关系态度
-set_variable = { G0 = 45 } # 对军队态度
-set_variable = { H0 = 55 } # 对内务部态度
+set_variable = { progressbar_var = 0 } # 党内紧张度
+#set_variable = { A0 = 55 } # 国有/集体化态度
+#set_variable = { B0 = 55 } # 经济管理态度
+#set_variable = { C0 = 45 } # 党政关系态度
+#set_variable = { D0 = 45 } # 意识形态管控态度
+#set_variable = { E0 = 45 } # 民族关系态度
+#set_variable = { F0 = 45 } # 央地关系态度
+#set_variable = { G0 = 45 } # 对军队态度
+#set_variable = { H0 = 55 } # 对内务部态度
+
+set_power_balance = {
+    id = SOV_social_radicalization
+}
 
 capital = 219
 
@@ -67,19 +71,20 @@ if = {
 country_event = { id = prc.5 days = 6273 } #Death of Stalin	-	historical date
 
 #POLITICAL ADVISORS
+recruit_character = SOV_yezhov_party
 recruit_character = SOV_mikhail_kalinin
 recruit_character = SOV_nikita_khrushchyov
 recruit_character = SOV_nikolay_voznesensky
 recruit_character = SOV_lazar_kaganovich
 recruit_character = SOV_genrikh_yagoda
-recruit_character = SOV_nikolay_yezhov
+#recruit_character = SOV_nikolay_yezhov
 recruit_character = SOV_lavrenty_beriya
 recruit_character = SOV_vsevolod_merkulov
 recruit_character = SOV_vyacheslav_molotov
 recruit_character = SOV_maksim_litvinov
 
 # SF新增
-recruit_character = SOV_malinkefu
+#recruit_character = SOV_malinkefu
 recruit_character = SOV_Andrey_Vyshinsky
 recruit_character = SOV_Sergo_Ordzhonikidze
 recruit_character = SOV_ridannuofu
@@ -576,8 +581,10 @@ if = {
 
 add_ideas = {
 	home_of_revolution
-	SOV_politicized_military
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+    SOV_check_cards
+    SOV_stakhanov
+    SOV_politicized_military
+	SOV_genrikh_yagoda
 }
 
 # Starting tech

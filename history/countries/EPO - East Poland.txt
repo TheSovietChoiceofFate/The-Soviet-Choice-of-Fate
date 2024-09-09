@@ -1,9 +1,9 @@
-﻿capital = 94
+﻿capital = 3392
 
 create_country_leader = {
-	name = "无政府的混乱" 
-	desc = "无政府的混乱" 
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds" 
+	name = "无政府混乱" 
+	desc = "" 
+	picture = "GFX_POL_Portrait_Provisional_Government_of_National_Unity" 
 	ideology = centrism 
 	traits = { 
 	}

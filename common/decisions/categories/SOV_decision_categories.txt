@@ -15,15 +15,15 @@ SOV_1_0 = {
 	priority = 190
 }
 # 党内倾向
-SOV_2_0 = {
+#SOV_2_0 = {
 	#icon = 图标名
-    allowed = { 
-        tag = SOV
-	}
+#    allowed = { 
+#        tag = SOV
+#	}
 	#scripted_gui = party_tend # 政治局GUI，暂时搁置
-	visible_when_empty = yes
-	priority = 195
-}
+#	visible_when_empty = yes
+#	priority = 195
+#}
 # 宪法讨论运动
 SOV_3_0 = {
 	icon = "gfx/interface/decisions/xuanju.png"
@@ -52,56 +52,56 @@ SOV_4_0 = {
 	priority = 170
 }
 # 雅戈达剧情
-SOV_5_0 = {
+#SOV_5_0 = {
 	#icon = 图标名
 	#picture = 图片名
-    allowed = {
-        tag = SOV
-	}
-	available = {
-	hidden_trigger = { has_country_flag = SOV_yageda }
-	}
-	visible = {
-	hidden_trigger = { has_country_flag = SOV_yageda }
-	}
-	priority = 150
-	visible_when_empty = yes
-	#scripted_gui = sov_yageda_gui
-}
+#   allowed = {
+#        tag = SOV
+#	}
+#	available = {
+#	hidden_trigger = { has_country_flag = SOV_yageda }
+#	}
+#	visible = {
+#	hidden_trigger = { has_country_flag = SOV_yageda }
+#	}
+#	priority = 150
+#	visible_when_empty = yes
+#scripted_gui = sov_yageda_gui
+#}
 # 叶若夫剧情
-SOV_6_0 = {
+#SOV_6_0 = {
 	#icon = 图标名
 	#picture = 图片名
-    allowed = {
-        tag = SOV
-	}
-	available = {
-	hidden_trigger = { has_country_flag = SOV_yeruofu }
-	}
-	visible = {
-	hidden_trigger = { has_country_flag = SOV_yeruofu }
-	}
-	priority = 160
-	visible_when_empty = yes
-	#scripted_gui = sov_yeruofu_gui
-}
+#    allowed = {
+#        tag = SOV
+#	}
+#	available = {
+#	hidden_trigger = { has_country_flag = SOV_yeruofu }
+#	}
+#	visible = {
+#	hidden_trigger = { has_country_flag = SOV_yeruofu }
+#	}
+#	priority = 160
+#	visible_when_empty = yes
+#scripted_gui = sov_yeruofu_gui
+#}
 # 内务部Vs检察院
-SOV_7_0 = {
+#SOV_7_0 = {
 	#icon = 图标名
 	#picture = 图片名
-    allowed = {
-        tag = SOV
-	}
-	available = {
-	hidden_trigger = { has_country_flag = SOV_daqingxi }
-	}
-	visible = {
-	hidden_trigger = { has_country_flag = SOV_daqingxi }
-	}
-	priority = 185
-	visible_when_empty = yes
+#    allowed = {
+#        tag = SOV
+#	}
+#	available = {
+#	hidden_trigger = { has_country_flag = SOV_daqingxi }
+#	}
+#	visible = {
+#	hidden_trigger = { has_country_flag = SOV_daqingxi }
+#	}
+#	priority = 185
+#	visible_when_empty = yes
 	#scripted_gui = sov_nkvd_jiancha
-}
+#}
 # 党内紧张度
 SOV_8_0 = {
 	icon = generic_political_actions

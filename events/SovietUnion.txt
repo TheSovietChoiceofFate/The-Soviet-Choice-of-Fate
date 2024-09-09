@@ -192,18 +192,6 @@ country_event = {
 	}
 }
 ## 宪法讨论事件组
-# 开局事件
-country_event = {
-	id = sovietfate.0
-	title = sovietfate.0.t
-	desc = sovietfate.0.d
-	picture = pic_9
-    fire_only_once = yes
-	is_triggered_only = yes
-	option = { 
-		name = sovietfate.0.a
-	}
-}
 # 配给制的终结
 country_event = {
 	id = sovietfate.1
@@ -649,3 +637,4 @@ country_event = {
         country_event = { id = sovietfate.40 days = 1 }
 	}
 }
+# 

@@ -1,6 +1,87 @@
 # SF新增
-# 斯大林
 characters = {
+# 叶若夫——党政线
+    SOV_yezhov_party = {
+		name = SOV_yezhov_party
+		portraits = {
+            civilian = {
+				large = "gfx/leaders/SOV/Yezhov_party.dds"
+			}
+			army = {
+				small = "GFX_yezhov_partyleader"
+				large = "gfx/leaders/SOV/Yezhov_party.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_yezhov_party
+			allowed = {
+			original_tag = SOV
+			}
+			available = {
+			NOT = { is_country_leader = yes }
+			}
+			traits = {
+			yezhov
+			}
+		}
+	}
+# 叶若夫——NKVD
+SOV_nikolay_yezhov = {
+		name = SOV_nikolay_yezhov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_nikolay_yezhov"
+				large = "gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds"
+			}
+		}
+
+		allowed_civil_war = {
+			OR = {
+				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
+				AND = { #If not aligned by Right oppo, then stays with Stalin
+					original_tag = SOV
+					NOT = { tag = SOV }
+					NOT = {
+						any_other_country = {
+							original_tag = SOV
+							has_completed_focus = SOV_the_plan_for_the_coup
+						}
+					}
+				}
+			}
+			has_government = communism
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_nikolay_yezhov
+			can_be_fired = no
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+                NOT = { has_idea = SOV_yezhov_party }
+				NOT = { has_idea = SOV_genrikh_yagoda }
+				NOT = { has_idea = SOV_lavrenty_beriya }
+			}
+            visible = { 
+                NOT = { has_idea = SOV_yezhov_party } 
+            }
+			traits = {
+				head_of_the_nkvd_yezhov_initial 
+			}
+			on_add = {
+				ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+				SOV_paranoia_modifier_update_gui_tooltip = yes
+			}
+			on_remove = {
+				ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+				SOV_paranoia_modifier_update_gui_tooltip = yes
+			}
+		}
+	}
+# 斯大林
 	SOV_iosif_stalin = {
 		name = SOV_iosif_stalin
 		portraits = {
@@ -70,6 +151,7 @@ SOV_malinkefu = {
 		visible = {
 		}
 		available = {
+        NOT = { has_idea = SOV_yezhov_party }
 		NOT = { is_country_leader = yes }
 		}
 		traits = {

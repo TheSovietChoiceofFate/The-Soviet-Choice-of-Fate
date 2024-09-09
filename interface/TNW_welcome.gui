@@ -8,6 +8,7 @@ guiTypes = {
 		orientation = CENTER
 		origo = center
 		clipping = no
+        moveable = no
 
 		background = { 
 			name = "background"

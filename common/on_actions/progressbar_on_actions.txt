@@ -1,58 +1,35 @@
 on_actions = {
-	on_daily_SOV = {
+	on_weekly_SOV = {
 		effect = {
 			SOV = {
-				if = {
-					limit = {
-						has_country_flag = progressbar_add
-					}
-					add_to_variable = {
-						progressbar_var = 10
-					}
-					clamp_variable = {
-						var = progressbar_var
-						min = 0
-						max = 100
-					}
-	
+				limit = {
+					has_idea = SOV_check_cards
 				}
-				else_if = {
-					limit = {
-						has_country_flag = progressbar_decrease
-					}
-					add_to_variable = {
-						progressbar_var = -10
+            add_to_variable = {
+						progressbar_var = 5
 					}
 					clamp_variable = {
 						var = progressbar_var
 						min = 0
-						max = 100
-					}	
+						max = 400
 				}
 			}
-
+		}
+	}
+    on_weekly_SOV = {
+		effect = {
 			SOV = {
-				if = {
-					limit = {
-						has_country_flag = progressbar_add_sample
-					}
-					add_to_variable = {
-						progressbar_var_sample_2 = 5
-					}
-
-					set_variable = { progressbar_x = progressbar_var_sample_2 }
-					divide_variable = { progressbar_x = 100 }
-					multiply_variable = { progressbar_x = 491 }
-					add_to_variable = { progressbar_x = -8 }
-					clamp_variable = { 
-						var = progressbar_x 
-						min = 8 
-						max = 464 
-					}
-	
+				limit = {
+					has_idea = SOV_yezhov_party
 				}
-
-			
+            add_to_variable = {
+						progressbar_var = 2.5
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 400
+				}
 			}
 		}
 	}

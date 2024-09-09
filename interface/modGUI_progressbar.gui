@@ -30,13 +30,5 @@ guiTypes = {
 			format = center
 			maxHeight = 24
 		}
-        instantTextBoxType = {
-			name ="progressbar_text"
-			position = { x = 150 y = 140 }
-			font = "hoi_24header"
-			text = "[?PT]"
-			format = center
-			maxHeight = 24
-		}
 	}
 }

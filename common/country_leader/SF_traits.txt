@@ -1,5 +1,12 @@
 # 新增特质
 leader_traits = {
+    yezhov = { # 精力充沛的党务工作者
+	random = no
+	political_power_factor = 0.1
+    political_advisor_cost_factor = -0.2 
+	stability_factor = -0.05
+    custom_modifier_tooltip = add_tension2 
+    } 
 	stalin = { # 总书记
 	random = no
 	political_power_factor = 0.05 
