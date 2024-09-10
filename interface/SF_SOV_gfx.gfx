@@ -1,11 +1,11 @@
-SpriteTypes = {
+spriteTypes = {
     spriteType = {
-		name = "GFX_idea_check_cards"
-		texturefile = "gfx/interface/ideas/idea_sov_check_cards.dds"
+		name = "GFX_idea_sov_check_cards"
+		texturefile = "gfx/interface/ideas/sov_check_cards.dds"
 	}
     spriteType = {
-		name = "GFX_idea_stakhanov"
-		texturefile = "gfx/interface/ideas/idea_sov_stakhanov.dds"
+		name = "GFX_idea_sov_stakhanov"
+		texturefile = "gfx/interface/ideas/sov_stakhanov.dds"
 	}
     spriteType = {
 		name = "GFX_yezhov_partyleader"

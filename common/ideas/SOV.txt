@@ -13,7 +13,7 @@ ideas = {
 
         SOV_check_cards = {
 
-			picture = GFX_idea_check_cards
+			picture = sov_check_cards
 
 			removal_cost = -1
 			
@@ -33,7 +33,7 @@ ideas = {
         
         SOV_stakhanov = {
 
-			picture = GFX_idea_stakhanov
+			picture = sov_stakhanov
 
 			removal_cost = -1
 			
