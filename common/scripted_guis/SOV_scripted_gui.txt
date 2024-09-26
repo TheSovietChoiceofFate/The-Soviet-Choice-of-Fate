@@ -1,77 +1,18 @@
 scripted_gui = {
-	sov_cons_gui = { 
-		context_type = decision_category
-		window_name = "sov_cons_gui_window"
-		
-		properties = {
-			cons_leader = {
-				image = "[get_Stalin_gfx]"
-			}
-			cons_emblem = {
-				image = "[get_Zhdanov_gfx]"
-			}
-		}
-		ai_enabled = {
-			tag = SOV		
-		}
-	}
-	sov_yageda_gui = { 
-		context_type = decision_category
-		window_name = "sov_yageda_gui_window"
-		
-		properties = {
-			yageda_leader = {
-				image = "[get_yageda_gfx]"
-			}
-			yageda_emblem = {
-				image = "[get_Blagonravov_gfx]"
-			}
-		}
-		ai_enabled = {
-			tag = SOV		
-		}
-	}
     sov_yeruofu_gui = { 
 		context_type = decision_category
 		window_name = "sov_yeruofu_gui_window"
 		
 		properties = {
 			yeruofu_leader = {
-				image = "[get_yeruofu_gfx]"
+				image = "[?get_yeruofu_gfx]"
 			}
 			yeruofu_emblem = {
-				image = "[get_nkvd_gfx]"
+				image = "[?get_nkvd_gfx]"
 			}
 		}
 		ai_enabled = {
 			tag = SOV		
-		}
-	}
-	sov_nkvd_jiancha = {
-		context_type = decision_category
-		window_name = "sov_nkvd_jiancha_gui"
-
-		ai_enabled = {
-			always = no
-		}
-		
-		triggers = {
-		}
-		dynamic_lists = {
-			sov_nkvd_jiancha_gui_Bar = {
-				array = sov_nkvd_jiancha_gui_Bar_display
-				change_scope = no
-				entry_container = petliura_progress_bar_container_progress
-				index = bar_idx
-			}			
-		}
-
-		properties = {
-			sov_nkvd_jiancha_gui_Bar_icon = { 
-				x = sov_nkvd_jiancha_gui_Bar_icon_x^bar_idx
-				y = sov_nkvd_jiancha_gui_Bar_icon_y^bar_idx
-				frame = sov_nkvd_jiancha_gui_Bar_display^bar_idx								
-			}
 		}
 	}
 }

@@ -1,86 +1,4 @@
-# SF新增
 characters = {
-# 叶若夫——党政线
-    SOV_yezhov_party = {
-		name = SOV_yezhov_party
-		portraits = {
-            civilian = {
-				large = "gfx/leaders/SOV/Yezhov_party.dds"
-			}
-			army = {
-				small = "GFX_yezhov_partyleader"
-				large = "gfx/leaders/SOV/Yezhov_party.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_yezhov_party
-			allowed = {
-			original_tag = SOV
-			}
-			available = {
-			NOT = { is_country_leader = yes }
-			}
-			traits = {
-			yezhov
-			}
-		}
-	}
-# 叶若夫——NKVD
-SOV_nikolay_yezhov = {
-		name = SOV_nikolay_yezhov
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_nikolay_yezhov"
-				large = "gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds"
-			}
-		}
-
-		allowed_civil_war = {
-			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
-					original_tag = SOV
-					NOT = { tag = SOV }
-					NOT = {
-						any_other_country = {
-							original_tag = SOV
-							has_completed_focus = SOV_the_plan_for_the_coup
-						}
-					}
-				}
-			}
-			has_government = communism
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_nikolay_yezhov
-			can_be_fired = no
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-                NOT = { has_idea = SOV_yezhov_party }
-				NOT = { has_idea = SOV_genrikh_yagoda }
-				NOT = { has_idea = SOV_lavrenty_beriya }
-			}
-            visible = { 
-                NOT = { has_idea = SOV_yezhov_party } 
-            }
-			traits = {
-				head_of_the_nkvd_yezhov_initial 
-			}
-			on_add = {
-				ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
-				SOV_paranoia_modifier_update_gui_tooltip = yes
-			}
-			on_remove = {
-				ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
-				SOV_paranoia_modifier_update_gui_tooltip = yes
-			}
-		}
-	}
 # 斯大林
 	SOV_iosif_stalin = {
 		name = SOV_iosif_stalin
@@ -98,7 +16,6 @@ SOV_nikolay_yezhov = {
 			traits = {  
 			stalin
 			}
-			expire = "1953.3.1.1"
 			id = -1
 		}
 	}
@@ -110,10 +27,6 @@ SOV_nikolay_yezhov = {
 				small = GFX_idea_SOV_vyacheslav_molotov
 			}
 		}
-		allowed_civil_war = {
-			has_government = communism
-		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_vyacheslav_molotov
@@ -123,54 +36,25 @@ SOV_nikolay_yezhov = {
 			visible = {
 			}
 			available = {
-			NOT = { is_country_leader = yes }
+			is_country_leader = no
 			}
 			traits = {
 				molotov1
 			}
 		}
 	}
-# 马林科夫
-SOV_malinkefu = { 
-	name = SOV_malinkefu
-
-	portraits = {
-		civilian = {
-			large = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds"
-		}
-		army = {
-			small = "gfx/interface/ideas/Georgy_Malenkov.dds"
-		}
-	}
-	advisor = {
-		slot = political_advisor
-		idea_token = malinkefu
-		allowed = {
-			original_tag = SOV
-		}
-		visible = {
-		}
-		available = {
-        NOT = { has_idea = SOV_yezhov_party }
-		NOT = { is_country_leader = yes }
-		}
-		traits = {
-			Malenkov
-		}
-	}
-}
-# 维辛斯基
-    SOV_Andrey_Vyshinsky = {
-		name = SOV_Andrey_Vyshinsky
+# 卡冈诺维奇
+    SOV_lazar_kaganovich = {
+		name = SOV_lazar_kaganovich
 		portraits = {
 			army = {
-				small = "gfx/interface/ideas/Andrey_Vyshinsky.dds"
+				small = "GFX_idea_SOV_lazar_kaganovich"
 			}
 		}
 
 		advisor = {
 			slot = political_advisor
-			idea_token = Andrey_Vyshinsky
+			idea_token = SOV_lazar_kaganovich
 			allowed = {
 				original_tag = SOV
 			}
@@ -179,237 +63,7 @@ SOV_malinkefu = {
 			available = {
 			}
 			traits = {
-				vyshinsky
-			}
-		}
-    }
-# 奥尔忠尼启则
-    SOV_Sergo_Ordzhonikidze = {
-		name = SOV_Sergo_Ordzhonikidze
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Sergo_Ordzhonikidze.dds"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = Sergo_Ordzhonikidze
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			available = {
-			}
-			traits = {
-				Ordzhonikidze
-			}
-		}
-	}
-# 日丹诺夫
-    SOV_ridannuofu = {
-		name = SOV_ridannuofu
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Andrei_Zhdanov.dds"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = ridannuofu
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			available = {
-			NOT = { is_country_leader = yes }
-			}
-			traits = {
-				Zhdanov
-			}
-		}
-	}
-# 谢尔巴科夫
-    SOV_xieerbakefu = {
-		name = SOV_xieerbakefu
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Alexander_Shcherbakov.png"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = xieerbakefu
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			available = {
-			has_country_flag = at_second_war
-			}
-			traits = {
-				Shcherbakov
-			}
-		}
-	}
-# 米高扬
-    SOV_migaoyang = {
-		name = SOV_migaoyang
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Anastas_Mikoyan.dds"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = migaoyang
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			available = {
-			}
-			traits = {
-				Mikoyan
-			}
-		}
-	}
-# 什维尔尼克
-    SOV_shiweiernike = {
-		name = SOV_shiweiernike
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Nikolay_Shvernik.png"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = shiweiernike
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			available = {
-			}
-			traits = {
-				Shvernik
-			}
-		}
-	}
-# 苏斯洛夫
-    SOV_susiluofu = {
-		name = SOV_susiluofu
-		portraits = {
-			army = {
-				small = "gfx/interface/ideas/Mikhail_Suslov.png"
-			}
-        }
-		advisor = {
-			slot = political_advisor
-			idea_token = susiluofu
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			    #has_country_flag = at_second_war
-			}
-			available = {
-			    has_country_flag = after_second_war
-			}
-			traits = {
-				Suslov
-			}
-		}
-	}
-# 雅戈达
-SOV_genrikh_yagoda = {
-		name = SOV_genrikh_yagoda
-
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_genrikh_yagoda"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_genrikh_yagoda
-			can_be_fired = no
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-			}
-			traits = {
-				head_of_the_nkvd_yagoda_initial
-			}
-			#on_add = {
-			#}
-			#on_remove = {
-			#}
-		}
-	}
-# 叶若夫
-	SOV_nikolay_yezhov = {
-		name = SOV_nikolay_yezhov
-		portraits = {
-			army = {
-				small = "GFX_idea_SOV_nikolay_yezhov"
-				large = "gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds"
-			}
-		}
-
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_nikolay_yezhov
-			can_be_fired = no
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				NOT = { has_idea = SOV_genrikh_yagoda }
-				NOT = { has_idea = SOV_lavrenty_beriya }
-				NOT = { is_country_leader = yes }
-			}
-			traits = {
-				head_of_the_nkvd_yezhov_initial 
-			}
-		}
-	}
-# 贝利亚
-	SOV_lavrenty_beriya = {
-			name = SOV_lavrenty_beriya
-			portraits = {
-				civilian = {
-					large = "GFX_portrait_SOV_lavrenty_beriya"
-				}
-				army = {
-					small = "GFX_idea_SOV_lavrenty_beriya"
-				}
-			}
-
-			advisor = {
-				slot = political_advisor
-				idea_token = SOV_lavrenty_beriya
-				name = SOV_lavrenty_beriya
-				can_be_fired = no
-				allowed = {
-					original_tag = SOV
-				}
-				visible = {
-				}
-		available = {
-				NOT = { has_idea = SOV_nikolay_yezhov }
-				NOT = { has_idea = SOV_genrikh_yagoda }
-				NOT = { is_country_leader = yes }
-				}
-
-			traits = {
-				head_of_the_nkvd_beriya_initial
+				iron_lazar 
 			}
 		}
 	}
@@ -457,25 +111,24 @@ SOV_genrikh_yagoda = {
 			visible = {
 			}
 			available = {
-			NOT = { is_country_leader = yes }
+			is_country_leader = no
 			}
 			traits = {
 				political_commissar 
 			}
 		}
 	}
-# 卡冈诺维奇
-    SOV_lazar_kaganovich = {
-		name = SOV_lazar_kaganovich
+# 奥尔忠尼启则
+    SOV_Sergo_Ordzhonikidze = {
+		name = SOV_Sergo_Ordzhonikidze
 		portraits = {
 			army = {
-				small = "GFX_idea_SOV_lazar_kaganovich"
+				small = "gfx/interface/ideas/Sergo_Ordzhonikidze.dds"
 			}
-		}
-
+        }
 		advisor = {
 			slot = political_advisor
-			idea_token = SOV_lazar_kaganovich
+			idea_token = Sergo_Ordzhonikidze
 			allowed = {
 				original_tag = SOV
 			}
@@ -484,11 +137,82 @@ SOV_genrikh_yagoda = {
 			available = {
 			}
 			traits = {
-				iron_lazar 
+				Ordzhonikidze
 			}
 		}
 	}
-#李维诺夫
+# 日丹诺夫
+    SOV_ridannuofu = {
+		name = SOV_ridannuofu
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Andrei_Zhdanov.dds"
+			}
+        }
+		advisor = {
+			slot = political_advisor
+			idea_token = ridannuofu
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			available = {
+			is_country_leader = no
+			}
+			traits = {
+				Zhdanov
+			}
+		}
+	}
+# 维辛斯基
+    SOV_Andrey_Vyshinsky = {
+		name = SOV_Andrey_Vyshinsky
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Andrey_Vyshinsky.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = Andrey_Vyshinsky
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				vyshinsky
+			}
+		}
+    }
+# 米高扬
+    SOV_migaoyang = {
+		name = SOV_migaoyang
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Anastas_Mikoyan.dds"
+			}
+        }
+		advisor = {
+			slot = political_advisor
+			idea_token = migaoyang
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				Mikoyan
+			}
+		}
+	}
+# 李维诺夫
 SOV_maksim_litvinov = {
 		name = SOV_maksim_litvinov
 		portraits = {
@@ -512,7 +236,194 @@ SOV_maksim_litvinov = {
 			}
 		}
 	}
-#沃兹涅先斯基
+# 叶若夫——党政线
+    SOV_yezhov_party = {
+		name = SOV_yezhov_party
+		portraits = {
+            civilian = {
+				large = "gfx/leaders/SOV/Yezhov_party.dds"
+			}
+			army = {
+				small = "GFX_yezhov_partyleader"
+				large = "gfx/leaders/SOV/Yezhov_party.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_yezhov_party
+			allowed = {
+			original_tag = SOV
+			}
+			available = {
+			is_country_leader = no
+			}
+			traits = {
+			yezhov
+			}
+		}
+	}
+# 叶若夫——NKVD
+SOV_nikolay_yezhov = {
+		name = SOV_nikolay_yezhov
+		portraits = {
+			   army = {
+			   small = "GFX_idea_SOV_nikolay_yezhov"
+			   large = "gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_nikolay_yezhov
+			can_be_fired = no
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+                NOT = { has_idea = SOV_yezhov_party }
+				NOT = { has_idea = SOV_genrikh_yagoda }
+				NOT = { has_idea = SOV_lavrenty_beriya }
+			}
+            visible = { 
+                NOT = { has_idea = SOV_yezhov_party } 
+            }
+			traits = {
+				head_of_the_nkvd_yezhov_initial 
+			}
+		}
+	}
+# 雅戈达
+SOV_genrikh_yagoda = {
+		name = SOV_genrikh_yagoda
+
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_genrikh_yagoda"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_genrikh_yagoda
+			can_be_fired = no
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			traits = {
+				head_of_the_nkvd_yagoda_initial
+			}
+		}
+	}
+# 贝利亚
+	SOV_lavrenty_beriya = {
+			name = SOV_lavrenty_beriya
+			portraits = {
+				civilian = {
+					large = "GFX_portrait_SOV_lavrenty_beriya"
+				}
+				army = {
+					small = "GFX_idea_SOV_lavrenty_beriya"
+				}
+			}
+
+			advisor = {
+				slot = political_advisor
+				idea_token = SOV_lavrenty_beriya
+				name = SOV_lavrenty_beriya
+				can_be_fired = no
+				allowed = {
+					original_tag = SOV
+				}
+				visible = {
+				}
+		available = {
+				NOT = { has_idea = SOV_nikolay_yezhov }
+				NOT = { has_idea = SOV_genrikh_yagoda }
+				is_country_leader = no
+				}
+
+			traits = {
+				head_of_the_nkvd_beriya_initial
+			}
+		}
+	}
+# 马林科夫
+SOV_malinkefu = { 
+	name = SOV_malinkefu
+
+	portraits = {
+		civilian = {
+			large = "gfx/leaders/SOV/r56_portrait_SOV_Georgy_Malenkov.dds"
+		}
+		army = {
+			small = "gfx/interface/ideas/Georgy_Malenkov.dds"
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		idea_token = malinkefu
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+		}
+		available = {
+        NOT = { has_idea = SOV_yezhov_party }
+		is_country_leader = no
+		}
+		traits = {
+			Malenkov
+		}
+	}
+}
+# 谢尔巴科夫
+    SOV_xieerbakefu = {
+		name = SOV_xieerbakefu
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Alexander_Shcherbakov.png"
+			}
+        }
+		advisor = {
+			slot = political_advisor
+			idea_token = xieerbakefu
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				Shcherbakov
+			}
+		}
+	}
+# 苏斯洛夫
+    SOV_susiluofu = {
+		name = SOV_susiluofu
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/Mikhail_Suslov.png"
+			}
+        }
+		advisor = {
+			slot = political_advisor
+			idea_token = susiluofu
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+			}
+			available = {
+			}
+			traits = {
+				Suslov
+			}
+		}
+	}
+# 沃兹涅先斯基
 SOV_nikolay_voznesensky = {
 		name = SOV_nikolay_voznesensky
 
@@ -537,4 +448,278 @@ SOV_nikolay_voznesensky = {
 			}
 		}
 	}
+# 反对派
+# 斯米尔诺夫
+SOV_smirnov = {
+		name = SOV_smirnov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_ivan_smirnov"
+			}
+			army = {
+				small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_smirnov
+			allowed = {
+				original_tag = SOV
+			}
+            available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition
+			}
+		}
+	}
+# 斯米尔加
+SOV_smilga = {
+		name = SOV_smilga
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_smilga
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition 
+			}
+		}
+	}
+# 拉狄克
+SOV_radek = {
+		name = SOV_radek
+
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_karl_radek"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_radek
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition 
+			}
+		}
+	}
+# 普列奥布拉任斯基
+	SOV_preobrazhensky = {
+		name = SOV_preobrazhensky
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_yevgeny_preobrazhensky"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_preobrazhensky
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition 
+			}
+		}
+	}
+# 施略普尼柯夫
+	SOV_shlyapnikov = {
+		name = SOV_shlyapnikov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_shlyapnikov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition 
+			}
+		}
+	}
+# 布哈林
+	SOV_bukharin = {
+		name = SOV_bukharin
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_nikolay_bukharin"
+			}
+			army = {
+				small = "GFX_idea_SOV_nikolay_bukharin"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_bukharin
+			allowed = {
+				original_tag = SOV
+			}
+		available = {
+			always = no
+			}
+			traits = {
+				former_right_opposition  
+			}
+		}
+	}
+# 李可夫	
+	SOV_rykov = {
+		name = SOV_rykov
+
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_aleksey_rykov"
+			}
+			army = {
+				small = "GFX_idea_SOV_aleksey_rykov"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_rykov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_right_opposition  
+			}
+		}
+	}
+# 托姆斯基
+	SOV_tomsky = {
+		name = SOV_tomsky
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_mikhail_tomsky"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_tomsky
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_right_opposition
+			}
+		}
+	}
+# 索柯里尼柯夫
+	SOV_sokolnikov = {
+		name = SOV_sokolnikov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_grigory_sokolnikov"
+			}
+		}
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_sokolnikov
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition
+			}
+		}
+	}
+# 季诺维也夫
+	SOV_zinovyev = {
+		name = SOV_zinovyev
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_grigory_zinovyev"
+			}
+			army = {
+				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_zinovyev
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition 
+			}
+		}		
+	}
+# 加米涅夫
+	SOV_kamenev = {
+		name = SOV_kamenev
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_lev_kamenev"
+			}
+			army = {
+				small = "GFX_idea_SOV_lev_kamenev_imprisoned"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_kamenev
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+			always = no
+			}
+			traits = {
+				former_left_opposition  
+			}
+		}
+	}	
 }

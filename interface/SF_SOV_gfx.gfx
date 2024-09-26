@@ -11,6 +11,70 @@ spriteTypes = {
 		name = "GFX_yezhov_partyleader"
 		texturefile = "gfx/interface/ideas/Yezhov_partyleader.dds"
 	}
+    spriteType = {
+		name = "GFX_Nikolai_Yezhov"
+		texturefile = "gfx/interface/leaders/SOV/Yezhov_party.dds"
+	}
+    spriteType = {
+		name = "GFX_NKVD"
+		texturefile = "gfx/interface/leaders/SOV/NKVD.png"
+	}
+    spriteType = {
+		name = "GFX_news1"
+		texturefile = "gfx/event_pictures/SF_news1.png"
+	}
+    spriteType = {
+		name = "GFX_news2"
+		texturefile = "gfx/event_pictures/SF_news2.png"
+	}
+    spriteType = {
+		name = "GFX_news3"
+		texturefile = "gfx/event_pictures/SF_news3.png"
+	}
+    spriteType = {
+		name = "GFX_news4"
+		texturefile = "gfx/event_pictures/SF_news4.png"
+	}
+    spriteType = {
+		name = "GFX_news5"
+		texturefile = "gfx/event_pictures/SF_news5.png"
+	}
+    spriteType = {
+		name = "GFX_news6"
+		texturefile = "gfx/event_pictures/SF_news6.png"
+	}
+    spriteType = {
+		name = "GFX_news7"
+		texturefile = "gfx/event_pictures/SF_news7.png"
+	}
+    spriteType = {
+		name = "GFX_news8"
+		texturefile = "gfx/event_pictures/SF_news8.png"
+	}
+    spriteType = {
+		name = "GFX_news9"
+		texturefile = "gfx/event_pictures/SF_news9.png"
+	}
+    spriteType = {
+		name = "GFX_news10"
+		texturefile = "gfx/event_pictures/SF_news10.png"
+	}
+    spriteType = {
+		name = "GFX_news11"
+		texturefile = "gfx/event_pictures/SF_news11.png"
+	}
+    spriteType = {
+		name = "GFX_news12"
+		texturefile = "gfx/event_pictures/SF_news12.png"
+	}
+    spriteType = {
+		name = "GFX_news13"
+		texturefile = "gfx/event_pictures/SF_news13.png"
+	}
+    spriteType = {
+		name = "GFX_SOV_3_0"
+		texturefile = "gfx/event_pictures/SOV_3_0_pic.png"
+	}
 }
 
 #SpriteType = {

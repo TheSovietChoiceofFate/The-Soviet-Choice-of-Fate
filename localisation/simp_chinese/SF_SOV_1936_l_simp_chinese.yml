@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
- soviet: "苏维埃社会主义共和国联盟 1936年国策"
- #国策
+ soviet.1: "宪法改革-清洗国策树"
+ # 国策
  SF_SOV_Intensify_Anti_Sabotage_Movemant:0 "强化反破坏运动"
  SF_SOV_Intensify_Anti_Sabotage_Movemant_desc:0 "我们优秀的斯达汉诺夫主义者经常受到其他工人、管理人员和工程师的抵制和憎恨。内务部经常报告普通工人的敌意；还有大量证据表明，许多高级管理人员、厂长和工程师认为斯达汉诺夫人士打破记录的行为会破坏计划和经济发展。我们必须加强反对破坏分子的运动，使得没有人敢于反对斯达汉诺夫主义者！"
  SF_SOV_Encourage_Stakhanovites:0 "鼓励斯达汉诺夫分子"
@@ -24,7 +24,7 @@
  SF_SOV_Cut_Through_Red_Tape:0 "简化繁文缛节"
  SF_SOV_Cut_Through_Red_Tape_desc:0 ""
  SF_SOV_Status_Of_Lynching:0 "私刑之地位"
- SF_SOV_Status_Of_Lynching_desc:0 "在之前，尤其是阶级斗争激烈的时候，地方当局总是滥用权力进行逮捕；虽然这些行为有效的打击了阶级敌人，却也极大的破坏了法治、破坏了我们和农民之间的互信。而在社会主义走向胜利的今天、在维辛斯基同志的倡议下，新宪法草案中规定“逮捕须经检察官授权”。相信农民会支持这一规定，并逐渐恢复对我们的信任。"
+ SF_SOV_Status_Of_Lynching_desc:0 "在之前，尤其是阶级斗争激烈的时候，地方当局总是滥用权力进行逮捕；虽然这些行为有效的打击了阶级敌人，却也破坏了法治。在社会主义走向胜利的今天、在维辛斯基同志的倡议下，新宪法草案中规定“逮捕须经检察官授权”。我们应该如何选择？"
  SF_SOV_Consititutional_Supremacy:0 "宪法至上"
  SF_SOV_Consititutional_Supremacy_desc:0 "由于我们取得的成功，我们不再需要大规模镇压的时刻已经到来；宪法标志着阶级和解的开始：我们甚至敢于实施无记名选举制、给予昔日的敌人选举权。斯大林同志坚信，通过自由选举进行的干部轮换是振兴苏维埃和党以及提高国家管理效率的工具。在宪法面前，人人平等；大家都是社会主义社会的一员。"
  SF_SOV_Ensure_Economic_Efficiency:0 "确保经济体效率"
@@ -39,13 +39,34 @@
  SF_SOV_Guarantee_Judicial_Independence_desc:0 "根据新宪法草案，地方人民法院由各地区全体选民通过直接、平等和无记名投票选举产生。在列宁格勒和斯摩棱斯克，有通讯员建议所有法官和检察官都应由民主选举产生；在高尔基州，400条评论中有15条支持选举并可罢免法官、10条支持任命法官。这些积极响应和要求说明了新宪法的无比正确，我们必须将其执行到底。"
  SF_SOV_The_Law_Serves_Politics:0 "律法服务于政治，阶级斗争高于一切！"
  SF_SOV_The_Law_Serves_Politics_desc:0 "对地方民众和官员来说，和解为时过早，反对给予前阶级敌人让步的声音不绝于耳。人们呼吁，不，他们已经在依靠阶级本能四处行事，法律应为阶级斗争做出有利解释。"
- SF_SOV_Question_Of_Agricultural_Production_Quotas:0 "农业产出指标问题"
- SF_SOV_Question_Of_Agricultural_Production_Quotas_desc:0 ""
  SF_SOV_The_Clouds_That_Resurface:0 "再现的阴云"
- SF_SOV_The_Clouds_That_Resurface_desc:0 ""
+ SF_SOV_The_Clouds_That_Resurface_desc:0 "在经历了连续三年的丰收后，党对今年的农业收成依旧持乐观态度——然而，根据一些地区的报告，许多地方再次出现了气候变化导致的粮食歉收——似乎饥荒的阴云将再次笼罩在苏维埃联盟的土地上。我们该怎么做？"
+ SF_SOV_Question_Of_Agricultural_Production_Quotas:0 "收购指标再调整？"
+ SF_SOV_Question_Of_Agricultural_Production_Quotas_desc:0 "虽然我们对粮食歉收已经作出了反应——然而，根据各地的报告，粮食短缺问题仍在延续。现在是我们不得不面对的时候了：我们必须严肃考虑是否调整收购指标的问题。该如何选择？"
  SF_SOV_Constitution_Of_1936:0 "1936年宪法"
  SF_SOV_Constitution_Of_1936_desc:0 "社会主义劳动，就像一场涤荡的大雨，已经并正在从苏维埃土地上的人民身上洗去资产阶级心理和道德、资产阶级愿望和信仰的一切古老尺度；19年的革命，以一股涤荡的清风穿过了我们广袤的祖国；新宪法将成为我国工农基本成就的一种法典，成为人民为之奋斗并标志着社会主义胜利的成就的索引。"
+ SF_SOV_Public_Trial:0 "公开审判"
+ SF_SOV_Public_Trial_desc:0 ""
+ SF_SOV_Prepare_Statement:0 "准备口供"
+ SF_SOV_Prepare_Statement_desc:0 ""
+ SF_SOV_Draw_Up_Defendants:0 "拟定被告名单"
+ SF_SOV_Draw_Up_Defendants_desc:0 ""
+ SF_SOV_Trotsky_Zinoviev_United_Centre_of_Terror:0 "托洛茨基-季诺维也夫联合恐怖中心"
+ SF_SOV_Trotsky_Zinoviev_United_Centre_of_Terror_desc:0 ""
+ SF_SOV_Investigate_Rightwing_Opposition:0 "调查右翼反对派"
+ SF_SOV_Investigate_Rightwing_Opposition_desc:0 ""
+ SF_SOV_Refocus_on_Constitution:0 "重新专注于宪法"
+ SF_SOV_Refocus_on_Constitution_desc:0 ""
+ SF_SOV_Reorganisation_NKVD:0 "重组内务部"
+ SF_SOV_Reorganisation_NKVD_desc:0 ""
+ SF_SOV_Appoint_Bragornravov:0 "任命布拉贡拉沃夫"
+ SF_SOV_Appoint_Bragornravov_desc:0 ""
  
+ 
+ # 效果文字
+ setAmure: "§R我们将在远东建立新的城市§!"
+ nextstep: "§G现在我们有精力做其他事情了§!"
+
  #整合政策
  Soviet_integration_policy:0 "整合"
  compliance_50:0 "核心化"

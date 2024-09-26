@@ -1,0 +1,103 @@
+# 党内紧张度
+SOV_8_0 ={
+# 党内气氛：平静
+SOV_8_1 = {         
+	    #icon = 
+		activation = { 
+        tag = SOV     		
+		}                                    
+		available = { 
+        check_variable = { progressbar_var > 50 }	                       
+		}
+		is_good = no                         
+	
+		days_mission_timeout = 1000 
+		timeout_effect = {                   
+		}
+		complete_effect = {
+        country_event = { id = sovietfate.2 }
+		}
+	}
+# 党内气氛：不安
+SOV_8_2 = {         
+	    #icon = 
+		activation = {  
+        always = no     		
+		}                                    
+		available = { 
+        check_variable = { progressbar_var > 100 }	                       
+		}
+		is_good = no                         
+	
+		days_mission_timeout = 1000 
+		timeout_effect = {                   
+		}
+		complete_effect = {
+        set_country_flag = party_tesion_lv2 
+        activate_mission = SOV_8_3  
+        mark_focus_tree_layout_dirty = yes              
+		}
+	}
+# 党内气氛：紧张
+SOV_8_3 = {         
+	    #icon = 
+		activation = {
+        always = no      		
+		}                                    
+		available = { 
+        check_variable = { progressbar_var > 200 }	                       
+		}
+		is_good = no                         
+	
+		days_mission_timeout = 1000 
+		timeout_effect = {                   
+		}
+		complete_effect = {
+        set_country_flag = party_tesion_lv3
+        activate_mission = SOV_8_4 
+        mark_focus_tree_layout_dirty = yes
+ 
+        add_ideas = SOV_fear                    
+		}
+	}
+# 党内气氛：恐惧
+SOV_8_4 = {         
+	    #icon = 
+		activation = {
+        always = no         		
+		}                                    
+		available = { 
+        check_variable = { progressbar_var > 300 }	                       
+		}
+		is_good = no                         
+	
+		days_mission_timeout = 1000 
+		timeout_effect = {                   
+		}
+		complete_effect = {
+        set_country_flag = party_tesion_lv4
+        activate_mission = SOV_8_5
+        mark_focus_tree_layout_dirty = yes
+        remove_ideas = SOV_fear  
+        add_ideas = SOV_crazy                
+		}
+	}
+# 党内气氛：疯狂
+SOV_8_5 = {         
+	    #icon = 
+		activation = {
+        always = no         		
+		}                                    
+		available = { 
+        check_variable = { progressbar_var < 100 }	                       
+		}
+		is_good = no                         
+	
+		days_mission_timeout = 1000 
+		timeout_effect = {                   
+		}
+		complete_effect = {
+        remove_ideas = SOV_crazy                   
+		}
+	}
+}

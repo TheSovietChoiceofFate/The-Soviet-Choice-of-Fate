@@ -4,14 +4,14 @@ SOV_1_0 = {
     SOV_1_1 = {         
 	    icon = "gfx/interface/decisions/liangshi.png"
 		activation = {  
-			#has_country_flag = SOV_hungry_ing    		
+  		has_idea = SOV_lack_food
 		}                                    
 		available = { 	
-			#NOT = { has_country_flag = SOV_hungry }                        
+        NOT = { has_idea = SOV_lack_food }            
 		}
 		is_good = no                         
-	
-		days_mission_timeout = 300 
+
+		days_mission_timeout = 180
 		timeout_effect = {                     
 			custom_effect_tooltip = hungry     
 		}
@@ -19,7 +19,7 @@ SOV_1_0 = {
 			custom_effect_tooltip = save_hungry        
 		}
 	}
-# 不再指控农民
+# 宣传城乡平等
     SOV_1_2 = {         
 	    #icon = 图标名
 		cost = 50
@@ -28,6 +28,7 @@ SOV_1_0 = {
         days_remove = 30
 
 		available = {
+        always = no
 		}
 		ai_will_do = {
 			factor = 100
@@ -43,38 +44,15 @@ SOV_1_0 = {
         set_country_flag = SOV_mercy_easant 
 		}
 	}
-# 减少交付义务
-	SOV_1_3 = {     
-	    #icon = 图标名
-		cost = 0
-		
-		fire_only_once = yes 
-        days_remove = 60
-
-		available = {
-        has_country_flag = SOV_mercy_easant
-		}
-		ai_will_do = {
-			factor = 100
-		}
-        modifier = {
-	   	}
-		complete_effect = { 
-        # 生产效率-8%
-		}
-        remove_effect = {
-        # 减轻debuff
-		}
-	}
 # 援助粮食和种子
-	SOV_1_4 = {     
+	SOV_1_3 = {     
 	    #icon = 图标名
 		cost = 20
 		
 		fire_only_once = yes 
 
 		available = {
-        has_country_flag = SOV_mercy_easant
+        always = no
 		}
 		ai_will_do = {
 			factor = 100
@@ -88,7 +66,7 @@ SOV_1_0 = {
 		}
 	}
 # 限制谷物出口
-	SOV_1_5 = {     
+	SOV_1_4 = {     
 	    #icon = 图标名
 		cost = 0
 		
@@ -96,7 +74,7 @@ SOV_1_0 = {
         days_remove = 120
 
 		available = {
-        has_country_flag = SOV_mercy_easant
+        always = no
 		}
 		ai_will_do = {
 			factor = 100
@@ -111,14 +89,14 @@ SOV_1_0 = {
 		}
 	}
 # 打击投机活动
-    SOV_1_6 = {     
+    SOV_1_5 = {     
 	    #icon = 图标名
 		cost = 50
 		
 		fire_only_once = yes 
 
 		available = {
-        has_country_flag = SOV_mercy_easant
+        always = no
 		}
 		ai_will_do = {
 			factor = 100
@@ -130,32 +108,6 @@ SOV_1_0 = {
         remove_effect = {
         add_stability = 0.05
         # 减轻debuff
-		}
-	}
-}
-# 党内倾向
-SOV_2_0 = {
-	SOV_2_1 = {
-		
-		#icon = 图标名
-		cost = 100
-		days_remove = 180
-		
-		fire_only_once = yes 
-
-		available = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		modifier = {
-			custom_effect_tooltip = history_writing
-	   	}
-		complete_effect = {  
-			custom_effect_tooltip = history
-		}
-		remove_effect = {
-			custom_effect_tooltip = history_finish
 		}
 	}
 }
@@ -357,53 +309,6 @@ SOV_4_0 = {
 			add_political_power = -100
 			add_stability = -0.30
 			add_war_support = -0.4
-		}
-	}
-	SOV_4_8 = { # 建立共青城
-		
-		#icon = "gfx/interface/decisions/"
-		available = {
-		    657 = { is_owned_and_controlled_by = ROOT }
-			num_of_civilian_factories_available_for_projects > 5
-		}
-		visible = {
-		has_completed_focus = SF_SOV_Drafting_Of_The_1937_Plan
-		}
-		cost = 50
-		days_remove = 120
-		fire_only_once = yes
-		priority = 90
-
-		modifier = {
-			civilian_factory_use = 6
-		}
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		remove_effect = {
-		    657 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_victory_points = {
-                    province = 12263
-                    value = 1    
-                }
-			    set_province_name = {
-                    id = 12263
-                    name = "Amure"
-				}
-			}
 		}
 	}
 	SOV_4_6 = { # 扩建第聂伯河水电站
@@ -955,23 +860,19 @@ SOV_6_0 = {
 		#icon = 
 	    allowed = { tag = SOV }
 	    available = {
-			hidden_trigger = { always = no }
+        hidden_trigger = { always = no }
 	    }
 
-	    is_good = no
+	    is_good = yes
 
-	    days_mission_timeout = 90
+	    days_mission_timeout = 30
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
 
-	    visible = {
-	    }
-
 	    timeout_effect = {
-			activate_mission = SOV_6_2
+		activate_mission = SOV_6_2
 		}
 	}
 	SOV_6_2 = { # 德赖策案件
@@ -979,23 +880,19 @@ SOV_6_0 = {
 		#icon = 
 	    allowed = { tag = SOV }
 	    available = {
-			hidden_trigger = { always = no }
+		hidden_trigger = { always = no }
 	    }
 
-	    is_good = no
+	    is_good = yes
 
-	    days_mission_timeout = 7
+	    days_mission_timeout = 30
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
 
-	    visible = {
-	    }
-
 	    timeout_effect = {
-			activate_mission = SOV_6_3
+		activate_mission = SOV_6_3
 	    }
 	}
 	SOV_6_3 = { # 获取阿格拉诺夫支持
@@ -1006,18 +903,13 @@ SOV_6_0 = {
 			hidden_trigger = { always = no }
 	    }
 
-	    is_good = no
+	    is_good = yes
 
 	    days_mission_timeout = 30
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
-
-	    visible = {
-	    }
-
 	    timeout_effect = {
 	    }
 	}
@@ -1029,21 +921,16 @@ SOV_6_0 = {
 			hidden_trigger = { always = no }
 			}
 
-	    is_good = no
+	    is_good = yes
 
-	    days_mission_timeout = 21
+	    days_mission_timeout = 30
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
-
-	    visible = {
-	    } 
-
 	    timeout_effect = {
-			country_event = { id = sovietfate.46 days = 5 }
-			activate_mission = SOV_6_5
+		country_event = { id = sovietfate.46 days = 5 }
+		activate_mission = SOV_6_5
 	    }
 	}
 	SOV_6_5 = { # 写信给斯大林
@@ -1051,23 +938,18 @@ SOV_6_0 = {
 		#icon = 
 	    allowed = { tag = SOV }
 	    available = {
-			hidden_trigger = { always = no }
-			}
+		hidden_trigger = { always = no }
+		}
 
-	    is_good = no
-
+	    is_good = yes
+        
 	    days_mission_timeout = 14
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
-
-	    visible = {
-	    }
-
 	    timeout_effect = {
-			country_event = { id = sovietfate.47 days = 5 }
+		country_event = { id = sovietfate.47 days = 5 }
 	    }
 	}
 	SOV_6_6 = { # 在索契会见斯大林
@@ -1078,24 +960,15 @@ SOV_6_0 = {
 			hidden_trigger = { always = no }
 			}
 
-	    is_good = no
+	    is_good = yes
 
 	    days_mission_timeout = 20
 		fire_only_once = yes
-
-	    activation = {
+        activation = {
 		always = no 
 	    }
-
-	    visible = {
-	    }
-
 	    timeout_effect = {
-			country_event = { id = sovietfate.24 }
+		country_event = { id = sovietfate.24 }
 	    }
 	}
-}
-# 党内紧张度
-SOV_8_0 ={
-
 }

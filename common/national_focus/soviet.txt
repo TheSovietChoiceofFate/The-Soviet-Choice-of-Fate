@@ -10,10 +10,14 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = SF_SOV_Intensify_Anti_Sabotage_Movemant #强化反破坏运动
+		id = SF_SOV_Intensify_Anti_Sabotage_Movemant # 强化反破坏运动
 		icon = GFX_goal_SF_SOV_Intensify_Anti_Sabotage_Movemant
 		completion_reward = {
-			country_event = { id = sovietfate.26 }
+            swap_ideas = {
+            remove_idea = SOV_stakhanov
+            add_idea = SOV_stakhanov1            
+            }
+			country_event = { id = sovietfate.3 }
 		}
 		cost = 5.00
 		x = 4
@@ -27,15 +31,49 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
 		}
+        completion_reward = {
+        if = {
+            limit = {
+            has_idea = SOV_stakhanov2
+            }
+            swap_ideas = {
+            remove_idea = SOV_stakhanov2
+            add_idea = SOV_stakhanov3            
+            }
+            else = {
+            swap_ideas = {
+            remove_idea = SOV_stakhanov1
+            add_idea = SOV_stakhanov2            
+            }
+            }
+        }
+		}
 		x = 3
 		y = 1
 	}
 	focus = {
-		id = SF_SOV_Raise_Production_Quotas #拔高生产定额
+		id = SF_SOV_Raise_Production_Quotas # 拔高生产定额
 		icon = GFX_goal_SF_SOV_Raise_Production_Quotas
 		cost = 5.00
 		prerequisite = {
 			focus = SF_SOV_Intensify_Anti_Sabotage_Movemant
+		}
+        completion_reward = {
+        if = {
+            limit = {
+            has_idea = SOV_stakhanov2
+            }
+            swap_ideas = {
+            remove_idea = SOV_stakhanov2
+            add_idea = SOV_stakhanov3            
+            }
+            else = {
+            swap_ideas = {
+            remove_idea = SOV_stakhanov1
+            add_idea = SOV_stakhanov2            
+            }
+            }
+        }
 		}
 		x = 5
 		y = 1
@@ -50,11 +88,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Raise_Production_Quotas
 		}
+        completion_reward = {
+        add_timed_idea = { idea = SOV_lower_rates days = 365 }
+		}
 		x = 4
 		y = 2
 	}
 	focus = {
-		id = SF_SOV_The_Next_Step #下一步
+		id = SF_SOV_The_Next_Step # 下一步
 		icon = GFX_goal_SF_SOV_The_Next_Step
 		cost = 0.00
 		prerequisite = { 
@@ -64,22 +105,43 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
+            add_political_power = 100
 		    custom_effect_tooltip = nextstep
 			country_event = { id = sovietfate.35 } 
-		    country_event = { id = sovietfate.34 }
 		}
 		x = 4
 		y = 3
 	}
+    focus = {
+		id = SF_SOV_Constitution_Of_1936 # 1936年宪法
+		icon = GFX_goal_SF_SOV_Constitution_Of_1936
+		cost = 0.00
+		prerequisite = {
+			focus = SF_SOV_The_Next_Step
+		}
+        available = {
+			always = no
+		}
+		completion_reward = {
+            add_political_power = 150
+            swap_ideas = {
+            remove_idea = home_of_revolution
+            add_idea = home_of_revolution1          
+            }
+            load_focus_tree = soviet.1
+		}
+		x = 4
+		y = 4
+	}
 	focus = {
-		id = SF_SOV_Drafting_Of_The_1937_Plan #着手1937年经济计划
+		id = SF_SOV_Drafting_Of_The_1937_Plan # 着手1937年经济计划
 		icon = GFX_goal_SF_SOV_Drafting_Of_The_1937_Plan
-		cost = 1.00
+		cost = 2.00
 		prerequisite = {
 			focus = SF_SOV_The_Next_Step
 		}
 		completion_reward = {
-		    custom_effect_tooltip = setAmure
+            add_political_power = 50
 		    activate_targeted_decision = { target = 226 decision = SOV_4_6 } # 第聂伯河水电站扩建
 			activate_targeted_decision = { target = 214 decision = SOV_4_3 } # 阿尔汉格尔斯克船厂扩建
 			activate_targeted_decision = { target = 197 decision = SOV_4_3 } # 尼古拉耶夫船厂扩建
@@ -90,69 +152,149 @@ focus_tree = {
 	focus = {
 		id = SF_SOV_Cut_Investment_In_Heavy_Industry # 更均衡的重工业发展
 		icon = GFX_goal_SF_SOV_Cut_Investment_In_Heavy_Industry
-		cost = 1.00
+		cost = 2.00
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
 		}
 		completion_reward = {
+        add_political_power = 50
 		activate_targeted_decision = { target = 252 decision = SOV_4_4 } # 高尔基汽车厂扩建
 		activate_targeted_decision = { target = 219 decision = SOV_4_4 } # 莫斯科汽车厂扩建
 		activate_targeted_decision = { target = 248 decision = SOV_4_4 } # 雅罗斯拉夫汽车厂扩建
-		activate_targeted_decision = { target = 217 decision = SOV_4_7 } # 斯大林格勒拖拉机厂扩建
         activate_targeted_decision = { target = 398 decision = SOV_4_10 } # 彼尔姆重型机械厂新建
 		}
 		x = 1
 		y = 5
 	}
 	focus = {
-		id = SF_SOV_Boost_Production_Of_Consumer_Goods #提振消费品生产
+		id = SF_SOV_Boost_Production_Of_Consumer_Goods # 提振消费品生产
 		icon = GFX_goal_SF_SOV_Boost_Production_Of_Consumer_Goods
-		cost = 1.00
+		cost = 2.00
 		prerequisite = {
 			focus = SF_SOV_Drafting_Of_The_1937_Plan
 		}
 		completion_reward = {
+        add_political_power = 50
         activate_targeted_decision = { target = 405 decision = SOV_4_2 } # 塔什干纺织厂扩建
 		activate_targeted_decision = { target = 253 decision = SOV_4_2 } # 伊万诺沃纺织厂扩建
 		activate_targeted_decision = { target = 206 decision = SOV_4_9 } # 明斯克家具和木材厂新建
+        activate_targeted_decision = { target = 217 decision = SOV_4_7 } # 斯大林格勒拖拉机厂扩建
 		}
 		x = 3
 		y = 5
 	}
 	focus = {
-		id = SF_SOV_Further_Judicial_Reform #更进一步的司法改革
+		id = SF_SOV_Further_Judicial_Reform # 更进一步的司法改革
 		icon = GFX_goal_SF_SOV_Further_Judicial_Reform
-		cost = 1.00
+		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
 			focus = SF_SOV_The_Next_Step
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+        add_idea = SOV_judicial_reform          
 		}
 		x = 6
 		y = 4
 	}
 	focus = {
-		id = SF_SOV_Empower_Defense_Agencies #赋权辩护机构
+		id = SF_SOV_Empower_Defense_Agencies # 赋权辩护机构
 		icon = GFX_goal_SF_SOV_Empower_Defense_Agencies
-		cost = 1.00
+		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
 			focus = SF_SOV_Further_Judicial_Reform
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+        if = {
+            limit = {
+            has_idea = SOV_judicial_reform1
+            }
+            swap_ideas = {
+            remove_idea = SOV_judicial_reform1
+            add_idea = SOV_judicial_reform2           
+            }
+            else = {
+            swap_ideas = {
+            remove_idea = SOV_judicial_reform
+            add_idea = SOV_judicial_reform1          
+            }
+            }
+        }
 		}
 		x = 5
 		y = 5
 	}
+
 	focus = {
-		id = SF_SOV_Cut_Through_Red_Tape #简化繁文缛节
+		id = SF_SOV_Cut_Through_Red_Tape # 简化繁文缛节
 		icon = GFX_goal_SF_SOV_Cut_Through_Red_Tape
-		cost = 1.00
+		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
 			focus = SF_SOV_Further_Judicial_Reform
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+            if = {
+            limit = {
+            has_idea = SOV_judicial_reform1
+            }
+            swap_ideas = {
+            remove_idea = SOV_judicial_reform1
+            add_idea = SOV_judicial_reform2           
+            }
+            else = {
+            swap_ideas = {
+            remove_idea = SOV_judicial_reform
+            add_idea = SOV_judicial_reform1          
+            }
+            }
+        }
 		}
 		x = 7
 		y = 5
 	}
+
 	focus = {
-		id = SF_SOV_Status_Of_Lynching #私刑之地位
+		id = SF_SOV_Status_Of_Lynching # 私刑之地位
 		icon = GFX_goal_SF_SOV_Status_Of_Lynching
 		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
 			focus = SF_SOV_Empower_Defense_Agencies
 		}
@@ -160,26 +302,13 @@ focus_tree = {
 			focus = SF_SOV_Cut_Through_Red_Tape
 		}
 		completion_reward = {
-			country_event = { id = sovietfate.36 }
+			country_event = { id = sovietfate.4 }
 		}
 		x = 6
 		y = 6
 	}
 	focus = {
-		id = SF_SOV_Consititutional_Supremacy #宪法至上
-		icon = GFX_goal_SF_SOV_Consititutional_Supremacy
-		cost = 2.00
-		prerequisite = {
-			focus = SF_SOV_Status_Of_Lynching
-		}
-		mutually_exclusive = {
-			focus = SF_SOV_Soviet_Judge
-		}
-		x = 5
-		y = 7
-	}
-	focus = {
-		id = SF_SOV_Ensure_Economic_Efficiency #确保经济体效率
+		id = SF_SOV_Ensure_Economic_Efficiency # 确保经济体效率
 		icon = GFX_goal_SF_SOV_Ensure_Economic_Efficiency
 		cost = 2.00
 		prerequisite = {
@@ -188,107 +317,346 @@ focus_tree = {
 		prerequisite = {
 			focus = SF_SOV_Boost_Production_Of_Consumer_Goods
 		}
+        completion_reward = {
+        swap_ideas = {
+        remove_idea = SOV_stakhanov3
+        add_idea = SOV_stakhanov4          
+        }
+		}
 		x = 2
 		y = 6
 	}
 	focus = {
-		id = SF_SOV_Overheating_In_The_Transportation_Industry #运输业的过热现象
+		id = SF_SOV_Overheating_In_The_Transportation_Industry # 运输业的过热现象
 		icon = GFX_goal_SF_SOV_Overheating_In_The_Transportation_Industry
 		cost = 2.00
 		prerequisite = {
 			focus = SF_SOV_Ensure_Economic_Efficiency
 		}
+        completion_reward = {
+        swap_ideas = {
+        remove_idea = SOV_stakhanov4
+        add_idea = SOV_stakhanov5         
+        }
+		}
 		x = 1
 		y = 7
 	}
 	focus = {
-		id = SF_SOV_Dying_Movement #行将就木的运动
+		id = SF_SOV_Dying_Movement # 行将就木的运动
 		icon = GFX_goal_SF_SOV_Dying_Movement
 		cost = 2.00
 		prerequisite = {
 			focus = SF_SOV_Overheating_In_The_Transportation_Industry
 		}
+        completion_reward = {
+        swap_ideas = {
+        remove_idea = SOV_stakhanov5
+        add_idea = SOV_stakhanov6         
+        }
+		}
 		x = 1
 		y = 8
 	}
 	focus = {
-		id = SF_SOV_Soviet_Judge #法官乃是苏维埃的法官
+		id = SF_SOV_The_Clouds_That_Resurface # 再现的阴云
+		icon = GFX_goal_SF_SOV_The_Clouds_That_Resurface
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_Ensure_Economic_Efficiency
+		}
+        completion_reward = {
+        country_event = { id = food.2 } # 对农民的态度
+		}
+		x = 3
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_Question_Of_Agricultural_Production_Quotas # 收购指标再调整？
+		icon = GFX_goal_SF_SOV_Question_Of_Agricultural_Production_Quotas
+		cost = 2.00
+		prerequisite = {
+			focus = SF_SOV_The_Clouds_That_Resurface
+		}
+		completion_reward = {
+			country_event = { id = sovietfate.19 }
+		}
+		x = 3
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_Consititutional_Supremacy # 宪法至上
+		icon = GFX_goal_SF_SOV_Consititutional_Supremacy
+		cost = 2.00
+        available = {
+        has_country_flag = SOV_Consititutional_Supremacy
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
+		prerequisite = {
+			focus = SF_SOV_Status_Of_Lynching
+		}
+		mutually_exclusive = {
+			focus = SF_SOV_Soviet_Judge
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+        swap_ideas = {
+        remove_idea = SOV_judicial_reform2
+        add_idea = SOV_judicial_reform3          
+        }
+		}
+		x = 5
+		y = 7
+	}
+	focus = {
+		id = SF_SOV_Guarantee_Judicial_Independence # 保障司法独立性
+		icon = GFX_goal_SF_SOV_Guarantee_Judicial_Independence
+		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        visible = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
+		prerequisite = {
+			focus = SF_SOV_Consititutional_Supremacy
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+        swap_ideas = {
+        remove_idea = SOV_judicial_reform3
+        add_idea = SOV_judicial_reform4          
+        }
+		}
+		x = 5
+		y = 8
+	}
+	focus = {
+		id = SF_SOV_Soviet_Judge # 司法乃是苏维埃的司法
 		icon = GFX_goal_SF_SOV_Soviet_Judge
 		cost = 2.00
+        available = {
+        has_country_flag = SOV_Soviet_Judge
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        allow_branch = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
 			focus = SF_SOV_Status_Of_Lynching
 		}
 		mutually_exclusive = {
 			focus = SF_SOV_Consititutional_Supremacy
 		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = -0.1
+        tooltip_side = SOV_conserve_side
+        }
+        swap_ideas = {
+        remove_idea = SOV_judicial_reform2
+        add_idea = SOV_judicial_reform5          
+        }
+		}
 		x = 7
 		y = 7
 	}
 	focus = {
-		id = SF_SOV_Guarantee_Judicial_Independence #保障司法独立性
-		icon = GFX_goal_SF_SOV_Guarantee_Judicial_Independence
+		id = SF_SOV_The_Law_Serves_Politics # 律法服务于政治，阶级斗争高于一切
+		icon = GFX_goal_SF_SOV_The_Law_Serves_Politics
 		cost = 2.00
+        available = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        } 
+        visible = {
+        NOT = { has_country_flag = party_tesion_lv1 }
+        }
 		prerequisite = {
-			focus = SF_SOV_Consititutional_Supremacy
+			focus = SF_SOV_Soviet_Judge
+		}
+        completion_reward = {
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = -0.1
+        tooltip_side = SOV_conserve_side
+        }
+        swap_ideas = {
+        remove_idea = SOV_judicial_reform2
+        add_idea = SOV_judicial_reform6          
+        }
+		}
+		x = 7
+		y = 8
+	}
+# 清洗国策树（党内紧张度达到LV1）
+    focus = {
+		id = SF_SOV_Public_Trial # 公开审判
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_The_Next_Step
+		}
+        completion_reward = {
+		}
+		x = 6
+		y = 4
+	}
+    focus = {
+		id = SF_SOV_Draw_Up_Defendants # 拟定被告人名单
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Public_Trial
+		}
+        completion_reward = {
+		}
+		x = 7
+		y = 5
+	}
+    focus = {
+		id = SF_SOV_Prepare_Statement # 准备口供
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Public_Trial
+		}
+        completion_reward = {
+		}
+		x = 5
+		y = 5
+	}
+    focus = {
+		id = SF_SOV_Trotsky_Zinoviev_United_Centre_of_Terror # 托洛茨基-季诺维也夫联合恐怖中心
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Prepare_Statement
+		}
+        prerequisite = {
+			focus = SF_SOV_Draw_Up_Defendants
+		}
+        completion_reward = {
+		}
+		x = 6
+		y = 6
+	}
+    focus = {
+		id = SF_SOV_Reorganisation_NKVD # 重组内务部
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Investigate_Rightwing_Opposition
+		}
+        completion_reward = {
 		}
 		x = 5
 		y = 8
 	}
-	focus = {
-		id = SF_SOV_The_Law_Serves_Politics #律法服务于政治，阶级斗争高于一切
-		icon = GFX_goal_SF_SOV_The_Law_Serves_Politics
+    focus = {
+		id = SF_SOV_Investigate_Rightwing_Opposition # 调查右翼反对派
+		#icon = 
 		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
 		prerequisite = {
-			focus = SF_SOV_Soviet_Judge
+			focus = SF_SOV_Trotsky_Zinoviev_United_Centre_of_Terror
+		}
+		mutually_exclusive = {
+			focus = SF_SOV_Refocus_on_Constitution
+		}
+        completion_reward = {
+		}
+		x = 5
+		y = 7
+	}
+    focus = {
+		id = SF_SOV_Refocus_on_Constitution # 重新专注于宪法
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1 
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Trotsky_Zinoviev_United_Centre_of_Terror
+		}
+		mutually_exclusive = {
+			focus = SF_SOV_Investigate_Rightwing_Opposition
+		}
+        completion_reward = {
+		}
+		x = 7
+		y = 7
+	}
+    focus = {
+		id = SF_SOV_Appoint_Bragornravov # 任命布拉贡拉沃夫
+		#icon = 
+		cost = 2.00
+        available = {
+        has_country_flag = party_tesion_lv1
+        } 
+        allow_branch = {
+        has_country_flag = party_tesion_lv1
+        }
+		prerequisite = {
+			focus = SF_SOV_Refocus_on_Constitution
+		}
+        completion_reward = {
 		}
 		x = 7
 		y = 8
 	}
-	focus = {
-		id = SF_SOV_Question_Of_Agricultural_Production_Quotas #农业产出指标问题
-		icon = GFX_goal_SF_SOV_Question_Of_Agricultural_Production_Quotas
-		cost = 2.00
-		prerequisite = {
-			focus = SF_SOV_Ensure_Economic_Efficiency
-		}
-		x = 3
-		y = 7
-	}
-	focus = {
-		id = SF_SOV_The_Clouds_That_Resurface #再现的阴云
-		icon = GFX_goal_SF_SOV_The_Clouds_That_Resurface
-		cost = 2.00
-		completion_reward = {
-			country_event = { id = sovietfate.19 }
-		}
-		prerequisite = {
-			focus = SF_SOV_Question_Of_Agricultural_Production_Quotas
-		}
-		x = 3
-		y = 8
-	}
-	focus = {
-		id = SF_SOV_Constitution_Of_1936 #1936年宪法
-		icon = GFX_goal_SF_SOV_Constitution_Of_1936
-		cost = 0.00
-		prerequisite = {
-			focus = SF_SOV_Dying_Movement
-		}
-		prerequisite = {
-			focus = SF_SOV_The_Clouds_That_Resurface
-		}
-		prerequisite = {
-			focus = SF_SOV_Guarantee_Judicial_Independence
-			focus = SF_SOV_The_Law_Serves_Politics
-		}
-		completion_reward = {
-		}
-		x = 4
-		y = 9
-	}
 }
 focus_tree = {
-	id = soviet_purge_1936
+	id = soviet.1
 	country = {
 		factor = 0
 		modifier = {
@@ -297,24 +665,18 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = SF_SOV_Start_1937 #开始1937年人口普查
-		#icon = GFX_goal_SF_SOV_Intensify_Anti_Sabotage_Movemant
-		cost = 1.00
+		id = SF_SOV_ # 
+		#icon = GFX_goal_SF_SOV_
+		completion_reward = {
+            swap_ideas = {
+            remove_idea = SOV_stakhanov
+            add_idea = SOV_stakhanov1            
+            }
+			country_event = { id = sovietfate.3 }
+		}
+		cost = 5.00
 		x = 4
 		y = 0
-	}
-	focus = {
-		id = SF_SOV_Sudden_Change # 风云突变
-		#icon = GFX_goal_SF_SOV_Encourage_Stakhanovites
-		cost = 1.00
-		prerequisite = {
-			focus = SF_SOV_Start_1937
-		}
-		completion_reward = {
-			load_focus_tree = soviet
-		}
-		x = 4
-		y = 1
 	}
 }
 

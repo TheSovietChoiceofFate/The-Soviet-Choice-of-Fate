@@ -1,0 +1,45 @@
+add_namespace = food
+# 1936饥荒事件组
+# 来自地方的歉收报告
+country_event = {
+	id = food.1
+	title = food.1.t
+	desc = food.1.d
+    fire_only_once = yes
+    is_triggered_only = yes
+	picture = pic_3
+	option = { 
+		name = food.1.a
+		add_timed_idea = { idea = SOV_lack_food days = 365 }
+	}
+}
+
+# 选择
+country_event = {
+	id = food.2
+	title = food.2.t
+	desc = food.2.d
+	picture = pic_3
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = food.2.a
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = 0.1
+        tooltip_side = SOV_extreme_side
+        }
+        activate_targeted_decision = { decision = SOV_1_2 }
+        activate_targeted_decision = { decision = SOV_1_3 } 
+        activate_targeted_decision = { decision = SOV_1_4 } 
+        activate_targeted_decision = { decision = SOV_1_5 }   
+	}
+    option = { 
+		name = food.2.b
+        add_power_balance_value = {
+        id = SOV_social_radicalization
+        value = -0.1
+        tooltip_side = SOV_conserve_side
+        }
+	}
+}

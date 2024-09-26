@@ -78,7 +78,7 @@ guiTypes = {
 		} 
 		instantTextboxType = {
 			name = "CM_SE_desc_center" 
-			position = { x = 30 y = 380 }
+			position = { x = 30 y = 350 }
 			font = "hoi_18mbs"        
 			text = "CM_SE_desc"		
 			maxWidth = 440 

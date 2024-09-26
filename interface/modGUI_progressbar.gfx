@@ -6,7 +6,7 @@ spriteTypes = {
 		size = { x = 506 y = 325 }
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
-		steps = 100
+		steps = 400
 	}
     SpriteType = {
 		name = "GFX_progressbar_border"

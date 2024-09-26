@@ -1,0 +1,229 @@
+add_namespace = sf_news
+# 1937年
+news_event = {
+	id = sf_news.1
+	title = sf_news.1.t
+	desc = sf_news.1.d
+	picture = GFX_news1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.1.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.2
+	title = sf_news.2.t
+	desc = sf_news.2.d
+	picture = GFX_news2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.2.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.3
+	title = sf_news.3.t
+	desc = sf_news.3.d
+	picture = GFX_news3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.3.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.4
+	title = sf_news.4.t
+	desc = sf_news.4.d
+	picture = GFX_news4
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.4.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.5
+	title = sf_news.5.t
+	desc = sf_news.5.d
+	picture = GFX_news5
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.5.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.6
+	title = sf_news.6.t
+	desc = sf_news.6.d
+	picture = GFX_news6
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.6.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.7
+	title = sf_news.7.t
+	desc = sf_news.7.d
+	picture = GFX_news7
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.7.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.8
+	title = sf_news.8.t
+	desc = sf_news.8.d
+	picture = GFX_news8
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.8.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.9
+	title = sf_news.9.t
+	desc = sf_news.9.d
+	picture = GFX_news9
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.9.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.10
+	title = sf_news.10.t
+	desc = sf_news.10.d
+	picture = GFX_news10
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.10.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.11
+	title = sf_news.11.t
+	desc = sf_news.11.d
+	picture = GFX_news11
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.11.a
+		trigger = {
+		}
+	}
+}
+news_event = {
+	id = sf_news.12
+	title = sf_news.12.t
+	desc = sf_news.12.d
+	picture = GFX_news12
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.12.a
+		trigger = {
+		}
+	}
+}
+# 科萨列夫担任主席
+news_event = {
+	id = sf_news.13
+	title = sf_news.13.t
+	desc = sf_news.13.d
+	picture = GFX_news13
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.13.a
+		trigger = {
+		}
+	}
+}
+# 斯大林宣布将退休（二十大）
+news_event = {
+	id = sf_news.14
+	title = sf_news.14.t
+	desc = sf_news.14.d
+	picture = GFX_news5
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sf_news.14.a
+		trigger = {
+		}
+	}
+}
+# 1938年

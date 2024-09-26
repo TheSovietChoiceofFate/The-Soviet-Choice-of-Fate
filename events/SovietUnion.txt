@@ -1,19 +1,67 @@
 ﻿add_namespace = sovietfate
-
-### 1936年
-## 大清洗事件组
-# 1936年的内务部
+# 1936年
+# 配给制的终结
 country_event = {
-	id = sovietfate.41
-	title = sovietfate.41.t
-	desc = sovietfate.41.d
+	id = sovietfate.1
+	title = sovietfate.1.t
+	desc = sovietfate.1.d
+	picture = pic_13
+    fire_only_once = yes
+	option = { 
+		name = sovietfate.1.a
+		political_power = 20
+	}
+}
+# 党内紧张度LV1
+country_event = {
+	id = sovietfate.2
+	title = sovietfate.2.t
+	desc = sovietfate.2.d
 	picture = pic_7
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = sovietfate.2.a
+        custom_effect_tooltip = pt_lv1
+        set_country_flag = party_tesion_lv1 
+        activate_mission = SOV_8_2  
+        mark_focus_tree_layout_dirty = yes  
+	}
+}
+# 卡冈诺维奇的报告
+country_event = {
+	id = sovietfate.3
+	title = sovietfate.3.t
+	desc = sovietfate.3.d
+	picture = pic_1
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
-		name = sovietfate.41.a
-		activate_mission = SOV_5_1
-		set_country_flag = SOV_yageda
+		name = sovietfate.3.a
+        add_political_power = 50
+        add_to_variable = { progressbar_var = 5 }        
+	}
+	option = { 
+		name = sovietfate.3.b
+        add_political_power = -20       
+	}
+}
+# 私刑之地位
+country_event = {
+	id = sovietfate.4
+	title = sovietfate.4.t
+	desc = sovietfate.4.d
+	#picture = pic_
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = sovietfate.4.a
+        set_country_flag = SOV_Soviet_Judge
+               
+	}
+	option = { 
+		name = sovietfate.4.b
+        set_country_flag = SOV_Consititutional_Supremacy
 	}
 }
 # 开始审理托洛茨基-季诺维也夫联合中心
@@ -65,8 +113,9 @@ country_event = {
     is_triggered_only = yes
 	option = { 
 		name = sovietfate.45.a
-		country_event = { id = sovietfate.23 days = 3 }
 		activate_mission = SOV_6_4
+        retire_character = SOV_tomsky
+        custom_effect_tooltip = yezhov1
 	}
 }
 # 十六人审判
@@ -74,11 +123,17 @@ country_event = {
 	id = sovietfate.23
 	title = sovietfate.23.t
 	desc = sovietfate.23.d
-	#picture = sov_peijizhi
+	picture = GFX_report_event_SOV_purge_administration
     fire_only_once = yes
     is_triggered_only = yes
 	option = { 
 		name = sovietfate.23.a
+        retire_character = SOV_zinovyev
+        retire_character = SOV_kamenev
+        retire_character = SOV_smirnov
+        stability_factor = 0.05
+        add_political_power = 20
+        custom_effect_tooltip = add_tension3
 	}
 }
 # 叶若夫的调查结果
@@ -131,18 +186,6 @@ country_event = {
 	}
 }
 ## 国策事件
-# 斯大林6.3报告
-country_event = {
-	id = sovietfate.33
-	title = sovietfate.33.t
-	desc = sovietfate.33.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.33.a
-	}
-}
 # 前情提要：苏联的法治现状
 country_event = {
 	id = sovietfate.34
@@ -191,44 +234,31 @@ country_event = {
 		name = sovietfate.19.a
 	}
 }
-## 宪法讨论事件组
-# 配给制的终结
-country_event = {
-	id = sovietfate.1
-	title = sovietfate.1.t
-	desc = sovietfate.1.d
-	picture = pic_13
-    fire_only_once = yes
-	option = { 
-		name = sovietfate.1.a
-		political_power = 20
-	}
-}
 # 莫洛托夫下台
-country_event = {
-	id = sovietfate.3
-	title = sovietfate.3.t
-	desc = sovietfate.3.d
-	picture = pic_12
-    fire_only_once = yes
-	is_triggered_only = yes
-	option = { 
-		name = sovietfate.3.a
-		custom_effect_tooltip = molotov
-	}
-}
+#country_event = {
+#	id = sovietfate.3
+#	title = sovietfate.3.t
+#	desc = sovietfate.3.d
+#	picture = pic_12
+#    fire_only_once = yes
+#	is_triggered_only = yes
+#	option = { 
+#		name = sovietfate.3.a
+#		custom_effect_tooltip = molotov
+#	}
+#}
 # 宪法讨论（故事）
-country_event = {
-	id = sovietfate.2
-	title = sovietfate.2.t
-	desc = sovietfate.2.d
-	picture = pic_11
-    fire_only_once = yes
-	is_triggered_only = yes
-	option = { 
-		name = sovietfate.2.a
-	}
-}
+#country_event = {
+#	id = sovietfate.2
+#	title = sovietfate.2.t
+#	desc = sovietfate.2.d
+#	picture = pic_11
+#    fire_only_once = yes
+#	is_triggered_only = yes
+#	option = { 
+#		name = sovietfate.2.a
+#	}
+#}
 # 民意、新宪法与新体制
 country_event = {
 	id = sovietfate.5
@@ -402,38 +432,6 @@ country_event = {
 		name = sovietfate.17.a
 	}
 }
-## 1936饥荒事件组
-# 报告饥荒
-country_event = {
-	id = sovietfate.4
-	title = sovietfate.4.t
-	desc = sovietfate.4.d
-    fire_only_once = yes
-    is_triggered_only = yes
-	picture = pic_3
-	option = { 
-		name = sovietfate.4.a
-		add_political_power = -100
-		add_stability = -0.2
-        set_country_flag = SOV_hungry
-		set_country_flag = SOV_hungry_ing
-		custom_effect_tooltip = Agricultural_up_d
-		add_to_variable = { A0 = -50 }
-	}
-}
-# 三年丰收的尽头
-country_event = {
-	id = sovietfate.18
-	title = sovietfate.18.t
-	desc = sovietfate.18.d
-	picture = pic_3
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.18.a
-		country_event = { id = sovietfate.19 }
-	}
-}
 #反破坏运动退潮
 country_event = {
 	id = sovietfate.20
@@ -444,18 +442,6 @@ country_event = {
     is_triggered_only = yes
 	option = { 
 		name = sovietfate.20.a
-	}
-}
-# 欢庆吧，劳动节！
-country_event = {
-	id = sovietfate.21
-	title = sovietfate.21.t
-	desc = sovietfate.21.d
-	picture = pic_9
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.21.a
 	}
 }
 # 新宪法的草案
@@ -476,165 +462,3 @@ country_event = {
         }
     }
 }
-# 斯大林的广播
-country_event = {
-	id = sovietfate.25
-	title = sovietfate.25.t
-	desc = sovietfate.25.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.25.a
-	}
-}
-# 卡冈诺维奇的报告
-country_event = {
-	id = sovietfate.26
-	title = sovietfate.26.t
-	desc = sovietfate.26.d
-	picture = pic_1
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.26.a
-	}
-}
-# 内战反动派遗留问题
-country_event = {
-	id = sovietfate.27
-	title = sovietfate.27.t
-	desc = sovietfate.27.d
-	picture = pic_2
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.27.a
-	}
-}
-# 集体化遗留问题
-country_event = {
-	id = sovietfate.28
-	title = sovietfate.28.t
-	desc = sovietfate.28.d
-	picture = pic_13
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.28.a
-	}
-}
-# 去哥萨克化的遗产
-country_event = {
-	id = sovietfate.29
-	title = sovietfate.29.t
-	desc = sovietfate.29.d
-	picture = pic_2
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.29.a
-	}
-}
-# 选区划分问题
-country_event = {
-	id = sovietfate.30
-	title = sovietfate.30.t
-	desc = sovietfate.30.d
-	picture = pic_10
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.30.a
-	}
-}
-# 红军内部派别问题
-country_event = {
-	id = sovietfate.31
-	title = sovietfate.31.t
-	desc = sovietfate.31.d
-	picture = pic_2
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.31.a
-	}
-}
-# 国防阴谋论
-country_event = {
-	id = sovietfate.32
-	title = sovietfate.32.t
-	desc = sovietfate.32.d
-	picture = pic_2
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.32.a
-	}
-}
-## 1936年6月中央全会
-# 清查党证运动介绍
-country_event = {
-	id = sovietfate.37
-	title = sovietfate.37.t
-	desc = sovietfate.37.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.37.a
-        country_event = { id = sovietfate.38 days = 1 }
-	}
-}
-# 清查党证运动善后
-country_event = {
-	id = sovietfate.38
-	title = sovietfate.38.t
-	desc = sovietfate.38.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.38.a # 小规模
-        country_event = { id = sovietfate.39 days = 1 }
-	}
-	option = { 
-		name = sovietfate.38.b # 大规模
-        country_event = { id = sovietfate.39 days = 1 }
-	}
-}
-# 接下来的重心
-country_event = {
-	id = sovietfate.39
-	title = sovietfate.39.t
-	desc = sovietfate.39.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.39.a # 叶若夫同志
-        country_event = { id = sovietfate.40 days = 1 }
-	}
-	option = { 
-		name = sovietfate.39.b # 斯大林同志
-        country_event = { id = sovietfate.40 days = 1 }
-	}
-}
-# 对地方当局的批评
-country_event = {
-	id = sovietfate.40
-	title = sovietfate.40.t
-	desc = sovietfate.40.d
-	picture = pic_4
-    fire_only_once = yes
-    is_triggered_only = yes
-	option = { 
-		name = sovietfate.40.a # 掩护他们
-        country_event = { id = sovietfate.40 days = 1 }
-	}
-	option = { 
-		name = sovietfate.40.b # 把批评公开
-        country_event = { id = sovietfate.40 days = 1 }
-	}
-}
-# 

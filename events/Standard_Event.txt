@@ -1,0 +1,118 @@
+add_namespace = standard_event
+# 历史事件，对主线几乎没有影响
+# 1936年
+# 1937年
+# 第一辆履带式拖拉机下线
+country_event = {
+	id = standard_event.1
+	title = standard_event.1.t
+	desc = standard_event.1.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.1.a 
+        add_political_power = 20
+	}
+}
+# 赫塔古洛娃运动
+country_event = {
+	id = standard_event.2
+	title = standard_event.2.t
+	desc = standard_event.2.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.2.a 
+        add_political_power = 100
+        custom_effect_tooltip = setAmure
+        657 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_victory_points = {
+                    province = 12263
+                    value = 1    
+                }
+			    set_province_name = {
+                    id = 12263
+                    name = "Amure"
+				}
+			}
+	}
+}
+# 女性首次驾驶飞艇
+country_event = {
+	id = standard_event.3
+	title = standard_event.3.t
+	desc = standard_event.3.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.3.a 
+        add_political_power = 20
+	}
+}
+# 巴黎世界博览会
+country_event = {
+	id = standard_event.4
+	title = standard_event.4.t
+	desc = standard_event.4.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.4.a 
+        add_political_power = 50
+	}
+}
+# 穿越北极的航班
+country_event = {
+	id = standard_event.5
+	title = standard_event.5.t
+	desc = standard_event.5.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.5.a 
+        add_political_power = 20
+        country_event = { id = standard_event.6 days = 3 }
+	}
+}
+# 来自英雄的举报
+country_event = {
+	id = standard_event.6
+	title = standard_event.6.t
+	desc = standard_event.6.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.6.a 
+        set_country_flag = SOV_Report_by_Hero
+	}
+}
+# 北极航班失踪
+country_event = {
+	id = standard_event.7
+	title = standard_event.7.t
+	desc = standard_event.7.d
+	#picture = 
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = standard_event.7.a 
+        add_political_power = -20
+	}
+}

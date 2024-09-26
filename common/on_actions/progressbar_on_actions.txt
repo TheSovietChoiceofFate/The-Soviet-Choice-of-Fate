@@ -1,12 +1,53 @@
 on_actions = {
+## 党内紧张度 
+# 民族精神：清查党证
 	on_weekly_SOV = {
 		effect = {
 			SOV = {
 				limit = {
 					has_idea = SOV_check_cards
 				}
+                add_to_variable = {
+					progressbar_var = 5
+				}
+				clamp_variable = {
+					var = progressbar_var
+					min = 0
+					max = 400
+				}
+			}
+		}
+	}
+# 叶若夫（党务）
+    on_weekly_SOV = {
+		effect = {
+			SOV = {
+				limit = {
+					has_idea = SOV_yezhov_party
+				}
+                add_to_variable = {
+						progressbar_var = 1
+				}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 400
+				}
+			}
+		}
+	}
+# 权力平衡
+    on_weekly_SOV = {
+		effect = {
+			SOV = {
+				limit = {
+					is_power_balance_in_range = {
+                    id = SOV_social_radicalization
+                    range = SOV_waver_range
+                    }
+				}
             add_to_variable = {
-						progressbar_var = 5
+						progressbar_var = -1
 					}
 					clamp_variable = {
 						var = progressbar_var
@@ -20,10 +61,73 @@ on_actions = {
 		effect = {
 			SOV = {
 				limit = {
-					has_idea = SOV_yezhov_party
+					is_power_balance_in_range = {
+                    id = SOV_social_radicalization
+                    range = SOV_rather_conserve_range
+                    }
 				}
             add_to_variable = {
-						progressbar_var = 2.5
+						progressbar_var = -2
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 400
+				}
+			}
+		}
+	}
+    on_weekly_SOV = {
+		effect = {
+			SOV = {
+				limit = {
+					is_power_balance_in_range = {
+                    id = SOV_social_radicalization
+                    range = SOV_very_conserve_range
+                    }
+				}
+            add_to_variable = {
+						progressbar_var = -5
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 400
+				}
+			}
+		}
+	}
+    on_weekly_SOV = {
+		effect = {
+			SOV = {
+				limit = {
+					is_power_balance_in_range = {
+                    id = SOV_social_radicalization
+                    range = SOV_rather_extreme_side
+                    }
+				}
+            add_to_variable = {
+						progressbar_var = 2
+					}
+					clamp_variable = {
+						var = progressbar_var
+						min = 0
+						max = 400
+				}
+			}
+		}
+	}
+    on_weekly_SOV = {
+		effect = {
+			SOV = {
+				limit = {
+					is_power_balance_in_range = {
+                    id = SOV_social_radicalization
+                    range = SOV_very_extreme_side
+                    }
+				}
+            add_to_variable = {
+						progressbar_var = 5
 					}
 					clamp_variable = {
 						var = progressbar_var

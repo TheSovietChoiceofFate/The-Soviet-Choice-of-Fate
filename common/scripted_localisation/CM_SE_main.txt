@@ -12,7 +12,79 @@ defined_text = {
 	check_variable = { global.se_display = 2 } 
 	} 
 	localization_key = "CM_SE_title_2" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 3 } 
+	} 
+	localization_key = "CM_SE_title_3" 
 	}	
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 4 } 
+	} 
+	localization_key = "CM_SE_title_4" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 5 } 
+	} 
+	localization_key = "CM_SE_title_5" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 6 } 
+	} 
+	localization_key = "CM_SE_title_6" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 7 } 
+	} 
+	localization_key = "CM_SE_title_7" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 8 } 
+	} 
+	localization_key = "CM_SE_title_8" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 9 } 
+	} 
+	localization_key = "CM_SE_title_9" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 10 } 
+	} 
+	localization_key = "CM_SE_title_10" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 11 } 
+	} 
+	localization_key = "CM_SE_title_11" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 12 } 
+	} 
+	localization_key = "CM_SE_title_12" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 13 } 
+	} 
+	localization_key = "CM_SE_title_13" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 14 } 
+	} 
+	localization_key = "CM_SE_title_14" 
+	}
 }
 defined_text = { 
 	name = CM_SE_desc
@@ -29,6 +101,78 @@ defined_text = {
 	}  
 	localization_key = "CM_SE_desc_2" 
 	}	
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 3 } 
+	}  
+	localization_key = "CM_SE_desc_3" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 4 } 
+	}  
+	localization_key = "CM_SE_desc_4" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 5 } 
+	}  
+	localization_key = "CM_SE_desc_5" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 6 } 
+	}  
+	localization_key = "CM_SE_desc_6" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 7 } 
+	}  
+	localization_key = "CM_SE_desc_7" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 8 } 
+	}  
+	localization_key = "CM_SE_desc_8" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 9 } 
+	}  
+	localization_key = "CM_SE_desc_9" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 10 } 
+	}  
+	localization_key = "CM_SE_desc_10" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 11 } 
+	}  
+	localization_key = "CM_SE_desc_11" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 12 } 
+	}  
+	localization_key = "CM_SE_desc_12" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 13 } 
+	}  
+	localization_key = "CM_SE_desc_13" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 14 } 
+	}  
+	localization_key = "CM_SE_desc_14" 
+	}
 }
 defined_text = { 
 	name = CM_SE_quote
@@ -45,6 +189,78 @@ defined_text = {
 	} 
 	localization_key = "CM_SE_quote_2" 
 	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 3 } 
+	} 
+	localization_key = "CM_SE_quote_3" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 4 } 
+	} 
+	localization_key = "CM_SE_quote_4" 
+	}    
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 5 } 
+	} 
+	localization_key = "CM_SE_quote_5" 
+	}    
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 6 } 
+	} 
+	localization_key = "CM_SE_quote_6" 
+	}    
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 7 } 
+	} 
+	localization_key = "CM_SE_quote_7" 
+	}    
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 8 } 
+	} 
+	localization_key = "CM_SE_quote_8" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 9 } 
+	} 
+	localization_key = "CM_SE_quote_9" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 10 } 
+	} 
+	localization_key = "CM_SE_quote_10" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 11 } 
+	} 
+	localization_key = "CM_SE_quote_11" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 12 } 
+	} 
+	localization_key = "CM_SE_quote_12" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 13 } 
+	} 
+	localization_key = "CM_SE_quote_13" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 14 } 
+	} 
+	localization_key = "CM_SE_quote_14" 
+	}
 }
 defined_text = { 
 	name = CM_SE_btn
@@ -60,5 +276,77 @@ defined_text = {
 	check_variable = { global.se_display = 2 } 
 	} 
 	localization_key = "CM_SE_btn_2" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 3 } 
+	} 
+	localization_key = "CM_SE_btn_3" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 4 } 
+	} 
+	localization_key = "CM_SE_btn_4" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 5 } 
+	} 
+	localization_key = "CM_SE_btn_5" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 6 } 
+	} 
+	localization_key = "CM_SE_btn_6" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 7 } 
+	} 
+	localization_key = "CM_SE_btn_7" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 8 } 
+	} 
+	localization_key = "CM_SE_btn_8" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 9 } 
+	} 
+	localization_key = "CM_SE_btn_9" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 10 } 
+	} 
+	localization_key = "CM_SE_btn_10" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 11 } 
+	} 
+	localization_key = "CM_SE_btn_11" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 12 } 
+	} 
+	localization_key = "CM_SE_btn_12" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 13 } 
+	} 
+	localization_key = "CM_SE_btn_13" 
+	}
+    text = { 
+	trigger = { 
+	check_variable = { global.se_display = 14 } 
+	} 
+	localization_key = "CM_SE_btn_14" 
 	}
 }

@@ -107,4 +107,281 @@ SOV_TEST_1_0 = {
 		    }
 		}
 	}
+    SOV_TEST_1_5 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 3 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_6 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 4 }
+        news_event = { id = sf_news.1 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_7 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 5 }
+        news_event = { id = sf_news.3 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_8 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 6 }
+        news_event = { id = sf_news.2 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_9 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 7 }
+        news_event = { id = sf_news.4 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_10 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 8 }
+        news_event = { id = sf_news.5 }
+        news_event = { id = sf_news.6 days = 1 }
+        news_event = { id = sf_news.11 days = 2 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_11 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 9 }
+        news_event = { id = sf_news.7 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_12 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 10 }
+        news_event = { id = sf_news.8 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_13 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 11 }
+        news_event = { id = sf_news.9 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_14 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 12 }
+        news_event = { id = sf_news.10 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_15 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 13 }
+        news_event = { id = sf_news.12 }
+		#play_song = 
+		    }
+		}
+	}
+    SOV_TEST_1_16 = {
+	    cost = 0
+		days_remove = 0
+		
+		days_re_enable = 1
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		}
+		remove_effect = {
+	    SE_center = yes
+		hidden_effect = {
+		SE_center = yes
+		set_variable = { global.se_display = 14 }
+        news_event = { id = sf_news.13 }
+		#play_song = 
+		    }
+		}
+	}
 }

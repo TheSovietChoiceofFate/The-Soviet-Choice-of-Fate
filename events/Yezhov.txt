@@ -1,0 +1,28 @@
+add_namespace = yezhov
+# 叶若夫相关
+# “清查党证”运动告一段落
+country_event = {
+	id = yezhov.1
+	title = yezhov.1.t
+	desc = yezhov.1.d
+	picture = pic_16
+    fire_only_once = yes
+    is_triggered_only = yes
+	option = { 
+		name = yezhov.1.a # 派叶若夫同志监督NKVD的工作
+        remove_ideas = SOV_check_cards
+        add_political_power = 100
+        add_to_variable = { progressbar_var = 10 }
+        retire_character = SOV_yezhov_party
+        recruit_character = SOV_nikolay_yezhov
+        recruit_character = SOV_malinkefu
+        set_country_flag = SOV_yeruofu
+        activate_mission = SOV_6_1
+        custom_effect_tooltip = yezhov_leave
+	}
+    option = { 
+		name = yezhov.1.b # 党务工作需要叶若夫同志
+        remove_ideas = SOV_check_cards
+        custom_effect_tooltip = yezhov_stay
+	}
+}
